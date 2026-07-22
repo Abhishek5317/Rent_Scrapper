@@ -1,0 +1,940 @@
+Extraction batch #21 started — 3 store(s).
+
+============================================================
+[1/3] Domino's Sector 8B Chandigarh (30.7391, 76.7828)
+============================================================
+
+  → Scraping...
+2026-07-14 15:36:04,306 [INFO] No city name in config � reverse-geocoding (30.7391, 76.7828)...
+2026-07-14 15:36:04,705 [INFO] Resolved city: Chandigarh, state: Chandigarh
+2026-07-14 15:36:04,706 [INFO] Saved resolved values back to C:\Users\riddh\OneDrive\Desktop\skymark-grid-project\config.json
+2026-07-14 15:36:04,710 [INFO] Starting MagicBricks scrape run
+2026-07-14 15:36:05,338 [INFO] Bootstrapping session via Playwright: https://www.magicbricks.com/property-for-rent/residential-real-estate?cityName=Chandigarh&page=1
+2026-07-14 15:36:10,121 [INFO] Skipping likely-commercial listing:   Office Space for Rent in Rajiv Gandhi IT Park, Manimajra Chandigarh
+2026-07-14 15:36:10,133 [INFO] Skipping likely-commercial listing:   Showroom for Rent in Sector 17 Chandigarh
+2026-07-14 15:36:10,163 [INFO] Skipping likely-commercial listing:   Showroom for Rent in Sector 9 Chandigarh
+2026-07-14 15:36:10,167 [INFO] Skipping likely-commercial listing:  Warehouse/ Godown for Rent in Zirakpur Chandigarh
+2026-07-14 15:36:10,174 [INFO] Skipping likely-commercial listing:   Office Space for Rent in Elante Mall, Phase I Industrial Area Chandigarh
+2026-07-14 15:36:10,183 [INFO] Skipping likely-commercial listing:   Office Space for Rent in Sector 17 Chandigarh
+2026-07-14 15:36:10,185 [INFO] Skipping likely-commercial listing:   Office Space for Rent in Sector 45 Chandigarh
+2026-07-14 15:36:10,187 [INFO] Skipping likely-commercial listing:  Warehouse/ Godown for Rent in Sector 38 West Chandigarh
+2026-07-14 15:36:10,196 [INFO] Skipping likely-commercial listing:  Warehouse/ Godown for Rent in Daria Chandigarh
+2026-07-14 15:36:10,199 [INFO] Skipping likely-commercial listing:   Office Space for Rent in Elante Mall, Phase I Industrial Area Chandigarh
+2026-07-14 15:36:10,199 [INFO] Page 1: 20 listings parsed so far
+2026-07-14 15:36:15,415 [INFO] HTTP Request: GET https://www.magicbricks.com/property-for-rent/residential-real-estate?cityName=Chandigarh&page=2 "HTTP/1.1 200 OK"
+2026-07-14 15:36:15,600 [INFO] Skipping likely-commercial listing:   Office Space for Rent in Uptown Insignia, Zirakpur Chandigarh
+2026-07-14 15:36:15,606 [INFO] Skipping likely-commercial listing:   Office Space for Rent in Sector 9 Chandigarh
+2026-07-14 15:36:15,613 [INFO] Skipping likely-commercial listing:   Office Space for Rent in Sector 38C Chandigarh
+2026-07-14 15:36:15,615 [INFO] Skipping likely-commercial listing:   Office Space for Rent in Phase 1 Industrial Area Chandigarh
+2026-07-14 15:36:15,630 [INFO] Skipping likely-commercial listing:  Warehouse/ Godown for Rent in Sector 43B Chandigarh
+2026-07-14 15:36:15,643 [INFO] Skipping likely-commercial listing:  Industrial Building for Rent in Phase 1 Industrial Area Chandigarh
+2026-07-14 15:36:15,646 [INFO] Skipping likely-commercial listing:   Showroom for Rent in Sector 17 Chandigarh
+2026-07-14 15:36:15,666 [INFO] Skipping likely-commercial listing:   Showroom for Rent in Silver City Extention, Zirakpur Chandigarh
+2026-07-14 15:36:15,678 [INFO] Page 2: +22 listings (running total: 42)
+2026-07-14 15:36:20,245 [INFO] HTTP Request: GET https://www.magicbricks.com/property-for-rent/residential-real-estate?cityName=Chandigarh&page=3 "HTTP/1.1 200 OK"
+2026-07-14 15:36:20,434 [INFO] Skipping likely-commercial listing:   Office Space for Rent in Madhya Marg Chandigarh
+2026-07-14 15:36:20,437 [INFO] Skipping likely-commercial listing:  Warehouse/ Godown for Rent in Daria Chandigarh
+2026-07-14 15:36:20,455 [INFO] Skipping likely-commercial listing:   Office Space for Rent in Phase I Industrial Area Chandigarh
+2026-07-14 15:36:20,462 [INFO] Skipping likely-commercial listing:   Office Space for Rent in Paradigm Hermitage Plaza, Zirakpur Chandigarh
+2026-07-14 15:36:20,479 [INFO] Page 3: +26 listings (running total: 68)
+2026-07-14 15:36:25,434 [INFO] HTTP Request: GET https://www.magicbricks.com/property-for-rent/residential-real-estate?cityName=Chandigarh&page=4 "HTTP/1.1 200 OK"
+2026-07-14 15:36:25,634 [INFO] Skipping likely-commercial listing:   Office Space for Rent in Sector-34 Chandigarh
+2026-07-14 15:36:25,641 [INFO] Skipping likely-commercial listing:   Shop for Rent in Bay Shop No.41, Yec-22 C, CHD Chandigarh
+2026-07-14 15:36:25,646 [INFO] Skipping likely-commercial listing:   Office Space for Rent in Sector-22 Chandigarh
+2026-07-14 15:36:25,649 [INFO] Skipping likely-commercial listing:   Shop for Rent in Sector 13 Chandigarh
+2026-07-14 15:36:25,664 [INFO] Skipping likely-commercial listing:   Showroom for Rent in Sector 47D Chandigarh
+2026-07-14 15:36:25,670 [WARNING] Rejecting implausible monthly_rent=1150000.0 for cardid=85022067 (source text: 1150000) � outside the 1,000-1,000,000 sanity range.
+2026-07-14 15:36:25,670 [INFO] Skipping likely-commercial listing:   Office Space for Rent in Sector 9 Chandigarh
+2026-07-14 15:36:25,673 [INFO] Skipping likely-commercial listing:   Showroom for Rent in Sector 17 Chandigarh
+2026-07-14 15:36:25,675 [INFO] Skipping likely-commercial listing:   Shop for Rent in Sector 17 Chandigarh
+2026-07-14 15:36:25,676 [INFO] Page 4: +22 listings (running total: 90)
+2026-07-14 15:36:31,520 [INFO] HTTP Request: GET https://www.magicbricks.com/property-for-rent/residential-real-estate?cityName=Chandigarh&page=5 "HTTP/1.1 200 OK"
+2026-07-14 15:36:31,688 [INFO] Skipping likely-commercial listing:   Office Space for Rent in Zirakpur Chandigarh
+2026-07-14 15:36:31,691 [INFO] Skipping likely-commercial listing:   Shop for Rent in Nayagaon Chandigarh
+2026-07-14 15:36:31,695 [INFO] Skipping likely-commercial listing:   Showroom for Rent in Sector-35 Chandigarh
+2026-07-14 15:36:31,697 [INFO] Skipping likely-commercial listing:   Office Space for Rent in Sector 35C Chandigarh
+2026-07-14 15:36:31,716 [INFO] Skipping likely-commercial listing:  Industrial Shed for Rent in Phase 1 Industrial Area Chandigarh
+2026-07-14 15:36:31,718 [WARNING] Rejecting implausible monthly_rent=2100218000.0 for cardid=73250955 (source text: 2100218000) � outside the 1,000-1,000,000 sanity range.
+2026-07-14 15:36:31,719 [INFO] Skipping likely-commercial listing:   Office Space for Rent in Zirakpur Chandigarh
+2026-07-14 15:36:31,724 [INFO] Skipping likely-commercial listing:   Showroom for Rent in Zirakpur Chandigarh
+2026-07-14 15:36:31,741 [INFO] Skipping likely-commercial listing:   Shop for Rent in Sector-11 Chandigarh
+2026-07-14 15:36:31,744 [INFO] Skipping likely-commercial listing:   Showroom for Rent in Manimajra Chandigarh
+2026-07-14 15:36:31,747 [WARNING] Rejecting implausible monthly_rent=1290000.0 for cardid=83913263 (source text: 1290000) � outside the 1,000-1,000,000 sanity range.
+2026-07-14 15:36:31,747 [INFO] Skipping likely-commercial listing:   Shop for Rent in Sector-11 Chandigarh
+2026-07-14 15:36:31,747 [INFO] Page 5: +20 listings (running total: 110)
+2026-07-14 15:36:35,381 [INFO] HTTP Request: GET https://www.magicbricks.com/property-for-rent/residential-real-estate?cityName=Chandigarh&page=6 "HTTP/1.1 200 OK"
+2026-07-14 15:36:35,555 [INFO] Skipping likely-commercial listing:   Office Space for Rent in Sector 16 Chandigarh
+2026-07-14 15:36:35,562 [INFO] Skipping likely-commercial listing:   Office Space for Rent in Sector 13 Chandigarh
+2026-07-14 15:36:35,565 [INFO] Skipping likely-commercial listing:   Office Space for Rent in Sector 20 Chandigarh
+2026-07-14 15:36:35,588 [INFO] Skipping likely-commercial listing:   Shop for Rent in Manimajra Chandigarh
+2026-07-14 15:36:35,600 [INFO] Skipping likely-commercial listing:   Office Space for Rent in Sector 32D Chandigarh
+2026-07-14 15:36:35,614 [INFO] Skipping likely-commercial listing:   Showroom for Rent in Sector-37 Chandigarh
+2026-07-14 15:36:35,617 [INFO] Skipping likely-commercial listing:   Office Space for Rent in Sector 54 Chandigarh
+2026-07-14 15:36:35,619 [INFO] Skipping likely-commercial listing:   Showroom for Rent in Tribune Chowk Chandigarh
+2026-07-14 15:36:35,627 [INFO] Page 6: +22 listings (running total: 132)
+2026-07-14 15:36:35,627 [INFO] Starting detail-page enrichment (coordinates + amenities) for 132 listings...
+2026-07-14 15:36:40,825 [INFO] HTTP Request: GET https://www.magicbricks.com/green-lotus-utsav-zirakpur-chandigarh-pdpid-4d4235323530373439#cardid-84443725 "HTTP/1.1 200 OK"
+2026-07-14 15:36:44,721 [INFO] HTTP Request: GET https://www.magicbricks.com/propertyDetails/5-BHK-5500-Sq-ft-Residential-House-FOR-Rent-Sector-9-in-Chandigarh&id=4d423833353037373631#cardid-83507761 "HTTP/1.1 200 OK"
+2026-07-14 15:36:48,774 [INFO] HTTP Request: GET https://www.magicbricks.com/propertyDetails/4-BHK-1500-Sq-ft-Multistorey-Apartment-FOR-Rent-Sector-49-in-Chandigarh&id=4d423834393335383431#cardid-84935841 "HTTP/1.1 200 OK"
+2026-07-14 15:36:52,980 [INFO] HTTP Request: GET https://www.magicbricks.com/green-lotus-utsav-zirakpur-chandigarh-pdpid-4d4235323530373439#cardid-85430081 "HTTP/1.1 200 OK"
+2026-07-14 15:36:58,945 [INFO] HTTP Request: GET https://www.magicbricks.com/propertyDetails/2-BHK-750-Sq-ft-Multistorey-Apartment-FOR-Rent-Sector-56-in-Chandigarh&id=4d423834363532353131#cardid-84652511 "HTTP/1.1 200 OK"
+2026-07-14 15:37:02,830 [INFO] HTTP Request: GET https://www.magicbricks.com/progressive-society-sector-50-chandigarh-pdpid-4d4235323532303039#cardid-85198331 "HTTP/1.1 200 OK"
+2026-07-14 15:37:07,850 [INFO] HTTP Request: GET https://www.magicbricks.com/propertyDetails/2-BHK-1800-Sq-ft-Builder-Floor-Apartment-FOR-Rent-Sector-42-in-Chandigarh&id=4d423832393537363333#cardid-82957633 "HTTP/1.1 200 OK"
+2026-07-14 15:37:13,091 [INFO] HTTP Request: GET https://www.magicbricks.com/propertyDetails/3-BHK-14-Marla-Residential-House-FOR-Rent-Sector-34-in-Chandigarh&id=4d423833363235343933#cardid-83625493 "HTTP/1.1 200 OK"
+2026-07-14 15:37:20,449 [INFO] HTTP Request: GET https://www.magicbricks.com/propertyDetails/2-BHK-1250-Sq-ft-Multistorey-Apartment-FOR-Rent-Sector-63-in-Chandigarh&id=4d423835343034373935#cardid-85404795 "HTTP/1.1 200 OK"
+2026-07-14 15:37:25,569 [INFO] HTTP Request: GET https://www.magicbricks.com/sushma-chandigarh-grande-zirakpur-chandigarh-pdpid-4d4235303137343736#cardid-65676925 "HTTP/1.1 200 OK"
+2026-07-14 15:37:25,929 [WARNING] Amenities section shows 'View All Amenities (15)' but only 12 were captured from the static HTML � the rest are likely behind a click-to-expand this scraper doesn't drive. Got: ['Club House', 'Private Terrace/Garden', 'Power Back Up', 'Swimming Pool', 'Lift', 'Security', 'Park', 'Reserved Parking', 'Service/Goods Lift', 'Visitor Parking', 'Intercom Facility', 'Gymnasium']
+2026-07-14 15:37:25,930 [INFO] Detail-page enrichment: 10/132 processed, 10 coordinates and 9 amenity lists found so far
+2026-07-14 15:37:33,213 [INFO] HTTP Request: GET https://www.magicbricks.com/maxxus-elanza-zirakpur-chandigarh-pdpid-4d4235313930353735#cardid-85468101 "HTTP/1.1 200 OK"
+2026-07-14 15:37:33,593 [WARNING] Amenities section shows 'View All Amenities (20)' but only 12 were captured from the static HTML � the rest are likely behind a click-to-expand this scraper doesn't drive. Got: ['Club House', 'Cafeteria/Food Court', 'Jogging and Strolling Track', 'Power Back Up', 'Swimming Pool', 'Lift', 'Security', 'Park', 'Reserved Parking', 'Intercom Facility', 'Banquet Hall', 'Gymnasium']
+2026-07-14 15:37:39,334 [INFO] HTTP Request: GET https://www.magicbricks.com/palm-court-zirakpur-chandigarh-pdpid-4d4235313030373137#cardid-85335879 "HTTP/1.1 200 OK"
+2026-07-14 15:37:45,237 [INFO] HTTP Request: GET https://www.magicbricks.com/apr-highland-park-zirakpur-zirakpur-chandigarh-pdpid-4d4235303937343531#cardid-84038935 "HTTP/1.1 200 OK"
+2026-07-14 15:37:45,736 [WARNING] Amenities section shows 'View All Amenities (11)' but only 0 were captured from the static HTML � the rest are likely behind a click-to-expand this scraper doesn't drive. Got: []
+2026-07-14 15:37:49,623 [INFO] HTTP Request: GET https://www.magicbricks.com/propertyDetails/2-BHK-1250-Sq-ft-Multistorey-Apartment-FOR-Rent-Sector-49-in-Chandigarh&id=4d423835303439363137#cardid-85049617 "HTTP/1.1 200 OK"
+2026-07-14 15:37:55,588 [INFO] HTTP Request: GET https://www.magicbricks.com/propertyDetails/2-BHK-1015-Sq-ft-Builder-Floor-Apartment-FOR-Rent-Sector-28D-in-Chandigarh&id=4d423835343031353733#cardid-85401573 "HTTP/1.1 200 OK"
+2026-07-14 15:37:59,988 [INFO] HTTP Request: GET https://www.magicbricks.com/monarch-apartments-zirakpur-chandigarh-pdpid-4d4235313035313937#cardid-85536337 "HTTP/1.1 200 OK"
+2026-07-14 15:38:08,320 [INFO] HTTP Request: GET https://www.magicbricks.com/propertyDetails/4-BHK-2020-Sq-ft-Multistorey-Apartment-FOR-Rent-in-Chandigarh&id=4d423832393938383539#cardid-82998859 "HTTP/1.1 200 OK"
+2026-07-14 15:38:13,489 [INFO] HTTP Request: GET https://www.magicbricks.com/motiaz-royal-citi-zirakpur-chandigarh-pdpid-4d4235303833313839#cardid-85263963 "HTTP/1.1 200 OK"
+2026-07-14 15:38:13,821 [WARNING] Amenities section shows 'View All Amenities (15)' but only 12 were captured from the static HTML � the rest are likely behind a click-to-expand this scraper doesn't drive. Got: ['Club House', 'Cycling & Jogging Track', 'Power Back Up', 'Swimming Pool', 'Lift', 'Security', 'Park', 'Reserved Parking', 'Intercom Facility', 'Gymnasium', 'Piped Gas', 'Rain Water Harvesting']
+2026-07-14 15:38:17,177 [INFO] HTTP Request: GET https://www.magicbricks.com/propertyDetails/5-BHK-21780-Sq-ft-Residential-House-FOR-Rent-Sector-10-in-Chandigarh&id=4d423833393131393239#cardid-83911929 "HTTP/1.1 200 OK"
+2026-07-14 15:38:21,489 [INFO] HTTP Request: GET https://www.magicbricks.com/pushpac-complex-sector-49-chandigarh-pdpid-4d4235333130393435#cardid-84832661 "HTTP/1.1 200 OK"
+2026-07-14 15:38:21,766 [INFO] Detail-page enrichment: 20/132 processed, 19 coordinates and 13 amenity lists found so far
+2026-07-14 15:38:25,270 [INFO] HTTP Request: GET https://www.magicbricks.com/propertyDetails/3-BHK-1800-Sq-ft-Builder-Floor-Apartment-FOR-Rent-Sector-15-in-Chandigarh&id=4d423835353134313037#cardid-85514107 "HTTP/1.1 200 OK"
+2026-07-14 15:38:29,369 [INFO] HTTP Request: GET https://www.magicbricks.com/green-lotus-utsav-zirakpur-chandigarh-pdpid-4d4235323530373439#cardid-84456757 "HTTP/1.1 200 OK"
+2026-07-14 15:38:36,594 [INFO] HTTP Request: GET https://www.magicbricks.com/omaxe-the-lake-sector-17-chandigarh-pdpid-4d4235303836343436#cardid-85476295 "HTTP/1.1 301 Moved Permanently"
+2026-07-14 15:38:37,731 [INFO] HTTP Request: GET https://www.magicbricks.com/omaxe-the-lake-madhya-marg-chandigarh-pdpid-4d4235303836343436#cardid-85476295 "HTTP/1.1 200 OK"
+2026-07-14 15:38:38,281 [WARNING] Amenities section shows 'View All Amenities (16)' but only 0 were captured from the static HTML � the rest are likely behind a click-to-expand this scraper doesn't drive. Got: []
+2026-07-14 15:38:42,380 [INFO] HTTP Request: GET https://www.magicbricks.com/green-lotus-utsav-zirakpur-chandigarh-pdpid-4d4235323530373439#cardid-84080763 "HTTP/1.1 200 OK"
+2026-07-14 15:38:46,796 [INFO] HTTP Request: GET https://www.magicbricks.com/propertyDetails/3-BHK-2100-Sq-ft-Multistorey-Apartment-FOR-Rent-in-Chandigarh&id=4d423834333832313233#cardid-84382123 "HTTP/1.1 200 OK"
+2026-07-14 15:38:51,817 [INFO] HTTP Request: GET https://www.magicbricks.com/av-ananta-lifestyle-zirakpur-chandigarh-pdpid-4d4235313234323137#cardid-83703359 "HTTP/1.1 200 OK"
+2026-07-14 15:38:57,081 [INFO] HTTP Request: GET https://www.magicbricks.com/propertyDetails/4-BHK-2-Kanal-Builder-Floor-Apartment-FOR-Rent-Sector-21-in-Chandigarh&id=4d423833353933373939#cardid-83593799 "HTTP/1.1 200 OK"
+2026-07-14 15:39:02,962 [INFO] HTTP Request: GET https://www.magicbricks.com/propertyDetails/4-BHK-3580-Sq-ft-Residential-House-FOR-Rent-Sector-44-in-Chandigarh&id=4d423835343735303233#cardid-85475023 "HTTP/1.1 200 OK"
+2026-07-14 15:39:07,672 [INFO] HTTP Request: GET https://www.magicbricks.com/sushma-grande-zirakpur-chandigarh-pdpid-4d4235303336373530#cardid-85496927 "HTTP/1.1 200 OK"
+2026-07-14 15:39:08,279 [WARNING] Amenities section shows 'View All Amenities (50)' but only 12 were captured from the static HTML � the rest are likely behind a click-to-expand this scraper doesn't drive. Got: ['Club House', 'Cafeteria/Food Court', 'Bar/Lounge', 'Jogging and Strolling Track', 'Outdoor Tennis Courts', 'Private Terrace/Garden', 'Power Back Up', 'Swimming Pool', 'Lift', 'Security', 'Park', 'Reserved Parking']
+2026-07-14 15:39:12,782 [INFO] HTTP Request: GET https://www.magicbricks.com/propertyDetails/3-BHK-4500-Sq-ft-Builder-Floor-Apartment-FOR-Rent-Sector-21-in-Chandigarh&id=4d423835343732393433#cardid-85472943 "HTTP/1.1 200 OK"
+2026-07-14 15:39:12,906 [INFO] Detail-page enrichment: 30/132 processed, 29 coordinates and 21 amenity lists found so far
+2026-07-14 15:39:18,006 [INFO] HTTP Request: GET https://www.magicbricks.com/nk-sharma-savitry-greens-2-zirakpur-chandigarh-pdpid-4d4235303836323939#cardid-84844381 "HTTP/1.1 200 OK"
+2026-07-14 15:39:18,398 [WARNING] Amenities section shows 'View All Amenities (10)' but only 0 were captured from the static HTML � the rest are likely behind a click-to-expand this scraper doesn't drive. Got: []
+2026-07-14 15:39:23,741 [INFO] HTTP Request: GET https://www.magicbricks.com/savitry-greens-zirakpur-chandigarh-pdpid-4d4235303336363634#cardid-64366183 "HTTP/1.1 200 OK"
+2026-07-14 15:39:24,450 [WARNING] Amenities section shows 'View All Amenities (24)' but only 12 were captured from the static HTML � the rest are likely behind a click-to-expand this scraper doesn't drive. Got: ['Club House', 'Jogging and Strolling Track', 'Cycling & Jogging Track', 'Power Back Up', 'Swimming Pool', 'Lift', 'Security', 'Park', 'Reserved Parking', 'Intercom Facility', 'Gymnasium', 'Indoor Games Room']
+2026-07-14 15:39:29,568 [INFO] HTTP Request: GET https://www.magicbricks.com/propertyDetails/3-BHK-3200-Sq-ft-Residential-House-FOR-Rent-Sector-35-in-Chandigarh&id=4d423835343635383937#cardid-85465897 "HTTP/1.1 200 OK"
+2026-07-14 15:39:33,277 [INFO] HTTP Request: GET https://www.magicbricks.com/green-lotus-utsav-zirakpur-chandigarh-pdpid-4d4235323530373439#cardid-85426479 "HTTP/1.1 200 OK"
+2026-07-14 15:39:37,876 [INFO] HTTP Request: GET https://www.magicbricks.com/motia-blue-ridge-zirakpur-chandigarh-pdpid-4d4235313136363131#cardid-85460661 "HTTP/1.1 200 OK"
+2026-07-14 15:39:38,360 [WARNING] Amenities section shows 'View All Amenities (21)' but only 12 were captured from the static HTML � the rest are likely behind a click-to-expand this scraper doesn't drive. Got: ['Power Back Up', 'Swimming Pool', 'Lift', 'Park', 'Reserved Parking', 'Visitor Parking', 'Intercom Facility', 'Maintenance Staff', 'Gymnasium', 'Indoor Games Room', 'Rain Water Harvesting', 'Water Storage']
+2026-07-14 15:39:44,516 [INFO] HTTP Request: GET https://www.magicbricks.com/propertyDetails/3-BHK-2200-Sq-ft-Residential-House-FOR-Rent-Sector-33-in-Chandigarh&id=4d423835353036353831#cardid-85506581 "HTTP/1.1 200 OK"
+2026-07-14 15:39:52,109 [INFO] HTTP Request: GET https://www.magicbricks.com/skylar-homes-zirakpur-chandigarh-pdpid-4d4235323030393235#cardid-85245219 "HTTP/1.1 200 OK"
+2026-07-14 15:39:58,261 [INFO] HTTP Request: GET https://www.magicbricks.com/el-spazia-zirakpur-chandigarh-pdpid-4d4235313237303437#cardid-75904027 "HTTP/1.1 200 OK"
+2026-07-14 15:39:58,965 [WARNING] Amenities section shows 'View All Amenities (13)' but only 12 were captured from the static HTML � the rest are likely behind a click-to-expand this scraper doesn't drive. Got: ['Club House', 'Swimming Pool', 'Lift', 'Security', 'Park', 'Service/Goods Lift', 'Intercom Facility', 'Gymnasium', 'Indoor Games Room', 'Rain Water Harvesting', 'Internet/Wi-Fi Connectivity', 'Multipurpose Hall']
+2026-07-14 15:40:03,896 [INFO] HTTP Request: GET https://www.magicbricks.com/joynest-moh-1-zirakpur-chandigarh-pdpid-4d4235303938363237#cardid-84645055 "HTTP/1.1 200 OK"
+2026-07-14 15:40:04,400 [WARNING] Amenities section shows 'View All Amenities (25)' but only 12 were captured from the static HTML � the rest are likely behind a click-to-expand this scraper doesn't drive. Got: ['Club House', 'Jogging and Strolling Track', 'Cycling & Jogging Track', 'Power Back Up', 'Lift', 'Security', 'Park', 'Reserved Parking', 'Visitor Parking', 'Intercom Facility', 'Maintenance Staff', 'Gymnasium']
+2026-07-14 15:40:07,857 [INFO] HTTP Request: GET https://www.magicbricks.com/green-lotus-utsav-zirakpur-chandigarh-pdpid-4d4235323530373439#cardid-83902607 "HTTP/1.1 200 OK"
+2026-07-14 15:40:08,316 [INFO] Detail-page enrichment: 40/132 processed, 39 coordinates and 29 amenity lists found so far
+2026-07-14 15:40:15,249 [INFO] HTTP Request: GET https://www.magicbricks.com/orbit-apartments-zirakpur-chandigarh-pdpid-4d4235303336353634#cardid-82853915 "HTTP/1.1 200 OK"
+2026-07-14 15:40:15,572 [WARNING] Amenities section shows 'View All Amenities (21)' but only 12 were captured from the static HTML � the rest are likely behind a click-to-expand this scraper doesn't drive. Got: ['Club House', 'Power Back Up', 'Lift', 'Security', 'Park', 'Reserved Parking', 'Visitor Parking', 'Intercom Facility', 'Maintenance Staff', 'Bank & ATM', 'Gymnasium', 'Indoor Games Room']
+2026-07-14 15:40:22,123 [INFO] HTTP Request: GET https://www.magicbricks.com/propertyDetails/3-BHK-1800-Sq-ft-Builder-Floor-Apartment-FOR-Rent-Sector-15-in-Chandigarh&id=4d423835343032303931#cardid-85402091 "HTTP/1.1 200 OK"
+2026-07-14 15:40:27,314 [INFO] HTTP Request: GET https://www.magicbricks.com/propertyDetails/4-BHK-5000-Sq-ft-Residential-House-FOR-Rent-Sector-21-in-Chandigarh&id=4d423834343630373037#cardid-84460707 "HTTP/1.1 200 OK"
+2026-07-14 15:40:34,400 [INFO] HTTP Request: GET https://www.magicbricks.com/propertyDetails/3-BHK-2250-Sq-ft-Builder-Floor-Apartment-FOR-Rent-Sector-15-in-Chandigarh&id=4d423835343235323837#cardid-85425287 "HTTP/1.1 200 OK"
+2026-07-14 15:40:38,308 [INFO] HTTP Request: GET https://www.magicbricks.com/propertyDetails/1-BHK-1100-Sq-ft-Residential-House-FOR-Rent-Sector-38-in-Chandigarh&id=4d423835343337363735#cardid-85437675 "HTTP/1.1 200 OK"
+2026-07-14 15:40:45,736 [INFO] HTTP Request: GET https://www.magicbricks.com/artique-uptown-skylla-zirakpur-chandigarh-pdpid-4d4235313234323637#cardid-85152995 "HTTP/1.1 200 OK"
+2026-07-14 15:40:46,297 [WARNING] Amenities section shows 'View All Amenities (15)' but only 12 were captured from the static HTML � the rest are likely behind a click-to-expand this scraper doesn't drive. Got: ['Power Back Up', 'Swimming Pool', 'Lift', 'Security', 'Visitor Parking', 'Gymnasium', 'Rain Water Harvesting', 'Multipurpose Courts', 'Waste Disposal', 'Earth quake resistant', 'Large Open space', 'Multipurpose Hall']
+2026-07-14 15:40:49,556 [INFO] HTTP Request: GET https://www.magicbricks.com/motia-blue-ridge-zirakpur-chandigarh-pdpid-4d4235313136363131#cardid-85265057 "HTTP/1.1 200 OK"
+2026-07-14 15:40:50,039 [WARNING] Amenities section shows 'View All Amenities (21)' but only 12 were captured from the static HTML � the rest are likely behind a click-to-expand this scraper doesn't drive. Got: ['Power Back Up', 'Swimming Pool', 'Lift', 'Park', 'Reserved Parking', 'Visitor Parking', 'Intercom Facility', 'Maintenance Staff', 'Gymnasium', 'Indoor Games Room', 'Rain Water Harvesting', 'Water Storage']
+2026-07-14 15:40:53,676 [INFO] HTTP Request: GET https://www.magicbricks.com/propertyDetails/2-BHK-1100-Sq-ft-Residential-House-FOR-Rent-Sector-48-in-Chandigarh&id=4d423835333931323733#cardid-85391273 "HTTP/1.1 200 OK"
+2026-07-14 15:40:57,647 [INFO] HTTP Request: GET https://www.magicbricks.com/propertyDetails/4-BHK-4000-Sq-ft-Villa-FOR-Rent-Sector-8-in-Chandigarh&id=4d423835323632313137#cardid-85262117 "HTTP/1.1 200 OK"
+2026-07-14 15:41:01,612 [INFO] HTTP Request: GET https://www.magicbricks.com/propertyDetails/3-BHK-2100-Sq-ft-Multistorey-Apartment-FOR-Rent-in-Chandigarh&id=4d423835303937333939#cardid-85097399 "HTTP/1.1 200 OK"
+2026-07-14 15:41:01,900 [INFO] Detail-page enrichment: 50/132 processed, 49 coordinates and 39 amenity lists found so far
+2026-07-14 15:41:08,390 [INFO] HTTP Request: GET https://www.magicbricks.com/propertyDetails/3-BHK-1800-Sq-ft-Builder-Floor-Apartment-FOR-Rent-Sector-40-in-Chandigarh&id=4d423835333833363339#cardid-85383639 "HTTP/1.1 200 OK"
+2026-07-14 15:41:11,785 [INFO] HTTP Request: GET https://www.magicbricks.com/propertyDetails/2-BHK-1400-Sq-ft-Multistorey-Apartment-FOR-Rent-Sector-63-in-Chandigarh&id=4d423835333835313637#cardid-85385167 "HTTP/1.1 200 OK"
+2026-07-14 15:41:16,484 [INFO] HTTP Request: GET https://www.magicbricks.com/paradigm-the-hermitage-park-zirakpur-chandigarh-pdpid-4d4235303833353536#cardid-84899135 "HTTP/1.1 200 OK"
+2026-07-14 15:41:16,853 [WARNING] Amenities section shows 'View All Amenities (13)' but only 0 were captured from the static HTML � the rest are likely behind a click-to-expand this scraper doesn't drive. Got: []
+2026-07-14 15:41:20,381 [INFO] HTTP Request: GET https://www.magicbricks.com/rajdhani-apartments-sector-49-chandigarh-pdpid-4d4235333130393433#cardid-76825833 "HTTP/1.1 200 OK"
+2026-07-14 15:41:28,443 [INFO] HTTP Request: GET https://www.magicbricks.com/propertyDetails/4-BHK-4000-Sq-ft-Builder-Floor-Apartment-FOR-Rent-Sector-8-in-Chandigarh&id=4d423630343930373837#cardid-60490787 "HTTP/1.1 200 OK"
+2026-07-14 15:41:35,644 [INFO] HTTP Request: GET https://www.magicbricks.com/propertyDetails/3-BHK-1700-Sq-ft-Multistorey-Apartment-FOR-Rent-in-Chandigarh&id=4d423832353530313931#cardid-82550191 "HTTP/1.1 200 OK"
+2026-07-14 15:41:39,615 [INFO] HTTP Request: GET https://www.magicbricks.com/propertyDetails/3-BHK-3000-Sq-ft-Villa-FOR-Rent-Sector-8-in-Chandigarh&id=4d423833313031373439#cardid-83101749 "HTTP/1.1 200 OK"
+2026-07-14 15:41:42,905 [INFO] HTTP Request: GET https://www.magicbricks.com/propertyDetails/1-BHK-200-Sq-ft-Multistorey-Apartment-FOR-Rent-in-Chandigarh&id=4d423737353435303833#cardid-77545083 "HTTP/1.1 200 OK"
+2026-07-14 15:41:49,264 [INFO] HTTP Request: GET https://www.magicbricks.com/propertyDetails/2-BHK-1000-Sq-ft-Multistorey-Apartment-FOR-Rent-Nayagaon-in-Chandigarh&id=4d423835323939303735#cardid-85299075 "HTTP/1.1 200 OK"
+2026-07-14 15:41:55,393 [INFO] HTTP Request: GET https://www.magicbricks.com/propertyDetails/1-BHK-5-Marla-Residential-House-FOR-Rent-Sector-22B-in-Chandigarh&id=4d423835333332353933#cardid-85332593 "HTTP/1.1 200 OK"
+2026-07-14 15:41:55,525 [INFO] Detail-page enrichment: 60/132 processed, 58 coordinates and 48 amenity lists found so far
+2026-07-14 15:42:02,766 [INFO] HTTP Request: GET https://www.magicbricks.com/propertyDetails/1-BHK-750-Sq-ft-Residential-House-FOR-Rent-Zirakpur-in-Chandigarh&id=4d423335323836313731#cardid-35286171 "HTTP/1.1 200 OK"
+2026-07-14 15:42:07,069 [INFO] HTTP Request: GET https://www.magicbricks.com/gbp-crest-kharhar-chandigarh-pdpid-4d4235303836343030#cardid-69856433 "HTTP/1.1 200 OK"
+2026-07-14 15:42:13,000 [INFO] HTTP Request: GET https://www.magicbricks.com/propertyDetails/2-BHK-725-Sq-ft-Multistorey-Apartment-FOR-Rent-Sector-44-in-Chandigarh&id=4d423835323731333335#cardid-85271335 "HTTP/1.1 200 OK"
+2026-07-14 15:42:16,789 [INFO] HTTP Request: GET https://www.magicbricks.com/propertyDetails/2-BHK-1600-Sq-ft-Multistorey-Apartment-FOR-Rent-Sector-32A-in-Chandigarh&id=4d423733323130373935#cardid-73210795 "HTTP/1.1 200 OK"
+2026-07-14 15:42:21,206 [INFO] HTTP Request: GET https://www.magicbricks.com/propertyDetails/2-BHK-800-Sq-ft-Multistorey-Apartment-FOR-Rent-Manimajra-in-Chandigarh&id=4d423835353233313235#cardid-85523125 "HTTP/1.1 200 OK"
+2026-07-14 15:42:25,392 [INFO] HTTP Request: GET https://www.magicbricks.com/propertyDetails/3-BHK-2500-Sq-ft-Residential-House-FOR-Rent-Sector-37C-in-Chandigarh&id=4d423732323338313437#cardid-72238147 "HTTP/1.1 200 OK"
+2026-07-14 15:42:29,896 [INFO] HTTP Request: GET https://www.magicbricks.com/propertyDetails/1-BHK-800-Sq-ft-Multistorey-Apartment-FOR-Rent-Modern-Housing-Complex-in-Chandigarh&id=4d423339393434393235#cardid-39944925 "HTTP/1.1 200 OK"
+2026-07-14 15:42:36,456 [INFO] HTTP Request: GET https://www.magicbricks.com/propertyDetails/3-BHK-1800-Sq-ft-Residential-House-FOR-Rent-Sector-40D-in-Chandigarh&id=4d423835343933303533#cardid-85493053 "HTTP/1.1 200 OK"
+2026-07-14 15:42:43,932 [INFO] HTTP Request: GET https://www.magicbricks.com/propertyDetails/3-BHK-5000-Sq-ft-Multistorey-Apartment-FOR-Rent-Sector-21D-in-Chandigarh&id=4d423835343533383039#cardid-85453809 "HTTP/1.1 200 OK"
+2026-07-14 15:42:49,659 [INFO] HTTP Request: GET https://www.magicbricks.com/propertyDetails/2-BHK-1800-Sq-ft-Residential-House-FOR-Rent-Sector-35C-in-Chandigarh&id=4d423835343936393235#cardid-85496925 "HTTP/1.1 200 OK"
+2026-07-14 15:42:49,831 [INFO] Detail-page enrichment: 70/132 processed, 68 coordinates and 57 amenity lists found so far
+2026-07-14 15:42:56,846 [INFO] HTTP Request: GET https://www.magicbricks.com/propertyDetails/1-BHK-500-Sq-ft-Multistorey-Apartment-FOR-Rent-Sector-21-in-Chandigarh&id=4d423835353032313831#cardid-85502181 "HTTP/1.1 200 OK"
+2026-07-14 15:43:03,694 [INFO] HTTP Request: GET https://www.magicbricks.com/propertyDetails/2-BHK-1000-Sq-ft-Residential-House-FOR-Rent-Kharhar-in-Chandigarh&id=4d423730323934393931#cardid-70294991 "HTTP/1.1 200 OK"
+2026-07-14 15:43:09,639 [INFO] HTTP Request: GET https://www.magicbricks.com/bliss-orra-zirakpur-chandigarh-pdpid-4d4235313037333837#cardid-85511323 "HTTP/1.1 200 OK"
+2026-07-14 15:43:14,561 [INFO] HTTP Request: GET https://www.magicbricks.com/propertyDetails/2-BHK-1600-Sq-ft-Builder-Floor-Apartment-FOR-Rent-Sector-22B-in-Chandigarh&id=4d423835353134383139#cardid-85514819 "HTTP/1.1 200 OK"
+2026-07-14 15:43:18,533 [INFO] HTTP Request: GET https://www.magicbricks.com/propertyDetails/2-BHK-891-Sq-ft-Multistorey-Apartment-FOR-Rent-in-Chandigarh&id=4d423835343036333233#cardid-85406323 "HTTP/1.1 200 OK"
+2026-07-14 15:43:25,087 [INFO] HTTP Request: GET https://www.magicbricks.com/propertyDetails/3-BHK-2800-Sq-ft-Builder-Floor-Apartment-FOR-Rent-Sector-34-in-Chandigarh&id=4d423833333132323935#cardid-83312295 "HTTP/1.1 200 OK"
+2026-07-14 15:43:29,305 [INFO] HTTP Request: GET https://www.magicbricks.com/mig-flats-sector-40a-chandigarh-pdpid-4d4235343038363737#cardid-85420323 "HTTP/1.1 200 OK"
+2026-07-14 15:43:37,480 [INFO] HTTP Request: GET https://www.magicbricks.com/propertyDetails/2-BHK-1350-Sq-ft-Residential-House-FOR-Rent-Sector-20A-in-Chandigarh&id=4d423532323436363239#cardid-52246629 "HTTP/1.1 200 OK"
+2026-07-14 15:43:42,513 [INFO] HTTP Request: GET https://www.magicbricks.com/modern-housing-complex-manimajra-chandigarh-pdpid-4d4235323233343731#cardid-85403053 "HTTP/1.1 200 OK"
+2026-07-14 15:43:45,786 [INFO] HTTP Request: GET https://www.magicbricks.com/motia-blue-ridge-zirakpur-chandigarh-pdpid-4d4235313136363131#cardid-85391225 "HTTP/1.1 200 OK"
+2026-07-14 15:43:46,292 [WARNING] Amenities section shows 'View All Amenities (21)' but only 12 were captured from the static HTML � the rest are likely behind a click-to-expand this scraper doesn't drive. Got: ['Power Back Up', 'Swimming Pool', 'Lift', 'Park', 'Reserved Parking', 'Visitor Parking', 'Intercom Facility', 'Maintenance Staff', 'Gymnasium', 'Indoor Games Room', 'Rain Water Harvesting', 'Water Storage']
+2026-07-14 15:43:46,292 [INFO] Detail-page enrichment: 80/132 processed, 77 coordinates and 65 amenity lists found so far
+2026-07-14 15:43:51,295 [INFO] HTTP Request: GET https://www.magicbricks.com/propertyDetails/3-BHK-1741-Sq-ft-Multistorey-Apartment-FOR-Rent-Chandigarh-Enclave-in-Chandigarh&id=4d423835323638343433#cardid-85268443 "HTTP/1.1 200 OK"
+2026-07-14 15:43:57,162 [INFO] HTTP Request: GET https://www.magicbricks.com/propertyDetails/3-BHK-1600-Sq-ft-Residential-House-FOR-Rent-Sector-36-in-Chandigarh&id=4d423835333937323439#cardid-85397249 "HTTP/1.1 200 OK"
+2026-07-14 15:44:02,931 [INFO] HTTP Request: GET https://www.magicbricks.com/propertyDetails/1-BHK-3200-Sq-ft-Multistorey-Apartment-FOR-Rent-in-Chandigarh&id=4d423831383632353731#cardid-81862571 "HTTP/1.1 200 OK"
+2026-07-14 15:44:07,767 [INFO] HTTP Request: GET https://www.magicbricks.com/sbp-housing-park-dera-bassi-chandigarh-pdpid-4d4235303238393937#cardid-33055163 "HTTP/1.1 200 OK"
+2026-07-14 15:44:08,277 [WARNING] Amenities section shows 'View All Amenities (32)' but only 12 were captured from the static HTML � the rest are likely behind a click-to-expand this scraper doesn't drive. Got: ['Club House', 'Jogging and Strolling Track', 'Outdoor Tennis Courts', 'Cycling & Jogging Track', 'Power Back Up', 'Swimming Pool', 'Lift', 'Security', 'Reserved Parking', 'Intercom Facility', 'Maintenance Staff', 'Banquet Hall']
+2026-07-14 15:44:12,808 [INFO] HTTP Request: GET https://www.magicbricks.com/bajwa-sunny-enclave-khara-mohali-chandigarh-pdpid-4d4235333133343237#cardid-48804781 "HTTP/1.1 301 Moved Permanently"
+2026-07-14 15:44:13,438 [INFO] HTTP Request: GET https://www.magicbricks.com/bajwa-sunny-enclave-ludhiana-chandigarh-state-highway-chandigarh-pdpid-4d4235333133343237#cardid-48804781 "HTTP/1.1 200 OK"
+2026-07-14 15:44:17,314 [INFO] HTTP Request: GET https://www.magicbricks.com/propertyDetails/2-BHK-1500-Sq-ft-Residential-House-FOR-Rent-in-Chandigarh&id=4d423831383131383931#cardid-81811891 "HTTP/1.1 200 OK"
+2026-07-14 15:44:25,928 [INFO] HTTP Request: GET https://www.magicbricks.com/propertyDetails/450-Sq-ft-Studio-Apartment-FOR-Rent-Sector-18-in-Chandigarh&id=4d423835323533373633#cardid-85253763 "HTTP/1.1 200 OK"
+2026-07-14 15:44:30,113 [INFO] HTTP Request: GET https://www.magicbricks.com/propertyDetails/3-BHK-500-Sq-ft-Residential-House-FOR-Rent-Sector-18C-in-Chandigarh&id=4d423835303339383531#cardid-85039851 "HTTP/1.1 200 OK"
+2026-07-14 15:44:36,681 [INFO] HTTP Request: GET https://www.magicbricks.com/propertyDetails/3-BHK-1400-Sq-ft-Multistorey-Apartment-FOR-Rent-Khara-Mohali-in-Chandigarh&id=4d423835303438363035#cardid-85048605 "HTTP/1.1 200 OK"
+2026-07-14 15:44:40,148 [INFO] HTTP Request: GET https://www.magicbricks.com/propertyDetails/3-BHK-1080-Sq-ft-Residential-House-FOR-Rent-Khara-Mohali-in-Chandigarh&id=4d423835303136343131#cardid-85016411 "HTTP/1.1 200 OK"
+2026-07-14 15:44:40,387 [INFO] Detail-page enrichment: 90/132 processed, 86 coordinates and 74 amenity lists found so far
+2026-07-14 15:44:47,727 [INFO] HTTP Request: GET https://www.magicbricks.com/propertyDetails/2000-Sq-ft-Studio-Apartment-FOR-Rent-Sector-11-in-Chandigarh&id=4d423835323336333737#cardid-85236377 "HTTP/1.1 200 OK"
+2026-07-14 15:44:52,027 [INFO] HTTP Request: GET https://www.magicbricks.com/propertyDetails/2-BHK-75-Sq-yrd-Multistorey-Apartment-FOR-Rent-Sector-41-in-Chandigarh&id=4d423437303236313333#cardid-47026133 "HTTP/1.1 200 OK"
+2026-07-14 15:44:57,763 [INFO] HTTP Request: GET https://www.magicbricks.com/propertyDetails/2-BHK-1400-Sq-ft-Residential-House-FOR-Rent-Sector-22B-in-Chandigarh&id=4d423833353538303937#cardid-83558097 "HTTP/1.1 200 OK"
+2026-07-14 15:45:02,083 [INFO] HTTP Request: GET https://www.magicbricks.com/propertyDetails/2-BHK-1300-Sq-ft-Builder-Floor-Apartment-FOR-Rent-Sector-23-in-Chandigarh&id=4d423833333630363435#cardid-83360645 "HTTP/1.1 200 OK"
+2026-07-14 15:45:08,001 [INFO] HTTP Request: GET https://www.magicbricks.com/propertyDetails/1-BHK-2500-Sq-ft-Residential-House-FOR-Rent-Sector-35C-in-Chandigarh&id=4d423835343536333337#cardid-85456337 "HTTP/1.1 200 OK"
+2026-07-14 15:45:14,159 [INFO] HTTP Request: GET https://www.magicbricks.com/sushma-grande-nxt-zirakpur-chandigarh-pdpid-4d4235303930313532#cardid-83746075 "HTTP/1.1 200 OK"
+2026-07-14 15:45:14,792 [WARNING] Amenities section shows 'View All Amenities (13)' but only 12 were captured from the static HTML � the rest are likely behind a click-to-expand this scraper doesn't drive. Got: ['Club House', 'Outdoor Tennis Courts', 'Power Back Up', 'Swimming Pool', 'Lift', 'Park', 'Banquet Hall', 'Gymnasium', 'Kids Club', 'AEROBICS ROOM', 'Flower Gardens', 'Water Storage']
+2026-07-14 15:45:21,826 [INFO] HTTP Request: GET https://www.magicbricks.com/propertyDetails/2-BHK-2200-Sq-ft-Residential-House-FOR-Rent-Sector-22B-in-Chandigarh&id=4d423733313334343931#cardid-73134491 "HTTP/1.1 200 OK"
+2026-07-14 15:45:25,631 [INFO] HTTP Request: GET https://www.magicbricks.com/propertyDetails/2-BHK-2200-Sq-ft-Builder-Floor-Apartment-FOR-Rent-in-Chandigarh&id=4d423835353039303033#cardid-85509003 "HTTP/1.1 200 OK"
+2026-07-14 15:45:31,891 [INFO] HTTP Request: GET https://www.magicbricks.com/propertyDetails/3-BHK-Builder-Floor-Apartment-FOR-Rent-Sector-15-in-Chandigarh&id=4d423432343531333237#cardid-42451327 "HTTP/1.1 200 OK"
+2026-07-14 15:45:38,358 [INFO] HTTP Request: GET https://www.magicbricks.com/propertyDetails/1-BHK-200-Sq-ft-Multistorey-Apartment-FOR-Rent-Sector-22-in-Chandigarh&id=4d423539373533353531#cardid-59753551 "HTTP/1.1 200 OK"
+2026-07-14 15:45:38,532 [INFO] Detail-page enrichment: 100/132 processed, 95 coordinates and 79 amenity lists found so far
+2026-07-14 15:45:43,129 [INFO] HTTP Request: GET https://www.magicbricks.com/propertyDetails/300-Sq-ft-Studio-Apartment-FOR-Rent-in-Chandigarh&id=4d423636373231373835#cardid-66721785 "HTTP/1.1 200 OK"
+2026-07-14 15:45:46,939 [INFO] HTTP Request: GET https://www.magicbricks.com/chandigarh-royale-city-zirakpur-chandigarh-pdpid-4d4235333133333733#cardid-61085385 "HTTP/1.1 200 OK"
+2026-07-14 15:45:54,085 [INFO] HTTP Request: GET https://www.magicbricks.com/propertyDetails/2-BHK-300-Sq-ft-Residential-House-FOR-Rent-in-Chandigarh&id=4d423835343935303833#cardid-85495083 "HTTP/1.1 200 OK"
+2026-07-14 15:46:00,328 [INFO] HTTP Request: GET https://www.magicbricks.com/propertyDetails/3-BHK-900-Sq-ft-Multistorey-Apartment-FOR-Rent-Zirakpur-in-Chandigarh&id=4d423336373432313239#cardid-36742129 "HTTP/1.1 200 OK"
+2026-07-14 15:46:07,003 [INFO] HTTP Request: GET https://www.magicbricks.com/propertyDetails/3-BHK-1800-Sq-ft-Multistorey-Apartment-FOR-Rent-Dera-Bassi-in-Chandigarh&id=4d423730333335363835#cardid-70335685 "HTTP/1.1 200 OK"
+2026-07-14 15:46:14,420 [INFO] HTTP Request: GET https://www.magicbricks.com/propertyDetails/2-BHK-1150-Sq-ft-Multistorey-Apartment-FOR-Rent-Sector-48-in-Chandigarh&id=4d423639353034343833#cardid-69504483 "HTTP/1.1 200 OK"
+2026-07-14 15:46:20,107 [INFO] HTTP Request: GET https://www.magicbricks.com/ats-golf-meadows-prelude-dera-bassi-chandigarh-pdpid-4d4235303233353337#cardid-84426687 "HTTP/1.1 200 OK"
+2026-07-14 15:46:20,372 [WARNING] Amenities section shows 'View All Amenities (19)' but only 12 were captured from the static HTML � the rest are likely behind a click-to-expand this scraper doesn't drive. Got: ['Club House', 'Cycling & Jogging Track', 'Private Terrace/Garden', 'Power Back Up', 'Swimming Pool', 'Lift', 'Security', 'Park', 'Reserved Parking', 'Service/Goods Lift', 'Visitor Parking', 'Intercom Facility']
+2026-07-14 15:46:25,746 [INFO] HTTP Request: GET https://www.magicbricks.com/propertyDetails/3-BHK-2100-Sq-ft-Residential-House-FOR-Rent-Sector-32D-in-Chandigarh&id=4d423835333835343237#cardid-85385427 "HTTP/1.1 200 OK"
+2026-07-14 15:46:32,998 [INFO] HTTP Request: GET https://www.magicbricks.com/propertyDetails/1-BHK-1000-Sq-ft-Residential-House-FOR-Rent-Sector-20-in-Chandigarh&id=4d423638313337393737#cardid-68137977 "HTTP/1.1 200 OK"
+2026-07-14 15:46:38,041 [INFO] HTTP Request: GET https://www.magicbricks.com/bsnl-society-sector-50-chandigarh-pdpid-4d4235323231343239#cardid-72417927 "HTTP/1.1 200 OK"
+2026-07-14 15:46:38,312 [INFO] Detail-page enrichment: 110/132 processed, 103 coordinates and 84 amenity lists found so far
+2026-07-14 15:46:43,961 [INFO] HTTP Request: GET https://www.magicbricks.com/propertyDetails/2-BHK-900-Sq-ft-Residential-House-FOR-Rent-Sector-8B-in-Chandigarh&id=4d423835343234303531#cardid-85424051 "HTTP/1.1 200 OK"
+2026-07-14 15:46:49,801 [INFO] HTTP Request: GET https://www.magicbricks.com/propertyDetails/2-BHK-1400-Sq-ft-Residential-House-FOR-Rent-Sector-40-in-Chandigarh&id=4d423834333031393435#cardid-84301945 "HTTP/1.1 200 OK"
+2026-07-14 15:46:53,371 [INFO] HTTP Request: GET https://www.magicbricks.com/propertyDetails/2-BHK-120-Sq-yrd-Residential-House-FOR-Rent-Khara-Mohali-in-Chandigarh&id=4d423835303332393731#cardid-85032971 "HTTP/1.1 200 OK"
+2026-07-14 15:46:58,492 [INFO] HTTP Request: GET https://www.magicbricks.com/propertyDetails/3-BHK-258-Sq-ft-Residential-House-FOR-Rent-in-Chandigarh&id=4d423530363339333638#cardid-50639368 "HTTP/1.1 200 OK"
+2026-07-14 15:47:01,888 [INFO] HTTP Request: GET https://www.magicbricks.com/artique-uptown-skylla-zirakpur-chandigarh-pdpid-4d4235313234323637#cardid-84091033 "HTTP/1.1 200 OK"
+2026-07-14 15:47:02,406 [WARNING] Amenities section shows 'View All Amenities (15)' but only 12 were captured from the static HTML � the rest are likely behind a click-to-expand this scraper doesn't drive. Got: ['Power Back Up', 'Swimming Pool', 'Lift', 'Security', 'Visitor Parking', 'Gymnasium', 'Rain Water Harvesting', 'Multipurpose Courts', 'Waste Disposal', 'Earth quake resistant', 'Large Open space', 'Multipurpose Hall']
+2026-07-14 15:47:08,230 [INFO] HTTP Request: GET https://www.magicbricks.com/maya-garden-city-zirakpur-chandigarh-pdpid-4d4235303233343039#cardid-82825941 "HTTP/1.1 200 OK"
+2026-07-14 15:47:08,848 [WARNING] Amenities section shows 'View All Amenities (29)' but only 12 were captured from the static HTML � the rest are likely behind a click-to-expand this scraper doesn't drive. Got: ['Club House', 'Jogging and Strolling Track', 'Outdoor Tennis Courts', 'Cycling & Jogging Track', 'Private Terrace/Garden', 'Power Back Up', 'Swimming Pool', 'Lift', 'Security', 'Park', 'Reserved Parking', 'Visitor Parking']
+2026-07-14 15:47:14,067 [INFO] HTTP Request: GET https://www.magicbricks.com/universal-enclave-sector-48-chandigarh-pdpid-4d4235323631303531#cardid-85532603 "HTTP/1.1 200 OK"
+2026-07-14 15:47:19,999 [INFO] HTTP Request: GET https://www.magicbricks.com/propertyDetails/1-BHK-400-Sq-ft-Builder-Floor-Apartment-FOR-Rent-Sector-38-in-Chandigarh&id=4d423531313138303432#cardid-51118042 "HTTP/1.1 200 OK"
+2026-07-14 15:47:26,448 [INFO] HTTP Request: GET https://www.magicbricks.com/propertyDetails/2-BHK-1400-Sq-ft-Residential-House-FOR-Rent-Sector-46-in-Chandigarh&id=4d423835353039303431#cardid-85509041 "HTTP/1.1 200 OK"
+2026-07-14 15:47:30,647 [INFO] HTTP Request: GET https://www.magicbricks.com/propertyDetails/3-BHK-2250-Sq-ft-Residential-House-FOR-Rent-Sector-43-in-Chandigarh&id=4d423832353538343533#cardid-82558453 "HTTP/1.1 200 OK"
+2026-07-14 15:47:30,878 [INFO] Detail-page enrichment: 120/132 processed, 112 coordinates and 89 amenity lists found so far
+2026-07-14 15:47:38,123 [INFO] HTTP Request: GET https://www.magicbricks.com/propertyDetails/2-BHK-970-Sq-ft-Multistorey-Apartment-FOR-Rent-Sector-51A-in-Chandigarh&id=4d423835323831363437#cardid-85281647 "HTTP/1.1 200 OK"
+2026-07-14 15:47:45,429 [INFO] HTTP Request: GET https://www.magicbricks.com/propertyDetails/3-BHK-2050-Sq-ft-Penthouse-FOR-Rent-Manimajra-in-Chandigarh&id=4d423138363437343839#cardid-18647489 "HTTP/1.1 200 OK"
+2026-07-14 15:47:50,584 [INFO] HTTP Request: GET https://www.magicbricks.com/uppal-marble-arch-manimajra-chandigarh-pdpid-4d4235303338303839#cardid-80161851 "HTTP/1.1 200 OK"
+2026-07-14 15:47:51,004 [WARNING] Amenities section shows 'View All Amenities (16)' but only 12 were captured from the static HTML � the rest are likely behind a click-to-expand this scraper doesn't drive. Got: ['Private Terrace/Garden', 'Power Back Up', 'Swimming Pool', 'Lift', 'Security', 'Park', 'Reserved Parking', 'Intercom Facility', 'Gymnasium', 'Indoor Games Room', 'Piped Gas', 'Rain Water Harvesting']
+2026-07-14 15:47:57,795 [INFO] HTTP Request: GET https://www.magicbricks.com/propertyDetails/3-BHK-1050-Sq-ft-Multistorey-Apartment-FOR-Rent-in-Chandigarh&id=4d423632363738353533#cardid-62678553 "HTTP/1.1 200 OK"
+2026-07-14 15:48:04,157 [INFO] HTTP Request: GET https://www.magicbricks.com/propertyDetails/3-BHK-1500-Sq-ft-Builder-Floor-Apartment-FOR-Rent-in-Chandigarh&id=4d423832393831303337#cardid-82981037 "HTTP/1.1 200 OK"
+2026-07-14 15:48:11,002 [INFO] HTTP Request: GET https://www.magicbricks.com/propertyDetails/3-BHK-1880-Sq-ft-Multistorey-Apartment-FOR-Rent-Sector-50-in-Chandigarh&id=4d423832363536393935#cardid-82656995 "HTTP/1.1 200 OK"
+2026-07-14 15:48:17,037 [INFO] HTTP Request: GET https://www.magicbricks.com/propertyDetails/3-BHK-2600-Sq-ft-Builder-Floor-Apartment-FOR-Rent-Sector-37-in-Chandigarh&id=4d423833353431363733#cardid-83541673 "HTTP/1.1 200 OK"
+2026-07-14 15:48:23,589 [INFO] HTTP Request: GET https://www.magicbricks.com/propertyDetails/2-BHK-720-Sq-ft-Residential-House-FOR-Rent-in-Chandigarh&id=4d423438343931323339#cardid-48491239 "HTTP/1.1 200 OK"
+2026-07-14 15:48:28,217 [INFO] HTTP Request: GET https://www.magicbricks.com/propertyDetails/2-BHK-400-Sq-ft-Residential-House-FOR-Rent-in-Chandigarh&id=4d423637363836373635#cardid-67686765 "HTTP/1.1 200 OK"
+2026-07-14 15:48:34,458 [INFO] HTTP Request: GET https://www.magicbricks.com/propertyDetails/2-BHK-1100-Sq-ft-Residential-House-FOR-Rent-in-Chandigarh&id=4d423834323431383331#cardid-84241831 "HTTP/1.1 200 OK"
+2026-07-14 15:48:34,624 [INFO] Detail-page enrichment: 130/132 processed, 117 coordinates and 95 amenity lists found so far
+2026-07-14 15:48:42,426 [INFO] HTTP Request: GET https://www.magicbricks.com/propertyDetails/2-BHK-1600-Sq-ft-Builder-Floor-Apartment-FOR-Rent-Sector-38-in-Chandigarh&id=4d423835323039353137#cardid-85209517 "HTTP/1.1 200 OK"
+2026-07-14 15:48:49,094 [INFO] HTTP Request: GET https://www.magicbricks.com/propertyDetails/3-BHK-1300-Sq-ft-Residential-House-FOR-Rent-Dera-Bassi-in-Chandigarh&id=4d423734373638383435#cardid-74768845 "HTTP/1.1 200 OK"
+2026-07-14 15:48:49,228 [INFO] Detail-page enrichment complete: 119/132 listings got real coordinates, 95/132 got an amenities list
+2026-07-14 15:48:49,229 [INFO] Scraped 132 total listings
+2026-07-14 15:48:49,237 [INFO] Wrote 132 listings to scraped_listings.jsonl
+  Resolved city: Chandigarh (stored under unique key: "Domino's Sector 8B Chandigarh")
+
+  → Seeding grid...
+Seeding city "Domino's Sector 8B Chandigarh" (30.7391, 76.7828) — 200m cells, 5000m radius
+Created city "Domino's Sector 8B Chandigarh" (id=20)
+Seeded 2601 grid cells for "Domino's Sector 8B Chandigarh" (200m cells, 5000m radius).
+
+  → Ingesting...
+Ingesting into city="Domino's Sector 8B Chandigarh" (id=20)
+Geocoding found no results for "4 BHK Flat  for Rent in   Chandigarh, India"
+Geocoding found no results for "Domino's Sector 8B Chandigarh, India"
+No coordinates resolvable for listing https://www.magicbricks.com/propertyDetails/4-BHK-2020-Sq-ft-Multistorey-Apartment-FOR-Rent-in-Chandigarh&id=4d423832393938383539#cardid-82998859 — stored with grid_id = NULL.
+Skipping listing entirely — no coordinates resolvable by any method: https://www.magicbricks.com/propertyDetails/4-BHK-2020-Sq-ft-Multistorey-Apartment-FOR-Rent-in-Chandigarh&id=4d423832393938383539#cardid-82998859
+Geocoding found no results for "1 BHK Flat  for Rent in   Chandigarh, India"
+Geocoding found no results for "Domino's Sector 8B Chandigarh, India"
+No coordinates resolvable for listing https://www.magicbricks.com/propertyDetails/1-BHK-200-Sq-ft-Multistorey-Apartment-FOR-Rent-in-Chandigarh&id=4d423737353435303833#cardid-77545083 — stored with grid_id = NULL.
+Skipping listing entirely — no coordinates resolvable by any method: https://www.magicbricks.com/propertyDetails/1-BHK-200-Sq-ft-Multistorey-Apartment-FOR-Rent-in-Chandigarh&id=4d423737353435303833#cardid-77545083
+Geocoding found no results for "2 BHK Flat  for Rent in   Chandigarh, India"
+Geocoding found no results for "Domino's Sector 8B Chandigarh, India"
+No coordinates resolvable for listing https://www.magicbricks.com/propertyDetails/2-BHK-891-Sq-ft-Multistorey-Apartment-FOR-Rent-in-Chandigarh&id=4d423835343036333233#cardid-85406323 — stored with grid_id = NULL.
+Skipping listing entirely — no coordinates resolvable by any method: https://www.magicbricks.com/propertyDetails/2-BHK-891-Sq-ft-Multistorey-Apartment-FOR-Rent-in-Chandigarh&id=4d423835343036333233#cardid-85406323
+Geocoding found no results for "2 BHK  House for Rent in Hou Chandigarh, India"
+Geocoding found no results for "Domino's Sector 8B Chandigarh, India"
+No coordinates resolvable for listing https://www.magicbricks.com/propertyDetails/2-BHK-1500-Sq-ft-Residential-House-FOR-Rent-in-Chandigarh&id=4d423831383131383931#cardid-81811891 — stored with grid_id = NULL.
+Skipping listing entirely — no coordinates resolvable by any method: https://www.magicbricks.com/propertyDetails/2-BHK-1500-Sq-ft-Residential-House-FOR-Rent-in-Chandigarh&id=4d423831383131383931#cardid-81811891
+Geocoding found no results for "2 BHK Flat  for Rent in   Chandigarh, India"
+Geocoding found no results for "Domino's Sector 8B Chandigarh, India"
+No coordinates resolvable for listing https://www.magicbricks.com/propertyDetails/2-BHK-2200-Sq-ft-Builder-Floor-Apartment-FOR-Rent-in-Chandigarh&id=4d423835353039303033#cardid-85509003 — stored with grid_id = NULL.
+Skipping listing entirely — no coordinates resolvable by any method: https://www.magicbricks.com/propertyDetails/2-BHK-2200-Sq-ft-Builder-Floor-Apartment-FOR-Rent-in-Chandigarh&id=4d423835353039303033#cardid-85509003
+Geocoding found no results for " Studio Apartment  for Rent in   Chandigarh, India"
+Geocoding found no results for "Domino's Sector 8B Chandigarh, India"
+No coordinates resolvable for listing https://www.magicbricks.com/propertyDetails/300-Sq-ft-Studio-Apartment-FOR-Rent-in-Chandigarh&id=4d423636373231373835#cardid-66721785 — stored with grid_id = NULL.
+Skipping listing entirely — no coordinates resolvable by any method: https://www.magicbricks.com/propertyDetails/300-Sq-ft-Studio-Apartment-FOR-Rent-in-Chandigarh&id=4d423636373231373835#cardid-66721785
+Geocoding found no results for "2 BHK  House for Rent in Near Govt high school Chandigarh Chandigarh, India"
+Geocoding found no results for "Domino's Sector 8B Chandigarh, India"
+No coordinates resolvable for listing https://www.magicbricks.com/propertyDetails/2-BHK-300-Sq-ft-Residential-House-FOR-Rent-in-Chandigarh&id=4d423835343935303833#cardid-85495083 — stored with grid_id = NULL.
+Skipping listing entirely — no coordinates resolvable by any method: https://www.magicbricks.com/propertyDetails/2-BHK-300-Sq-ft-Residential-House-FOR-Rent-in-Chandigarh&id=4d423835343935303833#cardid-85495083
+Geocoding found no results for "3 BHK  House for Rent in sector 15 a Chandigarh, India"
+Geocoding found no results for "Domino's Sector 8B Chandigarh, India"
+No coordinates resolvable for listing https://www.magicbricks.com/propertyDetails/3-BHK-258-Sq-ft-Residential-House-FOR-Rent-in-Chandigarh&id=4d423530363339333638#cardid-50639368 — stored with grid_id = NULL.
+Skipping listing entirely — no coordinates resolvable by any method: https://www.magicbricks.com/propertyDetails/3-BHK-258-Sq-ft-Residential-House-FOR-Rent-in-Chandigarh&id=4d423530363339333638#cardid-50639368
+Geocoding found no results for "3 BHK Flat  for Rent in   Chandigarh, India"
+Geocoding found no results for "Domino's Sector 8B Chandigarh, India"
+No coordinates resolvable for listing https://www.magicbricks.com/propertyDetails/3-BHK-1050-Sq-ft-Multistorey-Apartment-FOR-Rent-in-Chandigarh&id=4d423632363738353533#cardid-62678553 — stored with grid_id = NULL.
+Skipping listing entirely — no coordinates resolvable by any method: https://www.magicbricks.com/propertyDetails/3-BHK-1050-Sq-ft-Multistorey-Apartment-FOR-Rent-in-Chandigarh&id=4d423632363738353533#cardid-62678553
+Geocoding found no results for "3 BHK Flat  for Rent in   Chandigarh, India"
+Geocoding found no results for "Domino's Sector 8B Chandigarh, India"
+No coordinates resolvable for listing https://www.magicbricks.com/propertyDetails/3-BHK-1500-Sq-ft-Builder-Floor-Apartment-FOR-Rent-in-Chandigarh&id=4d423832393831303337#cardid-82981037 — stored with grid_id = NULL.
+Skipping listing entirely — no coordinates resolvable by any method: https://www.magicbricks.com/propertyDetails/3-BHK-1500-Sq-ft-Builder-Floor-Apartment-FOR-Rent-in-Chandigarh&id=4d423832393831303337#cardid-82981037
+Geocoding found no results for "2 BHK  House for Rent in GBP Group Chandigarh, India"
+Geocoding found no results for "Domino's Sector 8B Chandigarh, India"
+No coordinates resolvable for listing https://www.magicbricks.com/propertyDetails/2-BHK-720-Sq-ft-Residential-House-FOR-Rent-in-Chandigarh&id=4d423438343931323339#cardid-48491239 — stored with grid_id = NULL.
+Skipping listing entirely — no coordinates resolvable by any method: https://www.magicbricks.com/propertyDetails/2-BHK-720-Sq-ft-Residential-House-FOR-Rent-in-Chandigarh&id=4d423438343931323339#cardid-48491239
+Geocoding found no results for "2 BHK  House for Rent in Burail Chandigarh, India"
+Geocoding found no results for "Domino's Sector 8B Chandigarh, India"
+No coordinates resolvable for listing https://www.magicbricks.com/propertyDetails/2-BHK-400-Sq-ft-Residential-House-FOR-Rent-in-Chandigarh&id=4d423637363836373635#cardid-67686765 — stored with grid_id = NULL.
+Skipping listing entirely — no coordinates resolvable by any method: https://www.magicbricks.com/propertyDetails/2-BHK-400-Sq-ft-Residential-House-FOR-Rent-in-Chandigarh&id=4d423637363836373635#cardid-67686765
+Geocoding found no results for "2 BHK  House for Rent in Sector 38D chandigarh Chandigarh, India"
+Geocoding found no results for "Domino's Sector 8B Chandigarh, India"
+No coordinates resolvable for listing https://www.magicbricks.com/propertyDetails/2-BHK-1100-Sq-ft-Residential-House-FOR-Rent-in-Chandigarh&id=4d423834323431383331#cardid-84241831 — stored with grid_id = NULL.
+Skipping listing entirely — no coordinates resolvable by any method: https://www.magicbricks.com/propertyDetails/2-BHK-1100-Sq-ft-Residential-House-FOR-Rent-in-Chandigarh&id=4d423834323431383331#cardid-84241831
+
+Ingestion complete for "Domino's Sector 8B Chandigarh":
+  Processed:            119
+  Skipped (no URL):     0
+  Skipped (no coords):  13
+  Skipped (no grid):    69
+  Errors:               0
+
+
+  → Aggregating...
+Computing stats for "Domino's Sector 8B Chandigarh" (id=20)...
+  bhk_bucket_stats: 51 rows written
+  grid_stats: 43 rows written
+Done.
+
+  ⏳ Cooling down for 45s before the next store...
+
+============================================================
+[2/3] Domino's Rajendra Nagar Indore (22.6867, 75.8377)
+============================================================
+
+  → Scraping...
+2026-07-14 15:50:04,662 [INFO] No city name in config � reverse-geocoding (22.6867, 75.8377)...
+2026-07-14 15:50:05,476 [INFO] Resolved city: Indore, state: Madhya Pradesh
+2026-07-14 15:50:05,478 [INFO] Saved resolved values back to C:\Users\riddh\OneDrive\Desktop\skymark-grid-project\config.json
+2026-07-14 15:50:05,485 [INFO] Starting MagicBricks scrape run
+2026-07-14 15:50:06,048 [INFO] Bootstrapping session via Playwright: https://www.magicbricks.com/property-for-rent/residential-real-estate?cityName=Indore&page=1
+2026-07-14 15:50:10,707 [INFO] Skipping likely-commercial listing:   Office Space for Rent in N R K BIZZ PARK, Vijay Nagar Indore
+2026-07-14 15:50:10,709 [INFO] Skipping likely-commercial listing:   Shop for Rent in Omaxe City, Indore Bypass Road Indore
+2026-07-14 15:50:10,714 [INFO] Skipping likely-commercial listing:   Showroom for Rent in Anand Bazaar Indore
+2026-07-14 15:50:10,725 [INFO] Skipping likely-commercial listing:   Office Space for Rent in Palasiya Square Indore
+2026-07-14 15:50:10,733 [INFO] Skipping likely-commercial listing:   Office Space for Rent in Vijay Nagar Indore
+2026-07-14 15:50:10,735 [INFO] Skipping likely-commercial listing:  Warehouse/ Godown for Rent in Mhow Indore
+2026-07-14 15:50:10,739 [INFO] Skipping likely-commercial listing:   Showroom for Rent in Navlakha Indore
+2026-07-14 15:50:10,741 [INFO] Skipping likely-commercial listing:  Warehouse/ Godown for Rent in Shree Nagar Extension Indore
+2026-07-14 15:50:10,745 [INFO] Skipping likely-commercial listing:  Warehouse/ Godown for Rent in Pithampur Indore
+2026-07-14 15:50:10,750 [INFO] Skipping likely-commercial listing:   Showroom for Rent in New Palasia Indore
+2026-07-14 15:50:10,757 [INFO] Skipping likely-commercial listing:   Office Space for Rent in Navlakha Indore
+2026-07-14 15:50:10,760 [INFO] Skipping likely-commercial listing:   Office Space for Rent in Greater Brijeshwari Indore
+2026-07-14 15:50:10,765 [INFO] Skipping likely-commercial listing:   Office Space for Rent in Scheme No 140 Indore
+2026-07-14 15:50:10,767 [INFO] Skipping likely-commercial listing:   Office Space for Rent in METRO TOWER, Vijay Nagar Indore
+2026-07-14 15:50:10,770 [INFO] Skipping likely-commercial listing:   Office Space for Rent in MR 10 Indore
+2026-07-14 15:50:10,772 [INFO] Skipping likely-commercial listing:   Office Space for Rent in New Palasiya Indore
+2026-07-14 15:50:10,775 [INFO] Skipping likely-commercial listing:   Office Space for Rent in Vijay Nagar Indore
+2026-07-14 15:50:10,780 [INFO] Page 1: 13 listings parsed so far
+2026-07-14 15:50:17,173 [INFO] HTTP Request: GET https://www.magicbricks.com/property-for-rent/residential-real-estate?cityName=Indore&page=2 "HTTP/1.1 200 OK"
+2026-07-14 15:50:17,370 [INFO] Skipping likely-commercial listing:  Warehouse/ Godown for Rent in Pithampur Indore
+2026-07-14 15:50:17,385 [INFO] Skipping likely-commercial listing:   Shop for Rent in Manavta Nagar Indore
+2026-07-14 15:50:17,423 [INFO] Skipping likely-commercial listing:   Showroom for Rent in Mari Mata Square Indore
+2026-07-14 15:50:17,436 [INFO] Skipping likely-commercial listing:   Office Space for Rent in Anand Bazaar Indore
+2026-07-14 15:50:17,441 [INFO] Skipping likely-commercial listing:  Warehouse/ Godown for Rent in Rau Pithampur Road Indore
+2026-07-14 15:50:17,444 [INFO] Skipping likely-commercial listing:   Showroom for Rent in Shanti Niwas, Palda Indore
+2026-07-14 15:50:17,446 [INFO] Skipping likely-commercial listing:   Office Space for Rent in Yeshwant Niwas Road Indore
+2026-07-14 15:50:17,454 [INFO] Page 2: +23 listings (running total: 36)
+2026-07-14 15:50:21,166 [INFO] HTTP Request: GET https://www.magicbricks.com/property-for-rent/residential-real-estate?cityName=Indore&page=3 "HTTP/1.1 200 OK"
+2026-07-14 15:50:21,343 [INFO] Skipping likely-commercial listing:   Showroom for Rent in Annapurna Road Prabhu Nagar Indore
+2026-07-14 15:50:21,346 [INFO] Skipping likely-commercial listing:   Showroom for Rent in Annapurna Road Prabhu Nagar Indore
+2026-07-14 15:50:21,349 [INFO] Skipping likely-commercial listing:   Office Space for Rent in Manorama Ganj Indore
+2026-07-14 15:50:21,351 [INFO] Skipping likely-commercial listing:   Office Space for Rent in Dravid Nagar Indore
+2026-07-14 15:50:21,353 [INFO] Skipping likely-commercial listing:   Office Space for Rent in NRK BUSINESS PARK, Scheme No. 54 Indore
+2026-07-14 15:50:21,358 [INFO] Skipping likely-commercial listing:   Showroom for Rent in Saket Nagar Indore
+2026-07-14 15:50:21,361 [INFO] Skipping likely-commercial listing:   Showroom for Rent in Dewas Naka Indore
+2026-07-14 15:50:21,366 [INFO] Skipping likely-commercial listing:  Warehouse/ Godown for Rent in Arjun Baroda Indore
+2026-07-14 15:50:21,374 [INFO] Skipping likely-commercial listing:   Showroom for Rent in New Gouri Nagar Indore
+2026-07-14 15:50:21,379 [INFO] Skipping likely-commercial listing:  Warehouse/ Godown for Rent in Indore Bypass Road Indore
+2026-07-14 15:50:21,384 [INFO] Skipping likely-commercial listing:  Warehouse/ Godown for Rent in Sukhliya Gram Indore
+2026-07-14 15:50:21,392 [INFO] Skipping likely-commercial listing:   Shop for Rent in Dewas Naka Indore
+2026-07-14 15:50:21,397 [INFO] Skipping likely-commercial listing:   Office Space for Rent in APOLLO PREMIER, Vijay Nagar Indore
+2026-07-14 15:50:21,401 [INFO] Skipping likely-commercial listing:   Office Space for Rent in Sapna Sangeeta Road Indore
+2026-07-14 15:50:21,416 [INFO] Page 3: +16 listings (running total: 52)
+2026-07-14 15:50:25,706 [INFO] HTTP Request: GET https://www.magicbricks.com/property-for-rent/residential-real-estate?cityName=Indore&page=4 "HTTP/1.1 200 OK"
+2026-07-14 15:50:25,940 [INFO] Skipping likely-commercial listing:  Warehouse/ Godown for Rent in Dewas Naka Indore
+2026-07-14 15:50:25,954 [INFO] Skipping likely-commercial listing:   Office Space for Rent in Kanchan Bagh Indore
+2026-07-14 15:50:25,957 [INFO] Skipping likely-commercial listing:  Warehouse/ Godown for Rent in Dakachya Indore
+2026-07-14 15:50:25,959 [INFO] Skipping likely-commercial listing:   Office Space for Rent in Vijay Nagar Indore
+2026-07-14 15:50:25,961 [INFO] Skipping likely-commercial listing:   Office Space for Rent in Silver Mall Complex, RNT Marg Indore
+2026-07-14 15:50:25,974 [WARNING] Rejecting implausible monthly_rent=1050000.0 for cardid=85337817 (source text: 1050000) � outside the 1,000-1,000,000 sanity range.
+2026-07-14 15:50:25,974 [INFO] Skipping likely-commercial listing:  Warehouse/ Godown for Rent in Mangliya Gaon Indore
+2026-07-14 15:50:25,993 [INFO] Skipping likely-commercial listing:   Office Space for Rent in Vijay Nagar Indore
+2026-07-14 15:50:26,012 [INFO] Skipping likely-commercial listing:   Office Space for Rent in Vijay Nagar Indore
+2026-07-14 15:50:26,016 [INFO] Skipping likely-commercial listing:   Office Space for Rent in Vijay Nagar Indore
+2026-07-14 15:50:26,016 [INFO] Page 4: +21 listings (running total: 73)
+2026-07-14 15:50:32,100 [INFO] HTTP Request: GET https://www.magicbricks.com/property-for-rent/residential-real-estate?cityName=Indore&page=5 "HTTP/1.1 200 OK"
+2026-07-14 15:50:32,295 [INFO] Skipping likely-commercial listing:   Office Space for Rent in Annapurna Road Prabhu Nagar Indore
+2026-07-14 15:50:32,303 [INFO] Skipping likely-commercial listing:   Showroom for Rent in Scheme No 78 Indore
+2026-07-14 15:50:32,306 [INFO] Skipping likely-commercial listing:   Shop for Rent in Royal Park, New Palasiya Indore
+2026-07-14 15:50:32,308 [INFO] Skipping likely-commercial listing:   Office Space for Rent in shekhar tower, New Palasiya Indore
+2026-07-14 15:50:32,324 [INFO] Skipping likely-commercial listing:   Office Space for Rent in Vijay Nagar Indore
+2026-07-14 15:50:32,326 [INFO] Skipping likely-commercial listing:   Office Space for Rent in Fortune Ambience, South Tukoganj Indore
+2026-07-14 15:50:32,350 [INFO] Skipping likely-commercial listing:   Shop for Rent in Silicon City Indore
+2026-07-14 15:50:32,356 [INFO] Skipping likely-commercial listing:   Office Space for Rent in Onam Plaza, Old Palasia Indore
+2026-07-14 15:50:32,369 [INFO] Page 5: +22 listings (running total: 95)
+2026-07-14 15:50:36,019 [INFO] HTTP Request: GET https://www.magicbricks.com/property-for-rent/residential-real-estate?cityName=Indore&page=6 "HTTP/1.1 200 OK"
+2026-07-14 15:50:36,223 [INFO] Skipping likely-commercial listing: 2 BHK Flat  for Rent in  Universal Orion Pride, Universal Orion Pride, Ujjain Road Pologround Industrial Estate, Indore
+2026-07-14 15:50:36,226 [INFO] Skipping likely-commercial listing:   Showroom for Rent in Sanwer Road Industrial Area Indore
+2026-07-14 15:50:36,231 [INFO] Skipping likely-commercial listing:  Warehouse/ Godown for Rent in Sanwer Road Industrial Area Indore
+2026-07-14 15:50:36,235 [INFO] Skipping likely-commercial listing:   Office Space for Rent in Yeshwant Niwas Road Indore
+2026-07-14 15:50:36,237 [INFO] Skipping likely-commercial listing:   Shop for Rent in Pardesipura Indore
+2026-07-14 15:50:36,250 [INFO] Skipping likely-commercial listing:  Warehouse/ Godown for Rent in Dewas Naka Indore
+2026-07-14 15:50:36,252 [INFO] Skipping likely-commercial listing:   Showroom for Rent in Pipaliyahana Indore
+2026-07-14 15:50:36,263 [INFO] Page 6: +23 listings (running total: 118)
+2026-07-14 15:50:36,264 [INFO] Starting detail-page enrichment (coordinates + amenities) for 118 listings...
+2026-07-14 15:50:41,627 [INFO] HTTP Request: GET https://www.magicbricks.com/dainik-bhaskar-apollo-db-city-apollo-db-city-indore-pdpid-4d4235303232383732#cardid-72931581 "HTTP/1.1 301 Moved Permanently"
+2026-07-14 15:50:42,868 [INFO] HTTP Request: GET https://www.magicbricks.com/dainik-bhaskar-apollo-db-city-nipania-indore-pdpid-4d4235303232383732#cardid-72931581 "HTTP/1.1 200 OK"
+2026-07-14 15:50:43,417 [WARNING] Amenities section shows 'View All Amenities (39)' but only 12 were captured from the static HTML � the rest are likely behind a click-to-expand this scraper doesn't drive. Got: ['Club House', 'Cafeteria/Food Court', 'Bar/Lounge', 'Jogging and Strolling Track', 'Outdoor Tennis Courts', 'Cycling & Jogging Track', 'Private Terrace/Garden', 'Power Back Up', 'Swimming Pool', 'Lift', 'Security', 'Park']
+2026-07-14 15:50:47,683 [INFO] HTTP Request: GET https://www.magicbricks.com/sakar-elite-apex-mahalaxmi-nagar-indore-pdpid-4d4235313036393335#cardid-85529213 "HTTP/1.1 200 OK"
+2026-07-14 15:50:53,422 [INFO] HTTP Request: GET https://www.magicbricks.com/sarthak-singapore-lifestyle-tigariya-badshah-indore-pdpid-4d4235313837323536#cardid-83698609 "HTTP/1.1 200 OK"
+2026-07-14 15:51:00,571 [INFO] HTTP Request: GET https://www.magicbricks.com/propertyDetails/2-BHK-1000-Sq-ft-Multistorey-Apartment-FOR-Rent-Manorama-Ganj-in-Indore&id=4d423833373838363839#cardid-83788689 "HTTP/1.1 200 OK"
+2026-07-14 15:51:08,147 [INFO] HTTP Request: GET https://www.magicbricks.com/propertyDetails/3-BHK-1800-Sq-ft-Residential-House-FOR-Rent-Scheme-No.-54-in-Indore&id=4d423835343833353535#cardid-85483555 "HTTP/1.1 200 OK"
+2026-07-14 15:51:12,963 [INFO] HTTP Request: GET https://www.magicbricks.com/tirumala-pride-mr-10-indore-pdpid-4d4235323531353137#cardid-84743271 "HTTP/1.1 200 OK"
+2026-07-14 15:51:17,583 [INFO] HTTP Request: GET https://www.magicbricks.com/propertyDetails/2-BHK-450-Sq-ft-Residential-House-FOR-Rent-Scheme-No.-74-in-Indore&id=4d423834393234323933#cardid-84924293 "HTTP/1.1 200 OK"
+2026-07-14 15:51:22,278 [INFO] HTTP Request: GET https://www.magicbricks.com/skye-luxuria-apollo-db-city-indore-pdpid-4d4235303131383138#cardid-85075671 "HTTP/1.1 301 Moved Permanently"
+2026-07-14 15:51:23,111 [INFO] HTTP Request: GET https://www.magicbricks.com/skye-luxuria-nipania-indore-pdpid-4d4235303131383138#cardid-85075671 "HTTP/1.1 200 OK"
+2026-07-14 15:51:23,696 [WARNING] Amenities section shows 'View All Amenities (22)' but only 12 were captured from the static HTML � the rest are likely behind a click-to-expand this scraper doesn't drive. Got: ['Club House', 'Jogging and Strolling Track', 'Cycling & Jogging Track', 'Power Back Up', 'Swimming Pool', 'Lift', 'Security', 'Park', 'Reserved Parking', 'Bank & ATM', 'Gymnasium', 'Indoor Games Room']
+2026-07-14 15:51:29,139 [INFO] HTTP Request: GET https://www.magicbricks.com/propertyDetails/4-BHK-2500-Sq-ft-Villa-FOR-Rent-MR-11-in-Indore&id=4d423834393933313331#cardid-84993131 "HTTP/1.1 200 OK"
+2026-07-14 15:51:34,545 [INFO] HTTP Request: GET https://www.magicbricks.com/propertyDetails/2-BHK-1125-Sq-ft-Multistorey-Apartment-FOR-Rent-Tejpurgarbari-in-Indore&id=4d423834393733333733#cardid-84973373 "HTTP/1.1 200 OK"
+2026-07-14 15:51:34,706 [INFO] Detail-page enrichment: 10/118 processed, 10 coordinates and 7 amenity lists found so far
+2026-07-14 15:51:39,788 [INFO] HTTP Request: GET https://www.magicbricks.com/sarthak-singapore-lifestyle-tigariya-badshah-indore-pdpid-4d4235313837323536#cardid-73683607 "HTTP/1.1 200 OK"
+2026-07-14 15:51:45,942 [INFO] HTTP Request: GET https://www.magicbricks.com/propertyDetails/2-BHK-800-Sq-ft-Residential-House-FOR-Rent-Sudama-Nagar-in-Indore&id=4d423835313731303231#cardid-85171021 "HTTP/1.1 200 OK"
+2026-07-14 15:51:50,610 [INFO] HTTP Request: GET https://www.magicbricks.com/propertyDetails/4-BHK-4800-Sq-ft-Villa-FOR-Rent-Shanti-Niketan-in-Indore&id=4d423634383737303831#cardid-64877081 "HTTP/1.1 200 OK"
+2026-07-14 15:51:55,672 [INFO] HTTP Request: GET https://www.magicbricks.com/silver-springs-phase-2-indore-bypass-road-indore-pdpid-4d4235313038303137#cardid-81740079 "HTTP/1.1 200 OK"
+2026-07-14 15:51:59,771 [INFO] HTTP Request: GET https://www.magicbricks.com/varun-divine-greens-nipania-indore-pdpid-4d4235303733363333#cardid-85526071 "HTTP/1.1 200 OK"
+2026-07-14 15:52:00,217 [WARNING] Amenities section shows 'View All Amenities (16)' but only 12 were captured from the static HTML � the rest are likely behind a click-to-expand this scraper doesn't drive. Got: ['Jogging and Strolling Track', 'Outdoor Tennis Courts', 'Cycling & Jogging Track', 'Power Back Up', 'Lift', 'Security', 'Park', 'Reserved Parking', 'Visitor Parking', 'Intercom Facility', 'Maintenance Staff', 'Banquet Hall']
+2026-07-14 15:52:06,427 [INFO] HTTP Request: GET https://www.magicbricks.com/s-chugh-palazzo-park-residences-nipania-indore-pdpid-4d4235303732313737#cardid-84836253 "HTTP/1.1 200 OK"
+2026-07-14 15:52:07,008 [WARNING] Amenities section shows 'View All Amenities (19)' but only 12 were captured from the static HTML � the rest are likely behind a click-to-expand this scraper doesn't drive. Got: ['Cycling & Jogging Track', 'Power Back Up', 'Swimming Pool', 'Lift', 'Security', 'Park', 'Reserved Parking', 'Visitor Parking', 'Intercom Facility', 'Gymnasium', 'Flower Gardens', 'Rain Water Harvesting']
+2026-07-14 15:52:11,232 [INFO] HTTP Request: GET https://www.magicbricks.com/propertyDetails/2-BHK-800-Sq-ft-Multistorey-Apartment-FOR-Rent-Gokul-Nagar-in-Indore&id=4d423834353732393633#cardid-84572963 "HTTP/1.1 200 OK"
+2026-07-14 15:52:15,744 [INFO] HTTP Request: GET https://www.magicbricks.com/propertyDetails/4-BHK-3000-Sq-ft-Multistorey-Apartment-FOR-Rent-Race-Course-Road-in-Indore&id=4d423834313936353831#cardid-84196581 "HTTP/1.1 200 OK"
+2026-07-14 15:52:20,081 [INFO] HTTP Request: GET https://www.magicbricks.com/skye-luxuria-nipania-indore-pdpid-4d4235303131383138#cardid-85521575 "HTTP/1.1 200 OK"
+2026-07-14 15:52:20,591 [WARNING] Amenities section shows 'View All Amenities (22)' but only 12 were captured from the static HTML � the rest are likely behind a click-to-expand this scraper doesn't drive. Got: ['Club House', 'Jogging and Strolling Track', 'Cycling & Jogging Track', 'Power Back Up', 'Swimming Pool', 'Lift', 'Security', 'Park', 'Reserved Parking', 'Bank & ATM', 'Gymnasium', 'Indoor Games Room']
+2026-07-14 15:52:25,058 [INFO] HTTP Request: GET https://www.magicbricks.com/sky-corporate-park-vijay-nagar-indore-pdpid-4d4235313131373633#cardid-85451631 "HTTP/1.1 200 OK"
+2026-07-14 15:52:25,451 [WARNING] Amenities section shows 'View All Amenities (31)' but only 12 were captured from the static HTML � the rest are likely behind a click-to-expand this scraper doesn't drive. Got: ['Cafeteria/Food Court', 'Bar/Lounge', 'Jogging and Strolling Track', 'Outdoor Tennis Courts', 'Private Terrace/Garden', 'Power Back Up', 'Swimming Pool', 'Security', 'Park', 'Reserved Parking', 'Service/Goods Lift', 'Visitor Parking']
+2026-07-14 15:52:25,452 [INFO] Detail-page enrichment: 20/118 processed, 20 coordinates and 17 amenity lists found so far
+2026-07-14 15:52:30,171 [INFO] HTTP Request: GET https://www.magicbricks.com/propertyDetails/3-BHK-2000-Sq-ft-Residential-House-FOR-Rent-Geeta-Bhavan-in-Indore&id=4d423833313435323937#cardid-83145297 "HTTP/1.1 200 OK"
+2026-07-14 15:52:33,673 [INFO] HTTP Request: GET https://www.magicbricks.com/sarthak-singapore-lifestyle-tigariya-badshah-indore-pdpid-4d4235313837323536#cardid-85283997 "HTTP/1.1 200 OK"
+2026-07-14 15:52:37,964 [INFO] HTTP Request: GET https://www.magicbricks.com/propertyDetails/1-BHK-500-Sq-ft-Residential-House-FOR-Rent-Airport-Road-in-Indore&id=4d423732383934343331#cardid-72894431 "HTTP/1.1 200 OK"
+2026-07-14 15:52:43,500 [INFO] HTTP Request: GET https://www.magicbricks.com/propertyDetails/1-Bigha-Agricultural-Land-FOR-Rent-Kanadiya-in-Indore&id=4d423835333237393335#cardid-85327935 "HTTP/1.1 200 OK"
+2026-07-14 15:52:47,971 [INFO] HTTP Request: GET https://www.magicbricks.com/propertyDetails/2-BHK-600-Sq-ft-Residential-House-FOR-Rent-Rajwada-in-Indore&id=4d423833343631383539#cardid-83461859 "HTTP/1.1 200 OK"
+2026-07-14 15:52:53,118 [INFO] HTTP Request: GET https://www.magicbricks.com/propertyDetails/3-BHK-1500-Sq-ft-Multistorey-Apartment-FOR-Rent-Mahalaxmi-Nagar-in-Indore&id=4d423835303531313939#cardid-85051199 "HTTP/1.1 200 OK"
+2026-07-14 15:52:58,138 [INFO] HTTP Request: GET https://www.magicbricks.com/treasure-town-bijalpur-indore-pdpid-4d4235313231393439#cardid-70919561 "HTTP/1.1 200 OK"
+2026-07-14 15:53:03,259 [INFO] HTTP Request: GET https://www.magicbricks.com/agarwal-casa-villas-talawali-chanda-indore-pdpid-4d4235303937363039#cardid-41748331 "HTTP/1.1 200 OK"
+2026-07-14 15:53:11,336 [INFO] HTTP Request: GET https://www.magicbricks.com/propertyDetails/250-Sq-ft-Studio-Apartment-FOR-Rent-Scheme-No-103-in-Indore&id=4d423835333334393439#cardid-85334949 "HTTP/1.1 200 OK"
+2026-07-14 15:53:16,040 [INFO] HTTP Request: GET https://www.magicbricks.com/bcm-planet-nipania-indore-pdpid-4d4235303938363037#cardid-83791925 "HTTP/1.1 200 OK"
+2026-07-14 15:53:16,761 [INFO] Detail-page enrichment: 30/118 processed, 30 coordinates and 26 amenity lists found so far
+2026-07-14 15:53:24,355 [INFO] HTTP Request: GET https://www.magicbricks.com/propertyDetails/3-BHK-2080-Sq-ft-Residential-House-FOR-Rent-Mahalaxmi-Nagar-in-Indore&id=4d423834393138333435#cardid-84918345 "HTTP/1.1 200 OK"
+2026-07-14 15:53:30,403 [INFO] HTTP Request: GET https://www.magicbricks.com/sakar-nri-city-1-bicholi-mardana-indore-pdpid-4d4235323032393431#cardid-71225101 "HTTP/1.1 200 OK"
+2026-07-14 15:53:36,454 [INFO] HTTP Request: GET https://www.magicbricks.com/propertyDetails/2-BHK-1500-Sq-ft-Residential-House-FOR-Rent-Vijay-Nagar-in-Indore&id=4d423834353031373935#cardid-84501795 "HTTP/1.1 200 OK"
+2026-07-14 15:53:43,284 [INFO] HTTP Request: GET https://www.magicbricks.com/propertyDetails/1-BHK-800-Sq-ft-Residential-House-FOR-Rent-Sajan-Nagar-Road-in-Indore&id=4d423834363436373537#cardid-84646757 "HTTP/1.1 200 OK"
+2026-07-14 15:53:48,311 [INFO] HTTP Request: GET https://www.magicbricks.com/man-royal-greens-niranjanpur-indore-pdpid-4d4235313836353532#cardid-84793303 "HTTP/1.1 200 OK"
+2026-07-14 15:53:48,753 [WARNING] Amenities section shows 'View All Amenities (31)' but only 12 were captured from the static HTML � the rest are likely behind a click-to-expand this scraper doesn't drive. Got: ['Club House', 'Cafeteria/Food Court', 'Bar/Lounge', 'Jogging and Strolling Track', 'Outdoor Tennis Courts', 'Private Terrace/Garden', 'Power Back Up', 'Swimming Pool', 'Lift', 'Security', 'Park', 'Reserved Parking']
+2026-07-14 15:53:54,879 [INFO] HTTP Request: GET https://www.magicbricks.com/silver-springs-indore-bypass-road-indore-pdpid-4d4235303030323633#cardid-16671466 "HTTP/1.1 200 OK"
+2026-07-14 15:53:55,301 [WARNING] Amenities section shows 'View All Amenities (21)' but only 12 were captured from the static HTML � the rest are likely behind a click-to-expand this scraper doesn't drive. Got: ['Power Back Up', 'Swimming Pool', 'Lift', 'Security', 'Park', 'Reserved Parking', 'Visitor Parking', 'Bank & ATM', 'Guest Accommodation', 'Gymnasium', 'AEROBICS ROOM', 'Rain Water Harvesting']
+2026-07-14 15:53:58,645 [INFO] HTTP Request: GET https://www.magicbricks.com/ansal-town-indore-talawali-chanda-indore-pdpid-4d4235303932393332#cardid-85213983 "HTTP/1.1 200 OK"
+2026-07-14 15:53:59,031 [WARNING] Amenities section shows 'View All Amenities (14)' but only 12 were captured from the static HTML � the rest are likely behind a click-to-expand this scraper doesn't drive. Got: ['Club House', 'Jogging and Strolling Track', 'Swimming Pool', 'Lift', 'Security', 'Park', 'Reserved Parking', 'Visitor Parking', 'Intercom Facility', 'Maintenance Staff', 'Gymnasium', 'Meditation Area']
+2026-07-14 15:54:05,914 [INFO] HTTP Request: GET https://www.magicbricks.com/propertyDetails/3-BHK-1500-Sq-ft-Residential-House-FOR-Rent-Hukma-Khedi-in-Indore&id=4d423737383136303437#cardid-77816047 "HTTP/1.1 200 OK"
+2026-07-14 15:54:11,047 [INFO] HTTP Request: GET https://www.magicbricks.com/propertyDetails/4-BHK-2600-Sq-ft-Residential-House-FOR-Rent-Shalimar-Township-in-Indore&id=4d423835333433333635#cardid-85343365 "HTTP/1.1 200 OK"
+2026-07-14 15:54:17,193 [INFO] HTTP Request: GET https://www.magicbricks.com/propertyDetails/1-BHK-650-Sq-ft-Multistorey-Apartment-FOR-Rent-Mahalaxmi-Nagar-in-Indore&id=4d423835333938373131#cardid-85398711 "HTTP/1.1 200 OK"
+2026-07-14 15:54:17,361 [INFO] Detail-page enrichment: 40/118 processed, 40 coordinates and 35 amenity lists found so far
+2026-07-14 15:54:24,315 [INFO] HTTP Request: GET https://www.magicbricks.com/propertyDetails/4-BHK-3120-Sq-ft-Villa-FOR-Rent-New-Rani-Bagh-in-Indore&id=4d423736383236373037#cardid-76826707 "HTTP/1.1 200 OK"
+2026-07-14 15:54:29,339 [INFO] HTTP Request: GET https://www.magicbricks.com/propertyDetails/4-BHK-3000-Sq-ft-Villa-FOR-Rent-Nainod-in-Indore&id=4d423834313238383339#cardid-84128839 "HTTP/1.1 200 OK"
+2026-07-14 15:54:34,605 [INFO] HTTP Request: GET https://www.magicbricks.com/propertyDetails/1-BHK-750-Sq-ft-Residential-House-FOR-Rent-in-Indore&id=4d423835303137323535#cardid-85017255 "HTTP/1.1 200 OK"
+2026-07-14 15:54:38,639 [INFO] HTTP Request: GET https://www.magicbricks.com/indus-satellite-greens-ab-road-indore-pdpid-4d4235303231373939#cardid-85257959 "HTTP/1.1 301 Moved Permanently"
+2026-07-14 15:54:39,400 [INFO] HTTP Request: GET https://www.magicbricks.com/indus-satellite-greens-devas-road-indore-pdpid-4d4235303231373939#cardid-85257959 "HTTP/1.1 200 OK"
+2026-07-14 15:54:39,698 [WARNING] Amenities section shows 'View All Amenities (19)' but only 12 were captured from the static HTML � the rest are likely behind a click-to-expand this scraper doesn't drive. Got: ['Club House', 'Cycling & Jogging Track', 'Private Terrace/Garden', 'Power Back Up', 'Swimming Pool', 'Security', 'Park', 'Reserved Parking', 'Visitor Parking', 'Intercom Facility', 'Maintenance Staff', 'Gymnasium']
+2026-07-14 15:54:44,018 [INFO] HTTP Request: GET https://www.magicbricks.com/propertyDetails/2-BHK-1000-Sq-ft-Residential-House-FOR-Rent-Arandia-in-Indore&id=4d423835313337323239#cardid-85137229 "HTTP/1.1 200 OK"
+2026-07-14 15:54:48,335 [INFO] HTTP Request: GET https://www.magicbricks.com/buildwell-eminence-ujjain-indore-road-indore-pdpid-4d4235343239373837#cardid-85108345 "HTTP/1.1 200 OK"
+2026-07-14 15:54:53,245 [INFO] HTTP Request: GET https://www.magicbricks.com/bholaram-bhawar-kuan-square-indore-pdpid-4d4235343035303439#cardid-85535335 "HTTP/1.1 200 OK"
+2026-07-14 15:54:59,604 [INFO] HTTP Request: GET https://www.magicbricks.com/db-pride-talawali-chanda-indore-pdpid-4d4235303733363536#cardid-81761599 "HTTP/1.1 200 OK"
+2026-07-14 15:55:00,099 [WARNING] Amenities section shows 'View All Amenities (33)' but only 12 were captured from the static HTML � the rest are likely behind a click-to-expand this scraper doesn't drive. Got: ['Club House', 'Cafeteria/Food Court', 'Bar/Lounge', 'Jogging and Strolling Track', 'Outdoor Tennis Courts', 'Private Terrace/Garden', 'Power Back Up', 'Swimming Pool', 'Lift', 'Security', 'Park', 'Reserved Parking']
+2026-07-14 15:55:05,445 [INFO] HTTP Request: GET https://www.magicbricks.com/propertyDetails/1-BHK-500-Sq-ft-Multistorey-Apartment-FOR-Rent-Mahalaxmi-Nagar-in-Indore&id=4d423736363135363533#cardid-76615653 "HTTP/1.1 200 OK"
+2026-07-14 15:55:11,700 [INFO] HTTP Request: GET https://www.magicbricks.com/propertyDetails/1-BHK-650-Sq-ft-Builder-Floor-Apartment-FOR-Rent-Khatiwala-Tank-in-Indore&id=4d423833343937313635#cardid-83497165 "HTTP/1.1 200 OK"
+2026-07-14 15:55:11,843 [INFO] Detail-page enrichment: 50/118 processed, 49 coordinates and 44 amenity lists found so far
+2026-07-14 15:55:17,604 [INFO] HTTP Request: GET https://www.magicbricks.com/propertyDetails/2-BHK-1000-Sq-ft-Residential-House-FOR-Rent-Vijay-Nagar-in-Indore&id=4d423831373332393835#cardid-81732985 "HTTP/1.1 200 OK"
+2026-07-14 15:55:23,516 [INFO] HTTP Request: GET https://www.magicbricks.com/malwa-enclave-rahu-khedi-indore-pdpid-4d4235333930323335#cardid-85098631 "HTTP/1.1 200 OK"
+2026-07-14 15:55:23,873 [WARNING] Amenities section shows 'View All Amenities (21)' but only 12 were captured from the static HTML � the rest are likely behind a click-to-expand this scraper doesn't drive. Got: ['Swimming Pool', 'Park', 'Visitor Parking', 'Maintenance Staff', 'Banquet Hall', 'Guest Accommodation', 'Gymnasium', 'Rain Water Harvesting', 'Water Storage', 'Vaastu Compliant', 'Internet/Wi-Fi Connectivity', 'High Ceiling']
+2026-07-14 15:55:29,183 [INFO] HTTP Request: GET https://www.magicbricks.com/vijay-nagar-square-indore-scheme-no.-54-indore-pdpid-4d4235323437363837#cardid-84040719 "HTTP/1.1 200 OK"
+2026-07-14 15:55:35,543 [INFO] HTTP Request: GET https://www.magicbricks.com/propertyDetails/3-BHK-1200-Sq-ft-Multistorey-Apartment-FOR-Rent-Shree-Nagar-Extension-in-Indore&id=4d423533343833313135#cardid-53483115 "HTTP/1.1 200 OK"
+2026-07-14 15:55:40,739 [INFO] HTTP Request: GET https://www.magicbricks.com/propertyDetails/2-BHK-1250-Sq-ft-Multistorey-Apartment-FOR-Rent-Gopur-Colony-in-Indore&id=4d423833383337353031#cardid-83837501 "HTTP/1.1 200 OK"
+2026-07-14 15:55:46,389 [INFO] HTTP Request: GET https://www.magicbricks.com/bcm-paradise-nipania-indore-pdpid-4d4235303239373138#cardid-83661635 "HTTP/1.1 200 OK"
+2026-07-14 15:55:46,936 [WARNING] Amenities section shows 'View All Amenities (30)' but only 12 were captured from the static HTML � the rest are likely behind a click-to-expand this scraper doesn't drive. Got: ['Club House', 'Cafeteria/Food Court', 'Jogging and Strolling Track', 'Outdoor Tennis Courts', 'Power Back Up', 'Swimming Pool', 'Lift', 'Security', 'Park', 'Reserved Parking', 'Service/Goods Lift', 'Maintenance Staff']
+2026-07-14 15:55:51,195 [INFO] HTTP Request: GET https://www.magicbricks.com/propertyDetails/3-BHK-2000-Sq-ft-Residential-House-FOR-Rent-Vijay-Nagar-in-Indore&id=4d423834333935363833#cardid-84395683 "HTTP/1.1 200 OK"
+2026-07-14 15:55:55,696 [INFO] HTTP Request: GET https://www.magicbricks.com/propertyDetails/3-BHK-3500-Sq-ft-Residential-House-FOR-Rent-Mahalaxmi-Nagar-in-Indore&id=4d423835343538343233#cardid-85458423 "HTTP/1.1 200 OK"
+2026-07-14 15:56:01,460 [INFO] HTTP Request: GET https://www.magicbricks.com/propertyDetails/2-BHK-1200-Sq-ft-Residential-House-FOR-Rent-Mahalaxmi-Nagar-in-Indore&id=4d423830393533363635#cardid-80953665 "HTTP/1.1 200 OK"
+2026-07-14 15:56:05,007 [INFO] HTTP Request: GET https://www.magicbricks.com/propertyDetails/3-BHK-2200-Sq-ft-Residential-House-FOR-Rent-in-Indore&id=4d423832343133383731#cardid-82413871 "HTTP/1.1 200 OK"
+2026-07-14 15:56:05,476 [INFO] Detail-page enrichment: 60/118 processed, 58 coordinates and 52 amenity lists found so far
+2026-07-14 15:56:08,848 [INFO] HTTP Request: GET https://www.magicbricks.com/skye-luxuria-nipania-indore-pdpid-4d4235303131383138#cardid-64598901 "HTTP/1.1 200 OK"
+2026-07-14 15:56:09,365 [WARNING] Amenities section shows 'View All Amenities (22)' but only 12 were captured from the static HTML � the rest are likely behind a click-to-expand this scraper doesn't drive. Got: ['Club House', 'Jogging and Strolling Track', 'Cycling & Jogging Track', 'Power Back Up', 'Swimming Pool', 'Lift', 'Security', 'Park', 'Reserved Parking', 'Bank & ATM', 'Gymnasium', 'Indoor Games Room']
+2026-07-14 15:56:16,274 [INFO] HTTP Request: GET https://www.magicbricks.com/propertyDetails/1-BHK-850-Sq-ft-Multistorey-Apartment-FOR-Rent-Gopur-Square-in-Indore&id=4d423835343934353535#cardid-85494555 "HTTP/1.1 200 OK"
+2026-07-14 15:56:24,160 [INFO] HTTP Request: GET https://www.magicbricks.com/omaxe-pratham-mayakhedi-indore-pdpid-4d4235343235353139#cardid-84764513 "HTTP/1.1 200 OK"
+2026-07-14 15:56:30,096 [INFO] HTTP Request: GET https://www.magicbricks.com/shehnai-residency-lig-colony-indore-pdpid-4d4235323439393631#cardid-68095195 "HTTP/1.1 301 Moved Permanently"
+2026-07-14 15:56:31,044 [INFO] HTTP Request: GET https://www.magicbricks.com/shehnai-residency-ab-road-indore-pdpid-4d4235323439393631#cardid-68095195 "HTTP/1.1 200 OK"
+2026-07-14 15:56:38,732 [INFO] HTTP Request: GET https://www.magicbricks.com/tiara-residence-bicholi-hapsi-indore-pdpid-4d4235313133363631#cardid-85342043 "HTTP/1.1 200 OK"
+2026-07-14 15:56:39,523 [WARNING] Amenities section shows 'View All Amenities (20)' but only 12 were captured from the static HTML � the rest are likely behind a click-to-expand this scraper doesn't drive. Got: ['Club House', 'Power Back Up', 'Swimming Pool', 'Lift', 'Security', 'Reserved Parking', 'Visitor Parking', 'Intercom Facility', 'Maintenance Staff', 'Gymnasium', 'Indoor Games Room', 'Rain Water Harvesting']
+2026-07-14 15:56:43,413 [INFO] HTTP Request: GET https://www.magicbricks.com/grv-brij-residency-phase-2-mr-11-indore-pdpid-4d4235333234323133#cardid-82712729 "HTTP/1.1 200 OK"
+2026-07-14 15:56:47,827 [INFO] HTTP Request: GET https://www.magicbricks.com/propertyDetails/1-BHK-400-Sq-ft-Multistorey-Apartment-FOR-Rent-Mahalaxmi-Nagar-in-Indore&id=4d423834353532373037#cardid-84552707 "HTTP/1.1 200 OK"
+2026-07-14 15:56:53,651 [INFO] HTTP Request: GET https://www.magicbricks.com/db-pride-talawali-chanda-indore-pdpid-4d4235303733363536#cardid-85530491 "HTTP/1.1 200 OK"
+2026-07-14 15:56:54,420 [WARNING] Amenities section shows 'View All Amenities (33)' but only 12 were captured from the static HTML � the rest are likely behind a click-to-expand this scraper doesn't drive. Got: ['Club House', 'Cafeteria/Food Court', 'Bar/Lounge', 'Jogging and Strolling Track', 'Outdoor Tennis Courts', 'Private Terrace/Garden', 'Power Back Up', 'Swimming Pool', 'Lift', 'Security', 'Park', 'Reserved Parking']
+2026-07-14 15:56:59,803 [INFO] HTTP Request: GET https://www.magicbricks.com/propertyDetails/4-BHK-1600-Sq-ft-Villa-FOR-Rent-Nipania-in-Indore&id=4d423834393139333239#cardid-84919329 "HTTP/1.1 200 OK"
+2026-07-14 15:57:06,148 [INFO] HTTP Request: GET https://www.magicbricks.com/propertyDetails/1-BHK-960-Sq-ft-Multistorey-Apartment-FOR-Rent-Mahalaxmi-Nagar-in-Indore&id=4d423835333037363035#cardid-85307605 "HTTP/1.1 200 OK"
+2026-07-14 15:57:06,339 [INFO] Detail-page enrichment: 70/118 processed, 68 coordinates and 59 amenity lists found so far
+2026-07-14 15:57:12,504 [INFO] HTTP Request: GET https://www.magicbricks.com/propertyDetails/1-BHK-500-Sq-ft-Builder-Floor-Apartment-FOR-Rent-Mahalaxmi-Nagar-in-Indore&id=4d423835353337313137#cardid-85537117 "HTTP/1.1 200 OK"
+2026-07-14 15:57:17,824 [INFO] HTTP Request: GET https://www.magicbricks.com/aarone-countywalk-indore-bypass-road-indore-pdpid-4d4235303939363433#cardid-85444293 "HTTP/1.1 200 OK"
+2026-07-14 15:57:18,217 [WARNING] Amenities section shows 'View All Amenities (24)' but only 0 were captured from the static HTML � the rest are likely behind a click-to-expand this scraper doesn't drive. Got: []
+2026-07-14 15:57:24,184 [INFO] HTTP Request: GET https://www.magicbricks.com/treasure-fantasy-rau-road-indore-pdpid-4d4235303432353839#cardid-85475315 "HTTP/1.1 200 OK"
+2026-07-14 15:57:24,860 [WARNING] Amenities section shows 'View All Amenities (9)' but only 0 were captured from the static HTML � the rest are likely behind a click-to-expand this scraper doesn't drive. Got: []
+2026-07-14 15:57:29,093 [INFO] HTTP Request: GET https://www.magicbricks.com/propertyDetails/1-BHK-605-Sq-ft-Multistorey-Apartment-FOR-Rent-Vijay-Nagar-in-Indore&id=4d423834363231303335#cardid-84621035 "HTTP/1.1 200 OK"
+2026-07-14 15:57:33,492 [INFO] HTTP Request: GET https://www.magicbricks.com/kalindi-mid-town-indore-bypass-road-indore-pdpid-4d4235303239383037#cardid-20746432 "HTTP/1.1 200 OK"
+2026-07-14 15:57:38,834 [INFO] HTTP Request: GET https://www.magicbricks.com/sakar-elite-apex-mahalaxmi-nagar-indore-pdpid-4d4235313036393335#cardid-85340193 "HTTP/1.1 200 OK"
+2026-07-14 15:57:46,996 [INFO] HTTP Request: GET https://www.magicbricks.com/propertyDetails/3-BHK-1600-Sq-ft-Residential-House-FOR-Rent-Nipania-in-Indore&id=4d423834343739363939#cardid-84479699 "HTTP/1.1 200 OK"
+2026-07-14 15:57:52,430 [INFO] HTTP Request: GET https://www.magicbricks.com/propertyDetails/3-BHK-1300-Sq-ft-Multistorey-Apartment-FOR-Rent-Limbodi-in-Indore&id=4d423834383435303239#cardid-84845029 "HTTP/1.1 200 OK"
+2026-07-14 15:57:56,230 [INFO] HTTP Request: GET https://www.magicbricks.com/shubh-labh-heights-mr-11-indore-pdpid-4d4235323437393833#cardid-85257555 "HTTP/1.1 200 OK"
+2026-07-14 15:58:01,720 [INFO] HTTP Request: GET https://www.magicbricks.com/bcm-park-piplya-kumar-indore-pdpid-4d4235303938363735#cardid-72290361 "HTTP/1.1 200 OK"
+2026-07-14 15:58:02,317 [INFO] Detail-page enrichment: 80/118 processed, 78 coordinates and 64 amenity lists found so far
+2026-07-14 15:58:09,121 [INFO] HTTP Request: GET https://www.magicbricks.com/pinnacle-d-dreams-piplya-kumar-indore-pdpid-4d4235303231343334#cardid-85416815 "HTTP/1.1 200 OK"
+2026-07-14 15:58:16,331 [INFO] HTTP Request: GET https://www.magicbricks.com/propertyDetails/2-BHK-1050-Sq-ft-Multistorey-Apartment-FOR-Rent-Silicon-City-in-Indore&id=4d423835333736383639#cardid-85376869 "HTTP/1.1 200 OK"
+2026-07-14 15:58:21,508 [INFO] HTTP Request: GET https://www.magicbricks.com/propertyDetails/1-BHK-615-Sq-ft-Multistorey-Apartment-FOR-Rent-Silicon-City-in-Indore&id=4d423835343034303235#cardid-85404025 "HTTP/1.1 200 OK"
+2026-07-14 15:58:27,580 [INFO] HTTP Request: GET https://www.magicbricks.com/propertyDetails/2-BHK-1110-Sq-ft-Multistorey-Apartment-FOR-Rent-Apollo-DB-City-in-Indore&id=4d423835313935393839#cardid-85195989 "HTTP/1.1 200 OK"
+2026-07-14 15:58:31,161 [INFO] HTTP Request: GET https://www.magicbricks.com/treasure-fantasy-rau-road-indore-pdpid-4d4235303432353839#cardid-82565841 "HTTP/1.1 200 OK"
+2026-07-14 15:58:31,863 [WARNING] Amenities section shows 'View All Amenities (9)' but only 0 were captured from the static HTML � the rest are likely behind a click-to-expand this scraper doesn't drive. Got: []
+2026-07-14 15:58:37,192 [INFO] HTTP Request: GET https://www.magicbricks.com/propertyDetails/3-BHK-2500-Sq-ft-Multistorey-Apartment-FOR-Rent-Scheme-No-140-in-Indore&id=4d423830333833363731#cardid-80383671 "HTTP/1.1 200 OK"
+2026-07-14 15:58:40,862 [INFO] HTTP Request: GET https://www.magicbricks.com/propertyDetails/2-BHK-900-Sq-ft-Multistorey-Apartment-FOR-Rent-Nipania-in-Indore&id=4d423830363236313839#cardid-80626189 "HTTP/1.1 200 OK"
+2026-07-14 15:58:45,279 [INFO] HTTP Request: GET https://www.magicbricks.com/gk-aanandam-nipania-indore-pdpid-4d4235313236393939#cardid-85351111 "HTTP/1.1 200 OK"
+2026-07-14 15:58:46,073 [WARNING] Amenities section shows 'View All Amenities (14)' but only 12 were captured from the static HTML � the rest are likely behind a click-to-expand this scraper doesn't drive. Got: ['Club House', 'Jogging and Strolling Track', 'Power Back Up', 'Swimming Pool', 'Lift', 'Security', 'Reserved Parking', 'Maintenance Staff', 'Gymnasium', 'Water Storage', 'Vaastu Compliant', 'Waste Disposal']
+2026-07-14 15:58:51,717 [INFO] HTTP Request: GET https://www.magicbricks.com/propertyDetails/2-BHK-1050-Sq-ft-Multistorey-Apartment-FOR-Rent-Vijay-Nagar-in-Indore&id=4d423835333633363935#cardid-85363695 "HTTP/1.1 200 OK"
+2026-07-14 15:58:57,872 [INFO] HTTP Request: GET https://www.magicbricks.com/propertyDetails/2-BHK-1000-Sq-ft-Multistorey-Apartment-FOR-Rent-Bicholi-Mardana-in-Indore&id=4d423738333635333837#cardid-78365387 "HTTP/1.1 200 OK"
+2026-07-14 15:58:58,263 [INFO] Detail-page enrichment: 90/118 processed, 88 coordinates and 73 amenity lists found so far
+2026-07-14 15:59:03,091 [INFO] HTTP Request: GET https://www.magicbricks.com/mirchandani-shalimar-swayam-mr-10-indore-pdpid-4d4235303431373437#cardid-84210481 "HTTP/1.1 200 OK"
+2026-07-14 15:59:03,553 [WARNING] Amenities section shows 'View All Amenities (22)' but only 12 were captured from the static HTML � the rest are likely behind a click-to-expand this scraper doesn't drive. Got: ['Club House', 'Jogging and Strolling Track', 'Outdoor Tennis Courts', 'Cycling & Jogging Track', 'Power Back Up', 'Swimming Pool', 'Lift', 'Security', 'Reserved Parking', 'Gymnasium', 'Indoor Games Room', 'AEROBICS ROOM']
+2026-07-14 15:59:07,822 [INFO] HTTP Request: GET https://www.magicbricks.com/smart-living-pushp-vihar-indore-pdpid-4d4235323530323937#cardid-85045945 "HTTP/1.1 200 OK"
+2026-07-14 15:59:12,917 [INFO] HTTP Request: GET https://www.magicbricks.com/cosmos-city-bicholi-mardana-indore-pdpid-4d4235303431373031#cardid-85264069 "HTTP/1.1 200 OK"
+2026-07-14 15:59:18,472 [INFO] HTTP Request: GET https://www.magicbricks.com/propertyDetails/2-BHK-600-Sq-ft-Residential-House-FOR-Rent-Vijay-Nagar-in-Indore&id=4d423835343934313737#cardid-85494177 "HTTP/1.1 200 OK"
+2026-07-14 15:59:24,492 [INFO] HTTP Request: GET https://www.magicbricks.com/vastu-silicon-city-rau-pithampur-road-indore-pdpid-4d4235323636313537#cardid-85155127 "HTTP/1.1 200 OK"
+2026-07-14 15:59:32,488 [INFO] HTTP Request: GET https://www.magicbricks.com/propertyDetails/2-BHK-1011-Sq-ft-Multistorey-Apartment-FOR-Rent-in-Indore&id=4d423835313935373733#cardid-85195773 "HTTP/1.1 200 OK"
+2026-07-14 15:59:38,921 [INFO] HTTP Request: GET https://www.magicbricks.com/omaxe-shubhangan-premium-extension-phase-1-and-phase-2-omaxe-city-1-indore-pdpid-4d4235343233313433#cardid-84875795 "HTTP/1.1 301 Moved Permanently"
+2026-07-14 15:59:39,712 [INFO] HTTP Request: GET https://www.magicbricks.com/omaxe-shubhangan-premium-extension-phase-1-and-phase-2-balya-kheda-indore-pdpid-4d4235343233313433#cardid-84875795 "HTTP/1.1 200 OK"
+2026-07-14 15:59:44,170 [INFO] HTTP Request: GET https://www.magicbricks.com/grande-exotica-bicholi-mardana-indore-pdpid-4d4235303731393437#cardid-68486617 "HTTP/1.1 200 OK"
+2026-07-14 15:59:44,646 [WARNING] Amenities section shows 'View All Amenities (11)' but only 0 were captured from the static HTML � the rest are likely behind a click-to-expand this scraper doesn't drive. Got: []
+2026-07-14 15:59:49,593 [INFO] HTTP Request: GET https://www.magicbricks.com/shubh-labh-residency-khajrana-indore-pdpid-4d4235303939333935#cardid-75484727 "HTTP/1.1 200 OK"
+2026-07-14 15:59:56,644 [INFO] HTTP Request: GET https://www.magicbricks.com/propertyDetails/2-BHK-555-Sq-ft-Multistorey-Apartment-FOR-Rent-New-Rani-Bagh-in-Indore&id=4d423534393036383739#cardid-54906879 "HTTP/1.1 200 OK"
+2026-07-14 15:59:56,767 [INFO] Detail-page enrichment: 100/118 processed, 97 coordinates and 78 amenity lists found so far
+2026-07-14 16:00:01,324 [INFO] HTTP Request: GET https://www.magicbricks.com/near-bombay-hospital-mahalaxmi-nagar-indore-pdpid-4d4235343130333833#cardid-85367607 "HTTP/1.1 200 OK"
+2026-07-14 16:00:05,074 [INFO] HTTP Request: GET https://www.magicbricks.com/propertyDetails/1-BHK-650-Sq-ft-Residential-House-FOR-Rent-in-Indore&id=4d423830383536323431#cardid-80856241 "HTTP/1.1 200 OK"
+2026-07-14 16:00:11,181 [INFO] HTTP Request: GET https://www.magicbricks.com/propertyDetails/1-BHK-450-Sq-ft-Residential-House-FOR-Rent-Ujjain-Indore-Road-in-Indore&id=4d423833353838343235#cardid-83588425 "HTTP/1.1 200 OK"
+2026-07-14 16:00:15,592 [INFO] HTTP Request: GET https://www.magicbricks.com/propertyDetails/1-BHK-500-Sq-ft-Multistorey-Apartment-FOR-Rent-Patnipura-in-Indore&id=4d423833383239353337#cardid-83829537 "HTTP/1.1 200 OK"
+2026-07-14 16:00:20,091 [INFO] HTTP Request: GET https://www.magicbricks.com/propertyDetails/1-BHK-450-Sq-ft-Builder-Floor-Apartment-FOR-Rent-Scheme-No-134-in-Indore&id=4d423739393032333433#cardid-79902343 "HTTP/1.1 200 OK"
+2026-07-14 16:00:23,495 [INFO] HTTP Request: GET https://www.magicbricks.com/sarthak-singapore-lifestyle-tigariya-badshah-indore-pdpid-4d4235313837323536#cardid-85216233 "HTTP/1.1 200 OK"
+2026-07-14 16:00:27,873 [INFO] HTTP Request: GET https://www.magicbricks.com/propertyDetails/2-BHK-650-Sq-ft-Multistorey-Apartment-FOR-Rent-in-Indore&id=4d423835303931323737#cardid-85091277 "HTTP/1.1 200 OK"
+2026-07-14 16:00:31,066 [INFO] HTTP Request: GET https://www.magicbricks.com/near-bombay-hospital-mahalaxmi-nagar-indore-pdpid-4d4235343130333833#cardid-70007363 "HTTP/1.1 200 OK"
+2026-07-14 16:00:36,313 [INFO] HTTP Request: GET https://www.magicbricks.com/propertyDetails/3-BHK-1000-Sq-ft-Residential-House-FOR-Rent-Nipania-in-Indore&id=4d423835343431343133#cardid-85441413 "HTTP/1.1 200 OK"
+2026-07-14 16:00:39,764 [INFO] HTTP Request: GET https://www.magicbricks.com/lifestyle-ocean-park-nipania-indore-pdpid-4d4235303338383038#cardid-84387671 "HTTP/1.1 200 OK"
+2026-07-14 16:00:40,322 [INFO] Detail-page enrichment: 110/118 processed, 106 coordinates and 85 amenity lists found so far
+2026-07-14 16:00:44,256 [INFO] HTTP Request: GET https://www.magicbricks.com/propertyDetails/1-BHK-600-Sq-ft-Residential-House-FOR-Rent-Scheme-No-136-in-Indore&id=4d423630313037303431#cardid-60107041 "HTTP/1.1 200 OK"
+2026-07-14 16:00:49,383 [INFO] HTTP Request: GET https://www.magicbricks.com/propertyDetails/2-BHK-750-Sq-ft-Multistorey-Apartment-FOR-Rent-Lokmanya-Nagar-in-Indore&id=4d423835333638303735#cardid-85368075 "HTTP/1.1 200 OK"
+2026-07-14 16:00:56,474 [INFO] HTTP Request: GET https://www.magicbricks.com/om-heights-rajendra-nagar-indore-pdpid-4d4235323138323831#cardid-75081103 "HTTP/1.1 200 OK"
+2026-07-14 16:01:02,096 [INFO] HTTP Request: GET https://www.magicbricks.com/sarthak-estate-galaxy-rau-indore-pdpid-4d4235303236323030#cardid-85122401 "HTTP/1.1 200 OK"
+2026-07-14 16:01:02,971 [WARNING] Amenities section shows 'View All Amenities (14)' but only 12 were captured from the static HTML � the rest are likely behind a click-to-expand this scraper doesn't drive. Got: ['Power Back Up', 'Lift', 'Security', 'Park', 'Reserved Parking', 'Visitor Parking', 'Intercom Facility', 'Maintenance Staff', 'Gymnasium', 'Rain Water Harvesting', 'Vaastu Compliant', 'Grand Entrance lobby']
+2026-07-14 16:01:07,717 [INFO] HTTP Request: GET https://www.magicbricks.com/propertyDetails/1-BHK-180-Sq-yrd-Residential-House-FOR-Rent-Chandra-Nagar-in-Indore&id=4d423236323033383437#cardid-26203847 "HTTP/1.1 200 OK"
+2026-07-14 16:01:12,426 [INFO] HTTP Request: GET https://www.magicbricks.com/man-royal-view-vijay-nagar-indore-pdpid-4d4235323638313335#cardid-84973575 "HTTP/1.1 200 OK"
+2026-07-14 16:01:18,379 [INFO] HTTP Request: GET https://www.magicbricks.com/propertyDetails/1-BHK-750-Sq-ft-Multistorey-Apartment-FOR-Rent-Tulsi-Nagar-in-Indore&id=4d423439373732393236#cardid-49772926 "HTTP/1.1 200 OK"
+2026-07-14 16:01:25,900 [INFO] HTTP Request: GET https://www.magicbricks.com/propertyDetails/1-BHK-600-Sq-ft-Residential-House-FOR-Rent-Surya-Dev-Nagar-in-Indore&id=4d423730323732353735#cardid-70272575 "HTTP/1.1 200 OK"
+2026-07-14 16:01:26,105 [INFO] Detail-page enrichment complete: 114/118 listings got real coordinates, 90/118 got an amenities list
+2026-07-14 16:01:26,106 [INFO] Scraped 118 total listings
+2026-07-14 16:01:26,113 [INFO] Wrote 118 listings to scraped_listings.jsonl
+  Resolved city: Indore (stored under unique key: "Domino's Rajendra Nagar Indore")
+
+  → Seeding grid...
+Seeding city "Domino's Rajendra Nagar Indore" (22.6867, 75.8377) — 200m cells, 5000m radius
+Created city "Domino's Rajendra Nagar Indore" (id=21)
+Seeded 2601 grid cells for "Domino's Rajendra Nagar Indore" (200m cells, 5000m radius).
+
+  → Ingesting...
+Ingesting into city="Domino's Rajendra Nagar Indore" (id=21)
+Geocoding found no results for "1 BHK  House for Rent in Hare krishna vihar colony  nipaniya Indore, India"
+Geocoding found no results for "Domino's Rajendra Nagar Indore, India"
+No coordinates resolvable for listing https://www.magicbricks.com/propertyDetails/1-BHK-750-Sq-ft-Residential-House-FOR-Rent-in-Indore&id=4d423835303137323535#cardid-85017255 — stored with grid_id = NULL.
+Skipping listing entirely — no coordinates resolvable by any method: https://www.magicbricks.com/propertyDetails/1-BHK-750-Sq-ft-Residential-House-FOR-Rent-in-Indore&id=4d423835303137323535#cardid-85017255
+Geocoding found no results for "3 BHK  House for Rent in man royal bungalow nipaniya Indore, India"
+Geocoding found no results for "Domino's Rajendra Nagar Indore, India"
+No coordinates resolvable for listing https://www.magicbricks.com/propertyDetails/3-BHK-2200-Sq-ft-Residential-House-FOR-Rent-in-Indore&id=4d423832343133383731#cardid-82413871 — stored with grid_id = NULL.
+Skipping listing entirely — no coordinates resolvable by any method: https://www.magicbricks.com/propertyDetails/3-BHK-2200-Sq-ft-Residential-House-FOR-Rent-in-Indore&id=4d423832343133383731#cardid-82413871
+Geocoding found no results for "2 BHK Flat  for Rent in   Indore, India"
+Geocoding found no results for "Domino's Rajendra Nagar Indore, India"
+No coordinates resolvable for listing https://www.magicbricks.com/propertyDetails/2-BHK-1011-Sq-ft-Multistorey-Apartment-FOR-Rent-in-Indore&id=4d423835313935373733#cardid-85195773 — stored with grid_id = NULL.
+Skipping listing entirely — no coordinates resolvable by any method: https://www.magicbricks.com/propertyDetails/2-BHK-1011-Sq-ft-Multistorey-Apartment-FOR-Rent-in-Indore&id=4d423835313935373733#cardid-85195773
+Geocoding found no results for "2 BHK Flat  for Rent in   Indore, India"
+Geocoding found no results for "Domino's Rajendra Nagar Indore, India"
+No coordinates resolvable for listing https://www.magicbricks.com/propertyDetails/2-BHK-650-Sq-ft-Multistorey-Apartment-FOR-Rent-in-Indore&id=4d423835303931323737#cardid-85091277 — stored with grid_id = NULL.
+Skipping listing entirely — no coordinates resolvable by any method: https://www.magicbricks.com/propertyDetails/2-BHK-650-Sq-ft-Multistorey-Apartment-FOR-Rent-in-Indore&id=4d423835303931323737#cardid-85091277
+
+Ingestion complete for "Domino's Rajendra Nagar Indore":
+  Processed:            114
+  Skipped (no URL):     0
+  Skipped (no coords):  4
+  Skipped (no grid):    97
+  Errors:               0
+
+
+  → Aggregating...
+Computing stats for "Domino's Rajendra Nagar Indore" (id=21)...
+  bhk_bucket_stats: 21 rows written
+  grid_stats: 17 rows written
+Done.
+
+  ⏳ Cooling down for 45s before the next store...
+
+============================================================
+[3/3] Domino's Kochi Kerala (9.9312, 76.2673)
+============================================================
+
+  → Scraping...
+2026-07-14 16:02:21,626 [INFO] No city name in config � reverse-geocoding (9.9312, 76.2673)...
+2026-07-14 16:02:22,429 [INFO] Resolved city: Kochi, state: Kerala
+2026-07-14 16:02:22,431 [INFO] Saved resolved values back to C:\Users\riddh\OneDrive\Desktop\skymark-grid-project\config.json
+2026-07-14 16:02:22,436 [INFO] Starting MagicBricks scrape run
+2026-07-14 16:02:23,132 [INFO] Bootstrapping session via Playwright: https://www.magicbricks.com/property-for-rent/residential-real-estate?cityName=Kochi&page=1
+2026-07-14 16:02:27,926 [INFO] Skipping likely-commercial listing:  Warehouse/ Godown for Rent in Thammanam Pullepady Road Kochi
+2026-07-14 16:02:27,929 [INFO] Skipping likely-commercial listing:   Office Space for Rent in Cherai Kochi
+2026-07-14 16:02:27,948 [INFO] Skipping likely-commercial listing:   Office Space for Rent in Kadavanthra Kochi
+2026-07-14 16:02:27,962 [INFO] Skipping likely-commercial listing:   Office Space for Rent in Vyttila Kochi
+2026-07-14 16:02:27,965 [INFO] Skipping likely-commercial listing:   Showroom for Rent in Kundanoor Kochi
+2026-07-14 16:02:27,968 [INFO] Skipping likely-commercial listing:  Office in IT Park/ SEZ for Rent in Oxford business centre, Ravipuram Kochi
+2026-07-14 16:02:27,971 [INFO] Skipping likely-commercial listing:   Office Space for Rent in Kadavanthra Kochi
+2026-07-14 16:02:27,975 [INFO] Skipping likely-commercial listing:   Office Space for Rent in Thiruvankulam Kochi
+2026-07-14 16:02:27,979 [INFO] Skipping likely-commercial listing:   Office Space for Rent in Edappally Kochi
+2026-07-14 16:02:27,982 [INFO] Skipping likely-commercial listing:   Office Space for Rent in Fort Kochi Kochi
+2026-07-14 16:02:28,001 [INFO] Skipping likely-commercial listing:   Office Space for Rent in Mahatma Gandhi Road Kochi
+2026-07-14 16:02:28,018 [INFO] Skipping likely-commercial listing:   Shop for Rent in Padma Junction Kochi
+2026-07-14 16:02:28,020 [INFO] Page 1: 18 listings parsed so far
+2026-07-14 16:02:35,872 [INFO] HTTP Request: GET https://www.magicbricks.com/property-for-rent/residential-real-estate?cityName=Kochi&page=2 "HTTP/1.1 200 OK"
+2026-07-14 16:02:36,123 [INFO] Skipping likely-commercial listing:  Warehouse/ Godown for Rent in Thoppumpady Kochi
+2026-07-14 16:02:36,140 [INFO] Skipping likely-commercial listing:   Office Space for Rent in Thrikkakara Kochi
+2026-07-14 16:02:36,145 [INFO] Skipping likely-commercial listing:   Office Space for Rent in Thevara Kochi
+2026-07-14 16:02:36,147 [INFO] Skipping likely-commercial listing:  Warehouse/ Godown for Rent in Thammanam Pullepady Road Kochi
+2026-07-14 16:02:36,156 [INFO] Skipping likely-commercial listing:   Office Space for Rent in 2nd floor, Krishna Hospital Kochi
+2026-07-14 16:02:36,159 [INFO] Skipping likely-commercial listing:  Warehouse/ Godown for Rent in Puthiyakavu Kochi
+2026-07-14 16:02:36,161 [INFO] Skipping likely-commercial listing:   Office Space for Rent in Vennala Kochi
+2026-07-14 16:02:36,176 [INFO] Skipping likely-commercial listing:   Shop for Rent in Fort Kochi Kochi
+2026-07-14 16:02:36,179 [INFO] Skipping likely-commercial listing:   Office Space for Rent in Padamugal Kochi
+2026-07-14 16:02:36,179 [INFO] Page 2: +21 listings (running total: 39)
+2026-07-14 16:02:42,261 [INFO] HTTP Request: GET https://www.magicbricks.com/property-for-rent/residential-real-estate?cityName=Kochi&page=3 "HTTP/1.1 200 OK"
+2026-07-14 16:02:42,442 [INFO] Skipping likely-commercial listing:   Shop for Rent in Maradu Kochi
+2026-07-14 16:02:42,449 [INFO] Skipping likely-commercial listing:  Warehouse/ Godown for Rent in Aluva Kochi
+2026-07-14 16:02:42,459 [INFO] Skipping likely-commercial listing:   Office Space for Rent in Edappally Kochi
+2026-07-14 16:02:42,466 [INFO] Skipping likely-commercial listing:   Office Space for Rent in Kadavanthra Kochi
+2026-07-14 16:02:42,471 [INFO] Skipping likely-commercial listing:   Office Space for Rent in Angamaly Kochi
+2026-07-14 16:02:42,476 [INFO] Skipping likely-commercial listing:   Office Space for Rent in Aluva Kochi
+2026-07-14 16:02:42,482 [INFO] Skipping likely-commercial listing:   Office Space for Rent in Angamaly Kochi
+2026-07-14 16:02:42,484 [INFO] Skipping likely-commercial listing:   Shop for Rent in Angamaly Kochi
+2026-07-14 16:02:42,486 [INFO] Skipping likely-commercial listing:   Shop for Rent in Palluruthy Kochi
+2026-07-14 16:02:42,501 [INFO] Skipping likely-commercial listing:   Office Space for Rent in Mahatma Gandhi Road Kochi
+2026-07-14 16:02:42,511 [INFO] Skipping likely-commercial listing:   Office Space for Rent in Kundanoor Kochi
+2026-07-14 16:02:42,515 [INFO] Skipping likely-commercial listing:   Office Space for Rent in Kaloor Kochi
+2026-07-14 16:02:42,518 [INFO] Skipping likely-commercial listing:   Office Space for Rent in Thrippunithura Kochi
+2026-07-14 16:02:42,518 [INFO] Page 3: +17 listings (running total: 56)
+2026-07-14 16:02:46,933 [INFO] HTTP Request: GET https://www.magicbricks.com/property-for-rent/residential-real-estate?cityName=Kochi&page=4 "HTTP/1.1 200 OK"
+2026-07-14 16:02:47,129 [INFO] Skipping likely-commercial listing:   Office Space for Rent in Vyttila Kochi
+2026-07-14 16:02:47,148 [INFO] Skipping likely-commercial listing:   Office Space for Rent in Kaloor Kochi
+2026-07-14 16:02:47,160 [INFO] Skipping likely-commercial listing:   Office Space for Rent in Moolamkuzhi,Near karunalayam Kochi
+2026-07-14 16:02:47,163 [INFO] Skipping likely-commercial listing:   Office Space for Rent in Kadavanthra Kochi
+2026-07-14 16:02:47,181 [INFO] Skipping likely-commercial listing:   Office Space for Rent in Vyttila Kochi
+2026-07-14 16:02:47,191 [INFO] Skipping likely-commercial listing:   Office Space for Rent in Vyttila Kochi
+2026-07-14 16:02:47,201 [INFO] Skipping likely-commercial listing:   Office Space for Rent in Kadavanthra Kochi
+2026-07-14 16:02:47,204 [INFO] Skipping likely-commercial listing:   Office Space for Rent in Vallarpadom Kochi
+2026-07-14 16:02:47,206 [INFO] Skipping likely-commercial listing:   Office Space for Rent in Palluruthy Kochi
+2026-07-14 16:02:47,207 [INFO] Page 4: +21 listings (running total: 77)
+2026-07-14 16:02:50,639 [INFO] HTTP Request: GET https://www.magicbricks.com/property-for-rent/residential-real-estate?cityName=Kochi&page=5 "HTTP/1.1 200 OK"
+2026-07-14 16:02:50,811 [INFO] Skipping likely-commercial listing:   Office Space for Rent in Kandanad Kochi
+2026-07-14 16:02:50,824 [INFO] Skipping likely-commercial listing:   Office Space for Rent in Palarivattom Kochi
+2026-07-14 16:02:50,832 [INFO] Skipping likely-commercial listing:   Office Space for Rent in Vypin Kochi
+2026-07-14 16:02:50,834 [INFO] Skipping likely-commercial listing:   Office Space for Rent in Kadavanthra Kochi
+2026-07-14 16:02:50,839 [INFO] Skipping likely-commercial listing:   Office Space for Rent in Infopark Campus Kochi
+2026-07-14 16:02:50,845 [WARNING] Rejecting implausible monthly_rent=7000000.0 for cardid=9289643 (source text: 7000000) � outside the 1,000-1,000,000 sanity range.
+2026-07-14 16:02:50,847 [INFO] Skipping likely-commercial listing:   Office Space for Rent in apsars park broadway Kochi
+2026-07-14 16:02:50,850 [INFO] Skipping likely-commercial listing:   Office Space for Rent in Banerji Road Kochi
+2026-07-14 16:02:50,854 [INFO] Skipping likely-commercial listing:   Shop for Rent in Mattanchery Kochi
+2026-07-14 16:02:50,864 [INFO] Skipping likely-commercial listing:   Office Space for Rent in Panampily Nagar Kochi
+2026-07-14 16:02:50,873 [INFO] Skipping likely-commercial listing:  Warehouse/ Godown for Rent in Shanthi Cyber Dale Apartment, Edachira Kochi
+2026-07-14 16:02:50,875 [INFO] Skipping likely-commercial listing:   Office Space for Rent in Kaloor Kochi
+2026-07-14 16:02:50,881 [INFO] Skipping likely-commercial listing:   Office Space for Rent in Kaloor Kochi
+2026-07-14 16:02:50,885 [INFO] Skipping likely-commercial listing:   Office Space for Rent in Palluruthy Kochi
+2026-07-14 16:02:50,888 [INFO] Skipping likely-commercial listing:   Office Space for Rent in Kakkanad Kochi
+2026-07-14 16:02:50,888 [INFO] Page 5: +16 listings (running total: 93)
+2026-07-14 16:02:56,270 [INFO] HTTP Request: GET https://www.magicbricks.com/property-for-rent/residential-real-estate?cityName=Kochi&page=6 "HTTP/1.1 200 OK"
+2026-07-14 16:02:56,458 [INFO] Skipping likely-commercial listing:  Warehouse/ Godown for Rent in Nettoor Kochi
+2026-07-14 16:02:56,468 [WARNING] Rejecting implausible monthly_rent=1500000.0 for cardid=77617741 (source text: 1500000) � outside the 1,000-1,000,000 sanity range.
+2026-07-14 16:02:56,481 [INFO] Skipping likely-commercial listing:   Office Space for Rent in Palarivattom Kochi
+2026-07-14 16:02:56,490 [INFO] Skipping likely-commercial listing:   Office Space for Rent in Kakkanad Kochi
+2026-07-14 16:02:56,505 [INFO] Skipping likely-commercial listing:   Office Space for Rent in Kalamasery Kochi
+2026-07-14 16:02:56,507 [INFO] Skipping likely-commercial listing:  Warehouse/ Godown for Rent in panagad Kochi
+2026-07-14 16:02:56,515 [INFO] Skipping likely-commercial listing:  Warehouse/ Godown for Rent in Perumbavoor Kochi
+2026-07-14 16:02:56,528 [INFO] Page 6: +24 listings (running total: 117)
+2026-07-14 16:02:56,528 [INFO] Starting detail-page enrichment (coordinates + amenities) for 117 listings...
+2026-07-14 16:03:01,278 [INFO] HTTP Request: GET https://www.magicbricks.com/propertyDetails/1-BHK-552-Sq-ft-Multistorey-Apartment-FOR-Rent-Vyttila-in-Kochi&id=4d423833323630343039#cardid-83260409 "HTTP/1.1 200 OK"
+2026-07-14 16:03:07,217 [INFO] HTTP Request: GET https://www.magicbricks.com/propertyDetails/1-BHK-900-Sq-ft-Residential-House-FOR-Rent-Kakkanad-in-Kochi&id=4d423835343338353137#cardid-85438517 "HTTP/1.1 200 OK"
+2026-07-14 16:03:11,110 [INFO] HTTP Request: GET https://www.magicbricks.com/prestige-hillside-gateway-kakkanad-kochi-pdpid-4d4235313030363231#cardid-84901085 "HTTP/1.1 200 OK"
+2026-07-14 16:03:11,517 [WARNING] Amenities section shows 'View All Amenities (20)' but only 12 were captured from the static HTML � the rest are likely behind a click-to-expand this scraper doesn't drive. Got: ['Club House', 'Power Back Up', 'Swimming Pool', 'Lift', 'Security', 'Park', 'Reserved Parking', 'Visitor Parking', 'Intercom Facility', 'Maintenance Staff', 'Gymnasium', 'Indoor Games Room']
+2026-07-14 16:03:15,575 [INFO] HTTP Request: GET https://www.magicbricks.com/propertyDetails/3-BHK-1926-Sq-ft-Residential-House-FOR-Rent-Thrikkakara-in-Kochi&id=4d423834353433323937#cardid-84543297 "HTTP/1.1 200 OK"
+2026-07-14 16:03:20,542 [INFO] HTTP Request: GET https://www.magicbricks.com/tata-tritvam-marine-drive-kochi-pdpid-4d4235313139373531#cardid-73602383 "HTTP/1.1 200 OK"
+2026-07-14 16:03:21,023 [WARNING] Amenities section shows 'View All Amenities (13)' but only 0 were captured from the static HTML � the rest are likely behind a click-to-expand this scraper doesn't drive. Got: []
+2026-07-14 16:03:27,222 [INFO] HTTP Request: GET https://www.magicbricks.com/puravankara-purva-eternity-kakkanad-kochi-pdpid-4d4235303337393339#cardid-85127919 "HTTP/1.1 200 OK"
+2026-07-14 16:03:32,090 [INFO] HTTP Request: GET https://www.magicbricks.com/propertyDetails/2-BHK-1200-Sq-ft-Multistorey-Apartment-FOR-Rent-Vyttila-in-Kochi&id=4d423833393334393133#cardid-83934913 "HTTP/1.1 200 OK"
+2026-07-14 16:03:36,614 [INFO] HTTP Request: GET https://www.magicbricks.com/sobha-marina-one-marine-drive-kochi-pdpid-4d4235313033333635#cardid-85011463 "HTTP/1.1 200 OK"
+2026-07-14 16:03:37,177 [WARNING] Amenities section shows 'View All Amenities (40)' but only 12 were captured from the static HTML � the rest are likely behind a click-to-expand this scraper doesn't drive. Got: ['Club House', 'Cafeteria/Food Court', 'Jogging and Strolling Track', 'Outdoor Tennis Courts', 'Private Terrace/Garden', 'Barbeque Pit', 'Power Back Up', 'Swimming Pool', 'Lift', 'Security', 'Park', 'Reserved Parking']
+2026-07-14 16:03:43,680 [INFO] HTTP Request: GET https://www.magicbricks.com/kent-palm-villas-kakkanad-kochi-pdpid-4d4235303937393639#cardid-80194823 "HTTP/1.1 200 OK"
+2026-07-14 16:03:43,986 [WARNING] Amenities section shows 'View All Amenities (16)' but only 12 were captured from the static HTML � the rest are likely behind a click-to-expand this scraper doesn't drive. Got: ['Jogging and Strolling Track', 'Outdoor Tennis Courts', 'Power Back Up', 'Swimming Pool', 'Park', 'Reserved Parking', 'Service/Goods Lift', 'Visitor Parking', 'Maintenance Staff', 'Banquet Hall', 'Gymnasium', 'Rain Water Harvesting']
+2026-07-14 16:03:48,577 [INFO] HTTP Request: GET https://www.magicbricks.com/propertyDetails/4-BHK-1800-Sq-ft-Residential-House-FOR-Rent-Thevakkal-in-Kochi&id=4d423835313537313331#cardid-85157131 "HTTP/1.1 200 OK"
+2026-07-14 16:03:48,753 [INFO] Detail-page enrichment: 10/117 processed, 10 coordinates and 8 amenity lists found so far
+2026-07-14 16:03:53,312 [INFO] HTTP Request: GET https://www.magicbricks.com/skyline-palmshade-edappally-kochi-pdpid-4d4235323631333733#cardid-85400957 "HTTP/1.1 200 OK"
+2026-07-14 16:03:59,994 [INFO] HTTP Request: GET https://www.magicbricks.com/propertyDetails/3-BHK-1950-Sq-ft-Multistorey-Apartment-FOR-Rent-in-Kochi&id=4d423835333837333339#cardid-85387339 "HTTP/1.1 200 OK"
+2026-07-14 16:04:05,923 [INFO] HTTP Request: GET https://www.magicbricks.com/propertyDetails/3-BHK-2500-Sq-ft-Residential-House-FOR-Rent-in-Kochi&id=4d423834333833303233#cardid-84383023 "HTTP/1.1 200 OK"
+2026-07-14 16:04:12,381 [INFO] HTTP Request: GET https://www.magicbricks.com/propertyDetails/3-BHK-1200-Sq-ft-Builder-Floor-Apartment-FOR-Rent-Thammanam-Pullepady-Road-in-Kochi&id=4d423732353239353537#cardid-72529557 "HTTP/1.1 200 OK"
+2026-07-14 16:04:17,706 [INFO] HTTP Request: GET https://www.magicbricks.com/propertyDetails/4-BHK-2000-Sq-ft-Residential-House-FOR-Rent-Kakkanad-in-Kochi&id=4d423731343831353237#cardid-71481527 "HTTP/1.1 200 OK"
+2026-07-14 16:04:22,003 [INFO] HTTP Request: GET https://www.magicbricks.com/propertyDetails/3-BHK-1350-Sq-ft-Villa-FOR-Rent-Kakkanad-in-Kochi&id=4d423834373732383735#cardid-84772875 "HTTP/1.1 200 OK"
+2026-07-14 16:04:28,719 [INFO] HTTP Request: GET https://www.magicbricks.com/propertyDetails/2-BHK-1300-Sq-ft-Residential-House-FOR-Rent-Maradu-in-Kochi&id=4d423834343133383637#cardid-84413867 "HTTP/1.1 200 OK"
+2026-07-14 16:04:34,256 [INFO] HTTP Request: GET https://www.magicbricks.com/propertyDetails/16-Cent-Commercial-Land-FOR-Rent-in-Kochi&id=4d423834333837363539#cardid-84387659 "HTTP/1.1 200 OK"
+2026-07-14 16:04:41,837 [INFO] HTTP Request: GET https://www.magicbricks.com/propertyDetails/3-BHK-1800-Sq-ft-Multistorey-Apartment-FOR-Rent-Vyttila-in-Kochi&id=4d423337383537313831#cardid-37857181 "HTTP/1.1 200 OK"
+2026-07-14 16:04:50,466 [INFO] HTTP Request: GET https://www.magicbricks.com/propertyDetails/2-BHK-850-Sq-ft-Multistorey-Apartment-FOR-Rent-Vyttila-in-Kochi&id=4d423739343039373335#cardid-79409735 "HTTP/1.1 200 OK"
+2026-07-14 16:04:50,624 [INFO] Detail-page enrichment: 20/117 processed, 18 coordinates and 14 amenity lists found so far
+2026-07-14 16:04:54,331 [INFO] HTTP Request: GET https://www.magicbricks.com/propertyDetails/2-BHK-1000-Sq-ft-Builder-Floor-Apartment-FOR-Rent-South-Chittoor-Road-in-Kochi&id=4d423830323636313033#cardid-80266103 "HTTP/1.1 200 OK"
+2026-07-14 16:05:00,785 [INFO] HTTP Request: GET https://www.magicbricks.com/propertyDetails/3-BHK-1900-Sq-ft-Residential-House-FOR-Rent-Edappally-in-Kochi&id=4d423833373635383533#cardid-83765853 "HTTP/1.1 200 OK"
+2026-07-14 16:05:07,120 [INFO] HTTP Request: GET https://www.magicbricks.com/propertyDetails/5-Cent-Commercial-Land-FOR-Rent-Vyttila-in-Kochi&id=4d423833343338393831#cardid-83438981 "HTTP/1.1 200 OK"
+2026-07-14 16:05:13,486 [INFO] HTTP Request: GET https://www.magicbricks.com/propertyDetails/1-BHK-750-Sq-ft-Residential-House-FOR-Rent-Vennala-in-Kochi&id=4d423732353330373237#cardid-72530727 "HTTP/1.1 200 OK"
+2026-07-14 16:05:18,608 [INFO] HTTP Request: GET https://www.magicbricks.com/propertyDetails/2-BHK-1000-Sq-ft-Residential-House-FOR-Rent-in-Kochi&id=4d423434393337353939#cardid-44937599 "HTTP/1.1 200 OK"
+2026-07-14 16:05:24,644 [INFO] HTTP Request: GET https://www.magicbricks.com/propertyDetails/2-BHK-900-Sq-ft-Residential-House-FOR-Rent-Kalamassery-in-Kochi&id=4d423731323138353831#cardid-71218581 "HTTP/1.1 200 OK"
+2026-07-14 16:05:30,304 [INFO] HTTP Request: GET https://www.magicbricks.com/nucleus-rhyme-edappally-kochi-pdpid-4d4235313032343331#cardid-82834485 "HTTP/1.1 200 OK"
+2026-07-14 16:05:36,588 [INFO] HTTP Request: GET https://www.magicbricks.com/grtl-gardenia-edappally-kochi-pdpid-4d4235323234343133#cardid-85516161 "HTTP/1.1 200 OK"
+2026-07-14 16:05:41,341 [INFO] HTTP Request: GET https://www.magicbricks.com/propertyDetails/3-BHK-1630-Sq-ft-Villa-FOR-Rent-Thevakkal-in-Kochi&id=4d423835343931303931#cardid-85491091 "HTTP/1.1 200 OK"
+2026-07-14 16:05:46,403 [INFO] HTTP Request: GET https://www.magicbricks.com/propertyDetails/11-Cent-Commercial-Land-FOR-Rent-Edappally-in-Kochi&id=4d423738343031363937#cardid-78401697 "HTTP/1.1 200 OK"
+2026-07-14 16:05:46,552 [INFO] Detail-page enrichment: 30/117 processed, 27 coordinates and 20 amenity lists found so far
+2026-07-14 16:05:50,553 [INFO] HTTP Request: GET https://www.magicbricks.com/abc-homes-thrikkakara-kochi-pdpid-4d4235323632393633#cardid-85525817 "HTTP/1.1 200 OK"
+2026-07-14 16:05:56,186 [INFO] HTTP Request: GET https://www.magicbricks.com/propertyDetails/2-BHK-1800-Sq-ft-Residential-House-FOR-Rent-South-Chittoor-Road-in-Kochi&id=4d423830333134333739#cardid-80314379 "HTTP/1.1 200 OK"
+2026-07-14 16:06:02,416 [INFO] HTTP Request: GET https://www.magicbricks.com/asten-campus-court-kakkanad-kochi-pdpid-4d4235303332393338#cardid-85455715 "HTTP/1.1 200 OK"
+2026-07-14 16:06:08,763 [INFO] HTTP Request: GET https://www.magicbricks.com/propertyDetails/3-BHK-1700-Sq-ft-Residential-House-FOR-Rent-Vyttila-in-Kochi&id=4d423835343531373835#cardid-85451785 "HTTP/1.1 200 OK"
+2026-07-14 16:06:12,861 [INFO] HTTP Request: GET https://www.magicbricks.com/propertyDetails/1-BHK-710-Sq-ft-Multistorey-Apartment-FOR-Rent-Thuthiyoor-in-Kochi&id=4d423835353134333337#cardid-85514337 "HTTP/1.1 200 OK"
+2026-07-14 16:06:17,274 [INFO] HTTP Request: GET https://www.magicbricks.com/propertyDetails/3-BHK-1200-Sq-ft-Residential-House-FOR-Rent-Nazareth-in-Kochi&id=4d423730383136363139#cardid-70816619 "HTTP/1.1 200 OK"
+2026-07-14 16:06:22,612 [INFO] HTTP Request: GET https://www.magicbricks.com/propertyDetails/250-Sq-ft-Studio-Apartment-FOR-Rent-Kakkanad-in-Kochi&id=4d423835343936303235#cardid-85496025 "HTTP/1.1 200 OK"
+2026-07-14 16:06:29,246 [INFO] HTTP Request: GET https://www.magicbricks.com/propertyDetails/3-BHK-1400-Sq-ft-Multistorey-Apartment-FOR-Rent-Kundanoor-in-Kochi&id=4d423137313831323839#cardid-17181289 "HTTP/1.1 200 OK"
+2026-07-14 16:06:33,658 [INFO] HTTP Request: GET https://www.magicbricks.com/propertyDetails/4-BHK-2000-Sq-ft-Residential-House-FOR-Rent-in-Kochi&id=4d423438393836303637#cardid-48986067 "HTTP/1.1 200 OK"
+2026-07-14 16:06:37,771 [INFO] HTTP Request: GET https://www.magicbricks.com/propertyDetails/4-BHK-2450-Sq-ft-Villa-FOR-Rent-Thevakkal-in-Kochi&id=4d423835323337353839#cardid-85237589 "HTTP/1.1 200 OK"
+2026-07-14 16:06:37,906 [INFO] Detail-page enrichment: 40/117 processed, 36 coordinates and 29 amenity lists found so far
+2026-07-14 16:06:43,316 [INFO] HTTP Request: GET https://www.magicbricks.com/propertyDetails/3-BHK-1500-Sq-ft-Residential-House-FOR-Rent-in-Kochi&id=4d423834303136303131#cardid-84016011 "HTTP/1.1 200 OK"
+2026-07-14 16:06:48,189 [INFO] HTTP Request: GET https://www.magicbricks.com/propertyDetails/1-BHK-500-Sq-ft-Residential-House-FOR-Rent-Vazhakkala-in-Kochi&id=4d423835333734363039#cardid-85374609 "HTTP/1.1 200 OK"
+2026-07-14 16:06:52,198 [INFO] HTTP Request: GET https://www.magicbricks.com/propertyDetails/3-BHK-1350-Sq-ft-Residential-House-FOR-Rent-Fort-Cochin-in-Kochi&id=4d423236313932323533#cardid-26192253 "HTTP/1.1 200 OK"
+2026-07-14 16:06:59,577 [INFO] HTTP Request: GET https://www.magicbricks.com/asset-moon-grace-mahatma-gandhi-road-kochi-pdpid-4d4235313435353733#cardid-84866977 "HTTP/1.1 200 OK"
+2026-07-14 16:07:05,410 [INFO] HTTP Request: GET https://www.magicbricks.com/propertyDetails/3-BHK-1200-Sq-ft-Villa-FOR-Rent-Nedumbassery-in-Kochi&id=4d423834393438343133#cardid-84948413 "HTTP/1.1 200 OK"
+2026-07-14 16:07:09,999 [INFO] HTTP Request: GET https://www.magicbricks.com/propertyDetails/1-BHK-500-Sq-ft-Service-Apartment-FOR-Rent-Kakkanad-in-Kochi&id=4d423835353030323831#cardid-85500281 "HTTP/1.1 200 OK"
+2026-07-14 16:07:13,585 [INFO] HTTP Request: GET https://www.magicbricks.com/propertyDetails/1-BHK-700-Sq-ft-Residential-House-FOR-Rent-Chottanikkara-in-Kochi&id=4d423736303133363631#cardid-76013661 "HTTP/1.1 200 OK"
+2026-07-14 16:07:21,177 [INFO] HTTP Request: GET https://www.magicbricks.com/propertyDetails/2-BHK-650-Sq-ft-Villa-FOR-Rent-Puthuvype-in-Kochi&id=4d423835333439313733#cardid-85349173 "HTTP/1.1 200 OK"
+2026-07-14 16:07:25,374 [INFO] HTTP Request: GET https://www.magicbricks.com/propertyDetails/4-BHK-2750-Sq-ft-Villa-FOR-Rent-Koonammavu-in-Kochi&id=4d423834333037323137#cardid-84307217 "HTTP/1.1 200 OK"
+2026-07-14 16:07:29,697 [INFO] HTTP Request: GET https://www.magicbricks.com/propertyDetails/2-BHK-1180-Sq-ft-Multistorey-Apartment-FOR-Rent-Aluva-in-Kochi&id=4d423731393333323039#cardid-71933209 "HTTP/1.1 200 OK"
+2026-07-14 16:07:29,910 [INFO] Detail-page enrichment: 50/117 processed, 45 coordinates and 37 amenity lists found so far
+2026-07-14 16:07:37,265 [INFO] HTTP Request: GET https://www.magicbricks.com/propertyDetails/3-BHK-1350-Sq-ft-Multistorey-Apartment-FOR-Rent-Kaloor-in-Kochi&id=4d423834363338393539#cardid-84638959 "HTTP/1.1 200 OK"
+2026-07-14 16:07:43,896 [INFO] HTTP Request: GET https://www.magicbricks.com/propertyDetails/3-BHK-1500-Sq-ft-Residential-House-FOR-Rent-Elamakkara-in-Kochi&id=4d423835303432333037#cardid-85042307 "HTTP/1.1 200 OK"
+2026-07-14 16:07:49,749 [INFO] HTTP Request: GET https://www.magicbricks.com/propertyDetails/3-BHK-1555-Sq-ft-Multistorey-Apartment-FOR-Rent-in-Kochi&id=4d423835303033303135#cardid-85003015 "HTTP/1.1 200 OK"
+2026-07-14 16:07:55,466 [INFO] HTTP Request: GET https://www.magicbricks.com/propertyDetails/2-BHK-1500-Sq-ft-Residential-House-FOR-Rent-Edappally-in-Kochi&id=4d423438383835303933#cardid-48885093 "HTTP/1.1 200 OK"
+2026-07-14 16:07:59,781 [INFO] HTTP Request: GET https://www.magicbricks.com/propertyDetails/3-BHK-1280-Sq-ft-Multistorey-Apartment-FOR-Rent-in-Kochi&id=4d423835343738353335#cardid-85478535 "HTTP/1.1 200 OK"
+2026-07-14 16:08:05,087 [INFO] HTTP Request: GET https://www.magicbricks.com/propertyDetails/677-Sq-yrd-Commercial-Land-FOR-Rent-Nedumbassery-in-Kochi&id=4d423835343637373931#cardid-85467791 "HTTP/1.1 200 OK"
+2026-07-14 16:08:11,050 [INFO] HTTP Request: GET https://www.magicbricks.com/propertyDetails/2-BHK-1200-Sq-ft-Builder-Floor-Apartment-FOR-Rent-Kalamasery-in-Kochi&id=4d423736313833393939#cardid-76183999 "HTTP/1.1 200 OK"
+2026-07-14 16:08:19,126 [INFO] HTTP Request: GET https://www.magicbricks.com/propertyDetails/2-BHK-1200-Sq-ft-Residential-House-FOR-Rent-Kakkanad-in-Kochi&id=4d4239393938363337#cardid-9998637 "HTTP/1.1 200 OK"
+2026-07-14 16:08:22,711 [INFO] HTTP Request: GET https://www.magicbricks.com/propertyDetails/3-BHK-1000-Sq-ft-Residential-House-FOR-Rent-Vazhakkala-in-Kochi&id=4d423834393035333733#cardid-84905373 "HTTP/1.1 200 OK"
+2026-07-14 16:08:29,874 [INFO] HTTP Request: GET https://www.magicbricks.com/propertyDetails/2-BHK-900-Sq-ft-Residential-House-FOR-Rent-Padamugal-in-Kochi&id=4d423834383930383633#cardid-84890863 "HTTP/1.1 200 OK"
+2026-07-14 16:08:30,013 [INFO] Detail-page enrichment: 60/117 processed, 53 coordinates and 42 amenity lists found so far
+2026-07-14 16:08:35,936 [INFO] HTTP Request: GET https://www.magicbricks.com/propertyDetails/2-BHK-800-Sq-ft-Residential-House-FOR-Rent-Fort-Cochin-in-Kochi&id=4d423835333131373837#cardid-85311787 "HTTP/1.1 200 OK"
+2026-07-14 16:08:41,764 [INFO] HTTP Request: GET https://www.magicbricks.com/kalpaka-vrindavan-ponekara-edappally-kochi-pdpid-4d4235313630373131#cardid-69357343 "HTTP/1.1 200 OK"
+2026-07-14 16:08:47,134 [INFO] HTTP Request: GET https://www.magicbricks.com/petro-palace-apartment-puthiyakavu-kochi-pdpid-4d4235323530353835#cardid-72876805 "HTTP/1.1 200 OK"
+2026-07-14 16:08:51,187 [INFO] HTTP Request: GET https://www.magicbricks.com/propertyDetails/3-BHK-1000-Sq-ft-Multistorey-Apartment-FOR-Rent-in-Kochi&id=4d423739303237343037#cardid-79027407 "HTTP/1.1 200 OK"
+2026-07-14 16:08:56,842 [INFO] HTTP Request: GET https://www.magicbricks.com/propertyDetails/3-BHK-1200-Sq-ft-Residential-House-FOR-Rent-in-Kochi&id=4d423430383832373839#cardid-40882789 "HTTP/1.1 200 OK"
+2026-07-14 16:09:00,594 [INFO] HTTP Request: GET https://www.magicbricks.com/propertyDetails/5-Cent-Commercial-Land-FOR-Rent-Ravipuram-in-Kochi&id=4d423735333036353339#cardid-75306539 "HTTP/1.1 200 OK"
+2026-07-14 16:09:05,845 [INFO] HTTP Request: GET https://www.magicbricks.com/propertyDetails/3-BHK-3500-Sq-ft-Multistorey-Apartment-FOR-Rent-in-Kochi&id=4d423736313037303235#cardid-76107025 "HTTP/1.1 200 OK"
+2026-07-14 16:09:15,236 [INFO] HTTP Request: GET https://www.magicbricks.com/propertyDetails/3-BHK-1700-Sq-ft-Villa-FOR-Rent-Kakkanad-in-Kochi&id=4d423739303138383433#cardid-79018843 "HTTP/1.1 200 OK"
+2026-07-14 16:09:21,487 [INFO] HTTP Request: GET https://www.magicbricks.com/propertyDetails/2-BHK-800-Sq-ft-Residential-House-FOR-Rent-in-Kochi&id=4d423437313439313239#cardid-47149129 "HTTP/1.1 200 OK"
+2026-07-14 16:09:26,398 [INFO] HTTP Request: GET https://www.magicbricks.com/propertyDetails/4-BHK-2800-Sq-ft-Residential-House-FOR-Rent-in-Kochi&id=4d423438303137353639#cardid-48017569 "HTTP/1.1 200 OK"
+2026-07-14 16:09:26,678 [INFO] Detail-page enrichment: 70/117 processed, 59 coordinates and 43 amenity lists found so far
+2026-07-14 16:09:33,485 [INFO] HTTP Request: GET https://www.magicbricks.com/shwas-aquacity-aluva-kochi-pdpid-4d4235303339383031#cardid-80538183 "HTTP/1.1 200 OK"
+2026-07-14 16:09:40,404 [INFO] HTTP Request: GET https://www.magicbricks.com/propertyDetails/3-BHK-1600-Sq-ft-Multistorey-Apartment-FOR-Rent-Edappally-in-Kochi&id=4d423835343537303939#cardid-85457099 "HTTP/1.1 200 OK"
+2026-07-14 16:09:44,322 [INFO] HTTP Request: GET https://www.magicbricks.com/tata-tritvam-marine-drive-kochi-pdpid-4d4235313139373531#cardid-85142161 "HTTP/1.1 200 OK"
+2026-07-14 16:09:44,753 [WARNING] Amenities section shows 'View All Amenities (13)' but only 0 were captured from the static HTML � the rest are likely behind a click-to-expand this scraper doesn't drive. Got: []
+2026-07-14 16:09:50,266 [INFO] HTTP Request: GET https://www.magicbricks.com/unitac-sanam-chottanikkara-kochi-pdpid-4d4235303837313334#cardid-55751637 "HTTP/1.1 200 OK"
+2026-07-14 16:09:55,589 [INFO] HTTP Request: GET https://www.magicbricks.com/propertyDetails/2-BHK-1800-Sq-ft-Residential-House-FOR-Rent-Netoor-in-Kochi&id=4d423435363033343539#cardid-45603459 "HTTP/1.1 200 OK"
+2026-07-14 16:10:00,192 [INFO] HTTP Request: GET https://www.magicbricks.com/propertyDetails/2-BHK-1000-Sq-ft-Builder-Floor-Apartment-FOR-Rent-in-Kochi&id=4d423739343131333739#cardid-79411379 "HTTP/1.1 200 OK"
+2026-07-14 16:10:07,374 [INFO] HTTP Request: GET https://www.magicbricks.com/propertyDetails/4-BHK-2300-Sq-ft-Residential-House-FOR-Rent-Vyttila-in-Kochi&id=4d423834383037393339#cardid-84807939 "HTTP/1.1 200 OK"
+2026-07-14 16:10:13,714 [INFO] HTTP Request: GET https://www.magicbricks.com/propertyDetails/3-BHK-950-Sq-ft-Multistorey-Apartment-FOR-Rent-Edachira-in-Kochi&id=4d423834373435343537#cardid-84745457 "HTTP/1.1 200 OK"
+2026-07-14 16:10:20,260 [INFO] HTTP Request: GET https://www.magicbricks.com/propertyDetails/2-BHK-3200-Sq-ft-Builder-Floor-Apartment-FOR-Rent-Elamakkara-in-Kochi&id=4d423833353032373733#cardid-83502773 "HTTP/1.1 200 OK"
+2026-07-14 16:10:23,893 [INFO] HTTP Request: GET https://www.magicbricks.com/propertyDetails/2-BHK-1000-Sq-ft-Residential-House-FOR-Rent-Chittethukara-in-Kochi&id=4d423835313130303235#cardid-85110025 "HTTP/1.1 200 OK"
+2026-07-14 16:10:24,039 [INFO] Detail-page enrichment: 80/117 processed, 68 coordinates and 51 amenity lists found so far
+2026-07-14 16:10:29,404 [INFO] HTTP Request: GET https://www.magicbricks.com/propertyDetails/3-BHK-1100-Sq-ft-Residential-House-FOR-Rent-Kakkanad-in-Kochi&id=4d423736333831373035#cardid-76381705 "HTTP/1.1 200 OK"
+2026-07-14 16:10:34,410 [INFO] HTTP Request: GET https://www.magicbricks.com/nucleus-riva-edappally-kochi-pdpid-4d4235313031393833#cardid-76008067 "HTTP/1.1 200 OK"
+2026-07-14 16:10:43,098 [INFO] HTTP Request: GET https://www.magicbricks.com/propertyDetails/2-BHK-1100-Sq-ft-Multistorey-Apartment-FOR-Rent-Angamali-in-Kochi&id=4d423534363230363039#cardid-54620609 "HTTP/1.1 200 OK"
+2026-07-14 16:10:46,784 [INFO] HTTP Request: GET https://www.magicbricks.com/propertyDetails/3-BHK-1100-Sq-ft-Builder-Floor-Apartment-FOR-Rent-Palarivattom-in-Kochi&id=4d4239323839363433#cardid-9289643 "HTTP/1.1 200 OK"
+2026-07-14 16:10:51,217 [INFO] HTTP Request: GET https://www.magicbricks.com/propertyDetails/3-BHK-2800-Sq-ft-Residential-House-FOR-Rent-in-Kochi&id=4d423834303434353435#cardid-84044545 "HTTP/1.1 200 OK"
+2026-07-14 16:10:55,139 [INFO] HTTP Request: GET https://www.magicbricks.com/sfs-silicon-court-and-gate-seaport-airport-road-kochi-pdpid-4d4235303937383739#cardid-84807481 "HTTP/1.1 301 Moved Permanently"
+2026-07-14 16:10:55,525 [INFO] HTTP Request: GET https://www.magicbricks.com/sfs-silicon-court-and-gate-kakkanad-kochi-pdpid-4d4235303937383739#cardid-84807481 "HTTP/1.1 200 OK"
+2026-07-14 16:11:00,421 [INFO] HTTP Request: GET https://www.magicbricks.com/propertyDetails/2-BHK-800-Sq-ft-Builder-Floor-Apartment-FOR-Rent-Maradu-in-Kochi&id=4d423834323033323839#cardid-84203289 "HTTP/1.1 200 OK"
+2026-07-14 16:11:06,361 [INFO] HTTP Request: GET https://www.magicbricks.com/propertyDetails/2-BHK-1000-Sq-ft-Residential-House-FOR-Rent-Thrippunithura-in-Kochi&id=4d423431323331313835#cardid-41231185 "HTTP/1.1 200 OK"
+2026-07-14 16:11:10,153 [INFO] HTTP Request: GET https://www.magicbricks.com/propertyDetails/2-BHK-1300-Sq-ft-Residential-House-FOR-Rent-Maradu-in-Kochi&id=4d423833303639373531#cardid-83069751 "HTTP/1.1 200 OK"
+2026-07-14 16:11:13,956 [INFO] HTTP Request: GET https://www.magicbricks.com/propertyDetails/40000-Sq-ft-Office-in-IT-Park-SEZ-FOR-Rent-in-Kochi&id=4d423835303032323331#cardid-85002231 "HTTP/1.1 200 OK"
+2026-07-14 16:11:14,097 [INFO] Detail-page enrichment: 90/117 processed, 76 coordinates and 56 amenity lists found so far
+2026-07-14 16:11:19,262 [INFO] HTTP Request: GET https://www.magicbricks.com/propertyDetails/1-BHK-500-Sq-ft-Multistorey-Apartment-FOR-Rent-Edachira-in-Kochi&id=4d423835303032313737#cardid-85002177 "HTTP/1.1 200 OK"
+2026-07-14 16:11:23,856 [INFO] HTTP Request: GET https://www.magicbricks.com/propertyDetails/1-BHK-1200-Sq-ft-Builder-Floor-Apartment-FOR-Rent-Elamakkara-in-Kochi&id=4d423733333632313531#cardid-73362151 "HTTP/1.1 200 OK"
+2026-07-14 16:11:29,186 [INFO] HTTP Request: GET https://www.magicbricks.com/propertyDetails/2-BHK-900-Sq-ft-Residential-House-FOR-Rent-Elamakkara-in-Kochi&id=4d423834323032303131#cardid-84202011 "HTTP/1.1 200 OK"
+2026-07-14 16:11:35,399 [INFO] HTTP Request: GET https://www.magicbricks.com/propertyDetails/3-BHK-1800-Sq-ft-Residential-House-FOR-Rent-in-Kochi&id=4d423830373137373837#cardid-80717787 "HTTP/1.1 200 OK"
+2026-07-14 16:11:39,629 [INFO] HTTP Request: GET https://www.magicbricks.com/puravankara-purva-grandbay-marine-drive-kochi-pdpid-4d4235313035333931#cardid-84495345 "HTTP/1.1 200 OK"
+2026-07-14 16:11:45,459 [INFO] HTTP Request: GET https://www.magicbricks.com/propertyDetails/3-BHK-1600-Sq-ft-Multistorey-Apartment-FOR-Rent-Vyttila-in-Kochi&id=4d423832353937353237#cardid-82597527 "HTTP/1.1 200 OK"
+2026-07-14 16:11:50,282 [INFO] HTTP Request: GET https://www.magicbricks.com/propertyDetails/3-BHK-2000-Sq-ft-Residential-House-FOR-Rent-Kakkanad-in-Kochi&id=4d423637393537303939#cardid-67957099 "HTTP/1.1 200 OK"
+2026-07-14 16:11:55,905 [INFO] HTTP Request: GET https://www.magicbricks.com/propertyDetails/3-BHK-1545-Sq-ft-Multistorey-Apartment-FOR-Rent-Kadavanthra-in-Kochi&id=4d423635313539393039#cardid-65159909 "HTTP/1.1 200 OK"
+2026-07-14 16:12:03,731 [INFO] HTTP Request: GET https://www.magicbricks.com/propertyDetails/2-Acre-Commercial-Land-FOR-Rent-Seaport-Airport-Road-in-Kochi&id=4d423737363137373431#cardid-77617741 "HTTP/1.1 200 OK"
+2026-07-14 16:12:07,990 [INFO] HTTP Request: GET https://www.magicbricks.com/propertyDetails/3-BHK-1300-Sq-ft-Multistorey-Apartment-FOR-Rent-in-Kochi&id=4d423834383830313233#cardid-84880123 "HTTP/1.1 200 OK"
+2026-07-14 16:12:08,469 [INFO] Detail-page enrichment: 100/117 processed, 84 coordinates and 61 amenity lists found so far
+2026-07-14 16:12:13,290 [INFO] HTTP Request: GET https://www.magicbricks.com/propertyDetails/2-BHK-850-Sq-ft-Multistorey-Apartment-FOR-Rent-in-Kochi&id=4d423739323730303737#cardid-79270077 "HTTP/1.1 200 OK"
+2026-07-14 16:12:17,512 [INFO] HTTP Request: GET https://www.magicbricks.com/propertyDetails/18-Cent-Commercial-Land-FOR-Rent-Maradu-in-Kochi&id=4d423834353134343539#cardid-84514459 "HTTP/1.1 200 OK"
+2026-07-14 16:12:21,816 [INFO] HTTP Request: GET https://www.magicbricks.com/propertyDetails/2-BHK-850-Sq-ft-Multistorey-Apartment-FOR-Rent-Vyttila-in-Kochi&id=4d423835303039383533#cardid-85009853 "HTTP/1.1 200 OK"
+2026-07-14 16:12:27,342 [INFO] HTTP Request: GET https://www.magicbricks.com/propertyDetails/2-BHK-1000-Sq-ft-Residential-House-FOR-Rent-in-Kochi&id=4d423834383631383339#cardid-84861839 "HTTP/1.1 200 OK"
+2026-07-14 16:12:31,870 [INFO] HTTP Request: GET https://www.magicbricks.com/propertyDetails/2-BHK-1062-Sq-ft-Residential-House-FOR-Rent-Edappally-in-Kochi&id=4d423535373339373239#cardid-55739729 "HTTP/1.1 200 OK"
+2026-07-14 16:12:35,752 [INFO] HTTP Request: GET https://www.magicbricks.com/propertyDetails/2-BHK-900-Sq-ft-Residential-House-FOR-Rent-Mattanchery-in-Kochi&id=4d423535393133393137#cardid-55913917 "HTTP/1.1 200 OK"
+2026-07-14 16:12:43,091 [INFO] HTTP Request: GET https://www.magicbricks.com/mather-silver-lawns-edappally-kochi-pdpid-4d4235313734323835#cardid-70220401 "HTTP/1.1 200 OK"
+2026-07-14 16:12:47,322 [INFO] HTTP Request: GET https://www.magicbricks.com/propertyDetails/2-BHK-1200-Sq-ft-Residential-House-FOR-Rent-Kizhakkambalam-in-Kochi&id=4d423833393033313431#cardid-83903141 "HTTP/1.1 200 OK"
+2026-07-14 16:12:52,638 [INFO] HTTP Request: GET https://www.magicbricks.com/propertyDetails/2-BHK-800-Sq-ft-Residential-House-FOR-Rent-Kadavanthra-in-Kochi&id=4d423834373139353333#cardid-84719533 "HTTP/1.1 200 OK"
+2026-07-14 16:12:57,653 [INFO] HTTP Request: GET https://www.magicbricks.com/propertyDetails/3-BHK-1200-Sq-ft-Residential-House-FOR-Rent-Kothamangalam-in-Kochi&id=4d423834383638393239#cardid-84868929 "HTTP/1.1 200 OK"
+2026-07-14 16:12:57,842 [INFO] Detail-page enrichment: 110/117 processed, 92 coordinates and 64 amenity lists found so far
+2026-07-14 16:13:06,982 [INFO] HTTP Request: GET https://www.magicbricks.com/propertyDetails/3-BHK-2000-Sq-ft-Multistorey-Apartment-FOR-Rent-Kadavanthra-in-Kochi&id=4d423834373530343733#cardid-84750473 "HTTP/1.1 200 OK"
+2026-07-14 16:13:12,157 [INFO] HTTP Request: GET https://www.magicbricks.com/propertyDetails/2-BHK-1215-Sq-ft-Multistorey-Apartment-FOR-Rent-in-Kochi&id=4d423831393533313937#cardid-81953197 "HTTP/1.1 200 OK"
+2026-07-14 16:13:17,745 [INFO] HTTP Request: GET https://www.magicbricks.com/yasoram-praseeda-apartments-gandhinagar-kochi-pdpid-4d4235313634393937#cardid-84518721 "HTTP/1.1 200 OK"
+2026-07-14 16:13:21,615 [INFO] HTTP Request: GET https://www.magicbricks.com/propertyDetails/2-BHK-1100-Sq-ft-Residential-House-FOR-Rent-Edappally-in-Kochi&id=4d423834353234393339#cardid-84524939 "HTTP/1.1 200 OK"
+2026-07-14 16:13:26,428 [INFO] HTTP Request: GET https://www.magicbricks.com/propertyDetails/3-BHK-1600-Sq-ft-Residential-House-FOR-Rent-Edappally-in-Kochi&id=4d423834373338363135#cardid-84738615 "HTTP/1.1 200 OK"
+2026-07-14 16:13:31,390 [INFO] HTTP Request: GET https://www.magicbricks.com/propertyDetails/2-BHK-900-Sq-ft-Multistorey-Apartment-FOR-Rent-Kalamasery-in-Kochi&id=4d423834353235383133#cardid-84525813 "HTTP/1.1 200 OK"
+2026-07-14 16:13:35,403 [INFO] HTTP Request: GET https://www.magicbricks.com/dlf-new-town-heights-thrikkakara-kochi-pdpid-4d4235303232373234#cardid-84524993 "HTTP/1.1 301 Moved Permanently"
+2026-07-14 16:13:36,443 [INFO] HTTP Request: GET https://www.magicbricks.com/dlf-new-town-heights-kakkanad-kochi-pdpid-4d4235303232373234#cardid-84524993 "HTTP/1.1 200 OK"
+2026-07-14 16:13:37,093 [WARNING] Amenities section shows 'View All Amenities (26)' but only 12 were captured from the static HTML � the rest are likely behind a click-to-expand this scraper doesn't drive. Got: ['Club House', 'Jogging and Strolling Track', 'Power Back Up', 'Swimming Pool', 'Lift', 'Security', 'Park', 'Reserved Parking', 'Intercom Facility', 'Bank & ATM', 'Banquet Hall', 'Gymnasium']
+2026-07-14 16:13:37,093 [INFO] Detail-page enrichment complete: 98/117 listings got real coordinates, 68/117 got an amenities list
+2026-07-14 16:13:37,095 [INFO] Scraped 117 total listings
+2026-07-14 16:13:37,102 [INFO] Wrote 117 listings to scraped_listings.jsonl
+  Resolved city: Kochi (stored under unique key: "Domino's Kochi Kerala")
+
+  → Seeding grid...
+Seeding city "Domino's Kochi Kerala" (9.9312, 76.2673) — 200m cells, 5000m radius
+Created city "Domino's Kochi Kerala" (id=22)
+Seeded 2601 grid cells for "Domino's Kochi Kerala" (200m cells, 5000m radius).
+
+  → Ingesting...
+Ingesting into city="Domino's Kochi Kerala" (id=22)
+Geocoding found no results for "3 BHK Flat  for Rent in   Kochi, India"
+Address-level geocode for "https://www.magicbricks.com/propertyDetails/3-BHK-1950-Sq-ft-Multistorey-Apartment-FOR-Rent-in-Kochi&id=4d423835333837333339#cardid-85387339" only matched at city level — leaving uncoordinated.
+No coordinates resolvable for listing https://www.magicbricks.com/propertyDetails/3-BHK-1950-Sq-ft-Multistorey-Apartment-FOR-Rent-in-Kochi&id=4d423835333837333339#cardid-85387339 — stored with grid_id = NULL.
+Skipping listing entirely — no coordinates resolvable by any method: https://www.magicbricks.com/propertyDetails/3-BHK-1950-Sq-ft-Multistorey-Apartment-FOR-Rent-in-Kochi&id=4d423835333837333339#cardid-85387339
+Geocoding found no results for "3 BHK  House for Rent in Indira Nagar Kadavanthara Kochi, India"
+Address-level geocode for "https://www.magicbricks.com/propertyDetails/3-BHK-2500-Sq-ft-Residential-House-FOR-Rent-in-Kochi&id=4d423834333833303233#cardid-84383023" only matched at city level — leaving uncoordinated.
+No coordinates resolvable for listing https://www.magicbricks.com/propertyDetails/3-BHK-2500-Sq-ft-Residential-House-FOR-Rent-in-Kochi&id=4d423834333833303233#cardid-84383023 — stored with grid_id = NULL.
+Skipping listing entirely — no coordinates resolvable by any method: https://www.magicbricks.com/propertyDetails/3-BHK-2500-Sq-ft-Residential-House-FOR-Rent-in-Kochi&id=4d423834333833303233#cardid-84383023
+Geocoding found no results for "2 BHK  House for Rent in Kangarapaddy Kochi, India"
+Address-level geocode for "https://www.magicbricks.com/propertyDetails/2-BHK-1000-Sq-ft-Residential-House-FOR-Rent-in-Kochi&id=4d423434393337353939#cardid-44937599" only matched at city level — leaving uncoordinated.
+No coordinates resolvable for listing https://www.magicbricks.com/propertyDetails/2-BHK-1000-Sq-ft-Residential-House-FOR-Rent-in-Kochi&id=4d423434393337353939#cardid-44937599 — stored with grid_id = NULL.
+Skipping listing entirely — no coordinates resolvable by any method: https://www.magicbricks.com/propertyDetails/2-BHK-1000-Sq-ft-Residential-House-FOR-Rent-in-Kochi&id=4d423434393337353939#cardid-44937599
+Geocoding found no results for "4 BHK  House for Rent in Maveli Nagar, Thrikkakara Kochi, India"
+Address-level geocode for "https://www.magicbricks.com/propertyDetails/4-BHK-2000-Sq-ft-Residential-House-FOR-Rent-in-Kochi&id=4d423438393836303637#cardid-48986067" only matched at city level — leaving uncoordinated.
+No coordinates resolvable for listing https://www.magicbricks.com/propertyDetails/4-BHK-2000-Sq-ft-Residential-House-FOR-Rent-in-Kochi&id=4d423438393836303637#cardid-48986067 — stored with grid_id = NULL.
+Skipping listing entirely — no coordinates resolvable by any method: https://www.magicbricks.com/propertyDetails/4-BHK-2000-Sq-ft-Residential-House-FOR-Rent-in-Kochi&id=4d423438393836303637#cardid-48986067
+Geocoding found no results for "3 BHK  House for Rent in Peringala Kunnathunad Ernakulam 683565 Kochi, India"
+Address-level geocode for "https://www.magicbricks.com/propertyDetails/3-BHK-1500-Sq-ft-Residential-House-FOR-Rent-in-Kochi&id=4d423834303136303131#cardid-84016011" only matched at city level — leaving uncoordinated.
+No coordinates resolvable for listing https://www.magicbricks.com/propertyDetails/3-BHK-1500-Sq-ft-Residential-House-FOR-Rent-in-Kochi&id=4d423834303136303131#cardid-84016011 — stored with grid_id = NULL.
+Skipping listing entirely — no coordinates resolvable by any method: https://www.magicbricks.com/propertyDetails/3-BHK-1500-Sq-ft-Residential-House-FOR-Rent-in-Kochi&id=4d423834303136303131#cardid-84016011
+Geocoding found no results for "3 BHK Flat  for Rent in   Kochi, India"
+Address-level geocode for "https://www.magicbricks.com/propertyDetails/3-BHK-1555-Sq-ft-Multistorey-Apartment-FOR-Rent-in-Kochi&id=4d423835303033303135#cardid-85003015" only matched at city level — leaving uncoordinated.
+No coordinates resolvable for listing https://www.magicbricks.com/propertyDetails/3-BHK-1555-Sq-ft-Multistorey-Apartment-FOR-Rent-in-Kochi&id=4d423835303033303135#cardid-85003015 — stored with grid_id = NULL.
+Skipping listing entirely — no coordinates resolvable by any method: https://www.magicbricks.com/propertyDetails/3-BHK-1555-Sq-ft-Multistorey-Apartment-FOR-Rent-in-Kochi&id=4d423835303033303135#cardid-85003015
+Geocoding found no results for "3 BHK Flat  for Rent in   Kochi, India"
+Address-level geocode for "https://www.magicbricks.com/propertyDetails/3-BHK-1280-Sq-ft-Multistorey-Apartment-FOR-Rent-in-Kochi&id=4d423835343738353335#cardid-85478535" only matched at city level — leaving uncoordinated.
+No coordinates resolvable for listing https://www.magicbricks.com/propertyDetails/3-BHK-1280-Sq-ft-Multistorey-Apartment-FOR-Rent-in-Kochi&id=4d423835343738353335#cardid-85478535 — stored with grid_id = NULL.
+Skipping listing entirely — no coordinates resolvable by any method: https://www.magicbricks.com/propertyDetails/3-BHK-1280-Sq-ft-Multistorey-Apartment-FOR-Rent-in-Kochi&id=4d423835343738353335#cardid-85478535
+Geocoding found no results for "3 BHK  House for Rent in Tripunithura  Kochi, India"
+Address-level geocode for "https://www.magicbricks.com/propertyDetails/3-BHK-1200-Sq-ft-Residential-House-FOR-Rent-in-Kochi&id=4d423430383832373839#cardid-40882789" only matched at city level — leaving uncoordinated.
+No coordinates resolvable for listing https://www.magicbricks.com/propertyDetails/3-BHK-1200-Sq-ft-Residential-House-FOR-Rent-in-Kochi&id=4d423430383832373839#cardid-40882789 — stored with grid_id = NULL.
+Skipping listing entirely — no coordinates resolvable by any method: https://www.magicbricks.com/propertyDetails/3-BHK-1200-Sq-ft-Residential-House-FOR-Rent-in-Kochi&id=4d423430383832373839#cardid-40882789
+Geocoding found no results for "3 BHK Flat  for Rent in   Kochi, India"
+Address-level geocode for "https://www.magicbricks.com/propertyDetails/3-BHK-3500-Sq-ft-Multistorey-Apartment-FOR-Rent-in-Kochi&id=4d423736313037303235#cardid-76107025" only matched at city level — leaving uncoordinated.
+No coordinates resolvable for listing https://www.magicbricks.com/propertyDetails/3-BHK-3500-Sq-ft-Multistorey-Apartment-FOR-Rent-in-Kochi&id=4d423736313037303235#cardid-76107025 — stored with grid_id = NULL.
+Skipping listing entirely — no coordinates resolvable by any method: https://www.magicbricks.com/propertyDetails/3-BHK-3500-Sq-ft-Multistorey-Apartment-FOR-Rent-in-Kochi&id=4d423736313037303235#cardid-76107025
+Geocoding found no results for "2 BHK  House for Rent in Pallikkara Kochi, India"
+Address-level geocode for "https://www.magicbricks.com/propertyDetails/2-BHK-800-Sq-ft-Residential-House-FOR-Rent-in-Kochi&id=4d423437313439313239#cardid-47149129" only matched at city level — leaving uncoordinated.
+No coordinates resolvable for listing https://www.magicbricks.com/propertyDetails/2-BHK-800-Sq-ft-Residential-House-FOR-Rent-in-Kochi&id=4d423437313439313239#cardid-47149129 — stored with grid_id = NULL.
+Skipping listing entirely — no coordinates resolvable by any method: https://www.magicbricks.com/propertyDetails/2-BHK-800-Sq-ft-Residential-House-FOR-Rent-in-Kochi&id=4d423437313439313239#cardid-47149129
+Geocoding found no results for "4 BHK  House for Rent in Tripunithura Kochi, India"
+Address-level geocode for "https://www.magicbricks.com/propertyDetails/4-BHK-2800-Sq-ft-Residential-House-FOR-Rent-in-Kochi&id=4d423438303137353639#cardid-48017569" only matched at city level — leaving uncoordinated.
+No coordinates resolvable for listing https://www.magicbricks.com/propertyDetails/4-BHK-2800-Sq-ft-Residential-House-FOR-Rent-in-Kochi&id=4d423438303137353639#cardid-48017569 — stored with grid_id = NULL.
+Skipping listing entirely — no coordinates resolvable by any method: https://www.magicbricks.com/propertyDetails/4-BHK-2800-Sq-ft-Residential-House-FOR-Rent-in-Kochi&id=4d423438303137353639#cardid-48017569
+Geocoding found no results for "2 BHK Flat  for Rent in   Kochi, India"
+Address-level geocode for "https://www.magicbricks.com/propertyDetails/2-BHK-1000-Sq-ft-Builder-Floor-Apartment-FOR-Rent-in-Kochi&id=4d423739343131333739#cardid-79411379" only matched at city level — leaving uncoordinated.
+No coordinates resolvable for listing https://www.magicbricks.com/propertyDetails/2-BHK-1000-Sq-ft-Builder-Floor-Apartment-FOR-Rent-in-Kochi&id=4d423739343131333739#cardid-79411379 — stored with grid_id = NULL.
+Skipping listing entirely — no coordinates resolvable by any method: https://www.magicbricks.com/propertyDetails/2-BHK-1000-Sq-ft-Builder-Floor-Apartment-FOR-Rent-in-Kochi&id=4d423739343131333739#cardid-79411379
+Geocoding found no results for "3 BHK  House for Rent in Vyttila, Kochi Kochi, India"
+Address-level geocode for "https://www.magicbricks.com/propertyDetails/3-BHK-2800-Sq-ft-Residential-House-FOR-Rent-in-Kochi&id=4d423834303434353435#cardid-84044545" only matched at city level — leaving uncoordinated.
+No coordinates resolvable for listing https://www.magicbricks.com/propertyDetails/3-BHK-2800-Sq-ft-Residential-House-FOR-Rent-in-Kochi&id=4d423834303434353435#cardid-84044545 — stored with grid_id = NULL.
+Skipping listing entirely — no coordinates resolvable by any method: https://www.magicbricks.com/propertyDetails/3-BHK-2800-Sq-ft-Residential-House-FOR-Rent-in-Kochi&id=4d423834303434353435#cardid-84044545
+Geocoding found no results for " Office in IT Park/ SEZ for Rent in Kaloor Stadium, Kochi Kochi, India"
+Address-level geocode for "https://www.magicbricks.com/propertyDetails/40000-Sq-ft-Office-in-IT-Park-SEZ-FOR-Rent-in-Kochi&id=4d423835303032323331#cardid-85002231" only matched at city level — leaving uncoordinated.
+No coordinates resolvable for listing https://www.magicbricks.com/propertyDetails/40000-Sq-ft-Office-in-IT-Park-SEZ-FOR-Rent-in-Kochi&id=4d423835303032323331#cardid-85002231 — stored with grid_id = NULL.
+Skipping listing entirely — no coordinates resolvable by any method: https://www.magicbricks.com/propertyDetails/40000-Sq-ft-Office-in-IT-Park-SEZ-FOR-Rent-in-Kochi&id=4d423835303032323331#cardid-85002231
+Geocoding found no results for "3 BHK  House for Rent in nil Kochi, India"
+Address-level geocode for "https://www.magicbricks.com/propertyDetails/3-BHK-1800-Sq-ft-Residential-House-FOR-Rent-in-Kochi&id=4d423830373137373837#cardid-80717787" only matched at city level — leaving uncoordinated.
+No coordinates resolvable for listing https://www.magicbricks.com/propertyDetails/3-BHK-1800-Sq-ft-Residential-House-FOR-Rent-in-Kochi&id=4d423830373137373837#cardid-80717787 — stored with grid_id = NULL.
+Skipping listing entirely — no coordinates resolvable by any method: https://www.magicbricks.com/propertyDetails/3-BHK-1800-Sq-ft-Residential-House-FOR-Rent-in-Kochi&id=4d423830373137373837#cardid-80717787
+Geocoding found no results for "3 BHK Flat  for Rent in   Kochi, India"
+Address-level geocode for "https://www.magicbricks.com/propertyDetails/3-BHK-1300-Sq-ft-Multistorey-Apartment-FOR-Rent-in-Kochi&id=4d423834383830313233#cardid-84880123" only matched at city level — leaving uncoordinated.
+No coordinates resolvable for listing https://www.magicbricks.com/propertyDetails/3-BHK-1300-Sq-ft-Multistorey-Apartment-FOR-Rent-in-Kochi&id=4d423834383830313233#cardid-84880123 — stored with grid_id = NULL.
+Skipping listing entirely — no coordinates resolvable by any method: https://www.magicbricks.com/propertyDetails/3-BHK-1300-Sq-ft-Multistorey-Apartment-FOR-Rent-in-Kochi&id=4d423834383830313233#cardid-84880123
+Geocoding found no results for "2 BHK Flat  for Rent in   Kochi, India"
+Address-level geocode for "https://www.magicbricks.com/propertyDetails/2-BHK-850-Sq-ft-Multistorey-Apartment-FOR-Rent-in-Kochi&id=4d423739323730303737#cardid-79270077" only matched at city level — leaving uncoordinated.
+No coordinates resolvable for listing https://www.magicbricks.com/propertyDetails/2-BHK-850-Sq-ft-Multistorey-Apartment-FOR-Rent-in-Kochi&id=4d423739323730303737#cardid-79270077 — stored with grid_id = NULL.
+Skipping listing entirely — no coordinates resolvable by any method: https://www.magicbricks.com/propertyDetails/2-BHK-850-Sq-ft-Multistorey-Apartment-FOR-Rent-in-Kochi&id=4d423739323730303737#cardid-79270077
+Geocoding found no results for "2 BHK  House for Rent in Panampilly Nagar Kochi, India"
+Address-level geocode for "https://www.magicbricks.com/propertyDetails/2-BHK-1000-Sq-ft-Residential-House-FOR-Rent-in-Kochi&id=4d423834383631383339#cardid-84861839" only matched at city level — leaving uncoordinated.
+No coordinates resolvable for listing https://www.magicbricks.com/propertyDetails/2-BHK-1000-Sq-ft-Residential-House-FOR-Rent-in-Kochi&id=4d423834383631383339#cardid-84861839 — stored with grid_id = NULL.
+Skipping listing entirely — no coordinates resolvable by any method: https://www.magicbricks.com/propertyDetails/2-BHK-1000-Sq-ft-Residential-House-FOR-Rent-in-Kochi&id=4d423834383631383339#cardid-84861839
+Geocoding found no results for "2 BHK Flat  for Rent in   Kochi, India"
+Address-level geocode for "https://www.magicbricks.com/propertyDetails/2-BHK-1215-Sq-ft-Multistorey-Apartment-FOR-Rent-in-Kochi&id=4d423831393533313937#cardid-81953197" only matched at city level — leaving uncoordinated.
+No coordinates resolvable for listing https://www.magicbricks.com/propertyDetails/2-BHK-1215-Sq-ft-Multistorey-Apartment-FOR-Rent-in-Kochi&id=4d423831393533313937#cardid-81953197 — stored with grid_id = NULL.
+Skipping listing entirely — no coordinates resolvable by any method: https://www.magicbricks.com/propertyDetails/2-BHK-1215-Sq-ft-Multistorey-Apartment-FOR-Rent-in-Kochi&id=4d423831393533313937#cardid-81953197
+
+Ingestion complete for "Domino's Kochi Kerala":
+  Processed:            98
+  Skipped (no URL):     0
+  Skipped (no coords):  19
+  Skipped (no grid):    106
+  Errors:               0
+
+
+  → Aggregating...
+Computing stats for "Domino's Kochi Kerala" (id=22)...
+  bhk_bucket_stats: 10 rows written
+  grid_stats: 8 rows written
+Done.
+
+
+Batch #21 finished: 3 succeeded, 0 empty, 0 failed.

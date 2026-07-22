@@ -1,0 +1,172 @@
+Extraction batch #2 started — 3 store(s).
+
+============================================================
+[1/3] Domino's Madhapur Hyderabad (17.4482, 78.3915)
+============================================================
+
+  → Scraping...
+2026-07-13 10:45:02,872 [INFO] No city name in config � reverse-geocoding (17.4482, 78.3915)...
+2026-07-13 10:45:03,675 [INFO] Resolved city: Hyderabad, state: Telangana
+2026-07-13 10:45:03,677 [INFO] Saved resolved values back to C:\Users\riddh\OneDrive\Desktop\skymark-grid-project\config.json
+2026-07-13 10:45:03,691 [INFO] Starting MagicBricks scrape run
+2026-07-13 10:45:13,011 [INFO] Bootstrapping session via Playwright: https://www.magicbricks.com/property-for-rent/residential-real-estate?cityName=Hyderabad&page=1
+2026-07-13 10:45:31,299 [INFO] Skipping likely-commercial listing:   Office Space for Rent in Laxmi Cyber City, Hitech City Hyderabad
+2026-07-13 10:45:31,303 [INFO] Skipping likely-commercial listing:   Office Space for Rent in Banjara Hills, NH 9 Hyderabad
+2026-07-13 10:45:31,326 [WARNING] Rejecting implausible monthly_rent=1462000.0 for cardid=84657537 (source text: 1462000) � outside the 1,000-1,000,000 sanity range.
+2026-07-13 10:45:31,326 [INFO] Skipping likely-commercial listing:   Office Space for Rent in Kothaguda Hyderabad
+2026-07-13 10:45:31,340 [INFO] Skipping likely-commercial listing:   Office Space for Rent in Jubilee Hills Hyderabad
+2026-07-13 10:45:31,357 [INFO] Skipping likely-commercial listing:   Office Space for Rent in Doyens Colony, Serilingampally Hyderabad
+2026-07-13 10:45:31,363 [INFO] Skipping likely-commercial listing:   Office Space for Rent in Ameerpet, NH 9 Hyderabad
+2026-07-13 10:45:31,369 [INFO] Skipping likely-commercial listing:   Office Space for Rent in Telecom Nagar Gachibowli Hyderabad
+2026-07-13 10:45:31,378 [INFO] Skipping likely-commercial listing:   Office Space for Rent in Sai Nagar Nagole Hyderabad
+2026-07-13 10:45:31,382 [INFO] Skipping likely-commercial listing:   Office Space for Rent in Gachibowli Hyderabad
+2026-07-13 10:45:31,391 [INFO] Skipping likely-commercial listing:   Office Space for Rent in Raja Rajeshwara Nagar Hyderabad
+2026-07-13 10:45:31,396 [INFO] Skipping likely-commercial listing:   Office Space for Rent in Somajiguda, NH 9 Hyderabad
+2026-07-13 10:45:31,403 [INFO] Skipping likely-commercial listing:   Office Space for Rent in Alwal Hyderabad
+2026-07-13 10:45:31,407 [INFO] Skipping likely-commercial listing:   Office Space for Rent in Prashanti Nagar IDA Kukatpally Hyderabad
+2026-07-13 10:45:31,412 [INFO] Skipping likely-commercial listing:  Warehouse/ Godown for Rent in Chandulal Baradari Hyderabad
+2026-07-13 10:45:31,420 [INFO] Skipping likely-commercial listing:   Office Space for Rent in Punjagutta, NH 9 Hyderabad
+2026-07-13 10:45:31,424 [INFO] Skipping likely-commercial listing:   Office Space for Rent in Gachibowli Hyderabad
+2026-07-13 10:45:31,428 [INFO] Skipping likely-commercial listing:   Office Space for Rent in Shivam Road Hyderabad
+2026-07-13 10:45:31,429 [INFO] Page 1: 13 listings parsed so far
+2026-07-13 10:45:36,961 [INFO] Starting detail-page coordinate enrichment for 13 listings...
+2026-07-13 10:45:44,864 [INFO] HTTP Request: GET https://www.magicbricks.com/propertyDetails/3-BHK-2000-Sq-ft-Multistorey-Apartment-FOR-Rent-BL-Nagar-in-Hyderabad&id=4d423834373433333535#cardid-84743355 "HTTP/1.1 200 OK"
+2026-07-13 10:45:51,025 [INFO] HTTP Request: GET https://www.magicbricks.com/aparna-serene-park-kondapur-hyderabad-pdpid-4d4235303937343131#cardid-80699485 "HTTP/1.1 200 OK"
+2026-07-13 10:45:57,969 [INFO] HTTP Request: GET https://www.magicbricks.com/kondapur-kondapur-hyderabad-pdpid-4d4235313237363935#cardid-85372871 "HTTP/1.1 200 OK"
+2026-07-13 10:46:04,323 [INFO] HTTP Request: GET https://www.magicbricks.com/phoenix-golf-edge-gachibowli-hyderabad-pdpid-4d4235303131363938#cardid-85428213 "HTTP/1.1 200 OK"
+2026-07-13 10:46:11,485 [INFO] HTTP Request: GET https://www.magicbricks.com/raheja-vistas-nacharam-hyderabad-pdpid-4d4235303430373135#cardid-85045851 "HTTP/1.1 200 OK"
+2026-07-13 10:46:17,054 [INFO] HTTP Request: GET https://www.magicbricks.com/jayabheri-the-summit-narsingi-hyderabad-pdpid-4d4235313136393333#cardid-85481241 "HTTP/1.1 200 OK"
+2026-07-13 10:46:22,851 [INFO] HTTP Request: GET https://www.magicbricks.com/pranava-interlux-hitech-city-hyderabad-pdpid-4d4235333332333937#cardid-85300039 "HTTP/1.1 200 OK"
+2026-07-13 10:46:26,828 [INFO] HTTP Request: GET https://www.magicbricks.com/sumadhura-the-olympus-financial-district-hyderabad-pdpid-4d4235333737373939#cardid-85488295 "HTTP/1.1 301 Moved Permanently"
+2026-07-13 10:46:27,976 [INFO] HTTP Request: GET https://www.magicbricks.com/sumadhura-the-olympus-nanakram-guda-hyderabad-pdpid-4d4235333737373939#cardid-85488295 "HTTP/1.1 200 OK"
+2026-07-13 10:46:33,315 [INFO] HTTP Request: GET https://www.magicbricks.com/trendset-winz-gachibowli-hyderabad-pdpid-4d4235303030313135#cardid-85420831 "HTTP/1.1 200 OK"
+2026-07-13 10:46:40,786 [INFO] HTTP Request: GET https://www.magicbricks.com/prestige-ivy-league-hitech-city-hyderabad-pdpid-4d4235303736393837#cardid-84458813 "HTTP/1.1 200 OK"
+2026-07-13 10:46:41,262 [INFO] Detail-page enrichment: 10/13 processed, 10 coordinates found so far
+2026-07-13 10:46:46,295 [INFO] HTTP Request: GET https://www.magicbricks.com/candeur-crescent-serilingampally-hyderabad-pdpid-4d4235333332353339#cardid-85329175 "HTTP/1.1 200 OK"
+2026-07-13 10:46:51,002 [INFO] HTTP Request: GET https://www.magicbricks.com/propertyDetails/3-BHK-2000-Sq-ft-Multistorey-Apartment-FOR-Rent-Manikonda-in-Hyderabad&id=4d423835343637303137#cardid-85467017 "HTTP/1.1 200 OK"
+2026-07-13 10:46:57,957 [INFO] HTTP Request: GET https://www.magicbricks.com/propertyDetails/3200-Sq-ft-Commercial-Land-FOR-Rent-Kandlakoya-in-Hyderabad&id=4d423833313336393835#cardid-83136985 "HTTP/1.1 200 OK"
+2026-07-13 10:46:58,046 [INFO] Detail-page enrichment complete: 13/13 listings got real coordinates
+2026-07-13 10:46:58,047 [INFO] Scraped 13 total listings
+2026-07-13 10:46:58,063 [INFO] Wrote 13 listings to scraped_listings.jsonl
+  Resolved city: Hyderabad (stored under unique key: "Domino's Madhapur Hyderabad")
+
+  → Seeding grid...
+Seeding city "Domino's Madhapur Hyderabad" (17.4482, 78.3915) — 200m cells, 5000m radius
+Created city "Domino's Madhapur Hyderabad" (id=14)
+Seeded 2601 grid cells for "Domino's Madhapur Hyderabad" (200m cells, 5000m radius).
+
+  → Ingesting...
+Ingesting into city="Domino's Madhapur Hyderabad" (id=14)
+
+Ingestion complete for "Domino's Madhapur Hyderabad":
+  Processed:            13
+  Skipped (no URL):     0
+  Skipped (no coords):  0
+  Skipped (no grid):    6
+  Errors:               0
+
+
+  → Aggregating...
+Computing stats for "Domino's Madhapur Hyderabad" (id=14)...
+  bhk_bucket_stats: 7 rows written
+  grid_stats: 7 rows written
+Done.
+
+  ⏳ Cooling down for 45s before the next store...
+
+============================================================
+[2/3] Domino's Satellite Ahmedabad (23.0225, 72.525)
+============================================================
+
+  → Scraping...
+2026-07-13 10:47:50,345 [INFO] No city name in config � reverse-geocoding (23.0225, 72.525)...
+2026-07-13 10:47:50,902 [INFO] Resolved city: Sarkhej, state: Gujarat
+2026-07-13 10:47:50,903 [INFO] Saved resolved values back to C:\Users\riddh\OneDrive\Desktop\skymark-grid-project\config.json
+2026-07-13 10:47:50,909 [INFO] Starting MagicBricks scrape run
+2026-07-13 10:47:51,634 [INFO] Bootstrapping session via Playwright: https://www.magicbricks.com/property-for-rent/residential-real-estate?cityName=Sarkhej&page=1
+2026-07-13 10:48:14,625 [WARNING] Listing card selector didn't show up � page may have been served a captcha/interstitial. Inspect a screenshot before assuming the scraper is broken vs. the selector being stale.
+2026-07-13 10:48:54,081 [ERROR] Zero listing containers found. Diagnosis: NO-RESULTS PAGE (not a block): MagicBricks returned a legitimate 'no listings match these filters' page � e.g. this city may not support the full bedroom range or property-type list requested. Check bootstrap_debug.png to see exactly which filter got rejected; retrying the same request won't help, the search parameters need adjusting.
+2026-07-13 10:48:54,081 [INFO] DOM parse returned nothing, trying JSON blob fallback...
+2026-07-13 10:48:54,085 [INFO] Page 1: 0 listings parsed so far
+2026-07-13 10:48:56,116 [INFO] Starting detail-page coordinate enrichment for 0 listings...
+2026-07-13 10:48:56,117 [INFO] Detail-page enrichment complete: 0/0 listings got real coordinates
+2026-07-13 10:48:56,139 [INFO] Scraped 0 total listings
+2026-07-13 10:48:56,142 [INFO] Wrote 0 listings to scraped_listings.jsonl
+  Resolved city: Sarkhej (stored under unique key: "Domino's Satellite Ahmedabad")
+  ⚠️  Zero listings scraped — likely hit a bot-check page (see bootstrap_debug.png). Skipping seed/ingest/aggregate for this store.
+
+  ⏳ Cooling down for 45s before the next store...
+
+============================================================
+[3/3] Domino's Gomti Nagar Lucknow (26.8467, 81.0072)
+============================================================
+
+  → Scraping...
+2026-07-13 10:49:42,971 [INFO] No city name in config � reverse-geocoding (26.8467, 81.0072)...
+2026-07-13 10:49:43,843 [INFO] Resolved city: Lucknow, state: Uttar Pradesh
+2026-07-13 10:49:43,845 [INFO] Saved resolved values back to C:\Users\riddh\OneDrive\Desktop\skymark-grid-project\config.json
+2026-07-13 10:49:43,849 [INFO] Starting MagicBricks scrape run
+2026-07-13 10:49:47,293 [INFO] Bootstrapping session via Playwright: https://www.magicbricks.com/property-for-rent/residential-real-estate?cityName=Lucknow&page=1
+2026-07-13 10:50:01,730 [INFO] Skipping likely-commercial listing:   Shop for Rent in RR Orchid Estate, Kanpur Road Lucknow
+2026-07-13 10:50:01,743 [INFO] Skipping likely-commercial listing:   Office Space for Rent in Purvanchal Capital Tower, Vibhuti Khand Lucknow
+2026-07-13 10:50:01,752 [INFO] Skipping likely-commercial listing:   Shop for Rent in Viraj Khand Lucknow
+2026-07-13 10:50:01,760 [INFO] Skipping likely-commercial listing:   Showroom for Rent in Sector 2 Vikas Nagar Lucknow
+2026-07-13 10:50:01,764 [INFO] Skipping likely-commercial listing:   Office Space for Rent in Vikas Nagar Lucknow
+2026-07-13 10:50:01,774 [INFO] Skipping likely-commercial listing:   Showroom for Rent in Banthra Lucknow
+2026-07-13 10:50:01,781 [INFO] Skipping likely-commercial listing:   Shop for Rent in Arjun Ganj Lucknow
+2026-07-13 10:50:01,784 [INFO] Skipping likely-commercial listing:   Shop for Rent in Bijnor Road Lucknow
+2026-07-13 10:50:01,788 [INFO] Skipping likely-commercial listing:   Office Space for Rent in Gomti Nagar Lucknow
+2026-07-13 10:50:01,792 [INFO] Skipping likely-commercial listing:   Showroom for Rent in Jankipuram Extension Lucknow
+2026-07-13 10:50:01,812 [INFO] Skipping likely-commercial listing:   Shop for Rent in Budheshwar Lucknow
+2026-07-13 10:50:01,816 [INFO] Skipping likely-commercial listing:   Showroom for Rent in Shivaji Marg Lucknow
+2026-07-13 10:50:01,820 [INFO] Skipping likely-commercial listing:   Office Space for Rent in Ratan Square, Hazratganj Lucknow
+2026-07-13 10:50:01,829 [INFO] Skipping likely-commercial listing:   Showroom for Rent in Vishal Khand Lucknow
+2026-07-13 10:50:01,840 [INFO] Skipping likely-commercial listing:   Office Space for Rent in Vikrant Khand Lucknow
+2026-07-13 10:50:01,843 [INFO] Skipping likely-commercial listing:  Industrial Building for Rent in Sector 10 Indira Nagar Lucknow
+2026-07-13 10:50:01,844 [INFO] Page 1: 14 listings parsed so far
+2026-07-13 10:50:03,487 [INFO] Starting detail-page coordinate enrichment for 14 listings...
+2026-07-13 10:50:10,180 [INFO] HTTP Request: GET https://www.magicbricks.com/purvanchal-kings-court-gomti-nagar-lucknow-pdpid-4d4235303934343631#cardid-85168369 "HTTP/1.1 200 OK"
+2026-07-13 10:50:14,386 [INFO] HTTP Request: GET https://www.magicbricks.com/rohtas-pulmeria-gomti-nagar-lucknow-pdpid-4d4235303239323133#cardid-82351183 "HTTP/1.1 200 OK"
+2026-07-13 10:50:18,854 [INFO] HTTP Request: GET https://www.magicbricks.com/propertyDetails/2-BHK-1400-Sq-ft-Multistorey-Apartment-FOR-Rent-Aliganj-in-Lucknow&id=4d423834313933373133#cardid-84193713 "HTTP/1.1 200 OK"
+2026-07-13 10:50:24,420 [INFO] HTTP Request: GET https://www.magicbricks.com/viraj-bbd-green-city-faizabad-road-lucknow-pdpid-4d4235303031373638#cardid-83510161 "HTTP/1.1 200 OK"
+2026-07-13 10:50:29,107 [INFO] HTTP Request: GET https://www.magicbricks.com/propertyDetails/2-BHK-1200-Sq-ft-Residential-House-FOR-Rent-Jankipuram-in-Lucknow&id=4d423833393238393531#cardid-83928951 "HTTP/1.1 200 OK"
+2026-07-13 10:50:34,736 [INFO] HTTP Request: GET https://www.magicbricks.com/eldeco-city-breeze-madehgunj-lucknow-pdpid-4d4235303834383531#cardid-85429973 "HTTP/1.1 301 Moved Permanently"
+2026-07-13 10:50:35,577 [INFO] HTTP Request: GET https://www.magicbricks.com/eldeco-city-breeze-sitapur-road-lucknow-pdpid-4d4235303834383531#cardid-85429973 "HTTP/1.1 200 OK"
+2026-07-13 10:50:41,817 [INFO] HTTP Request: GET https://www.magicbricks.com/swapnil-sangam-bijnor-road-lucknow-pdpid-4d4235313136363235#cardid-85492593 "HTTP/1.1 200 OK"
+2026-07-13 10:50:46,514 [INFO] HTTP Request: GET https://www.magicbricks.com/propertyDetails/2-BHK-1250-Sq-ft-Residential-House-FOR-Rent-Mayur-Vihar-in-Lucknow&id=4d423835343933303731#cardid-85493071 "HTTP/1.1 200 OK"
+2026-07-13 10:50:51,351 [INFO] HTTP Request: GET https://www.magicbricks.com/lda-shravan-apartment-hindnagar-colony-lucknow-pdpid-4d4235323939353739#cardid-84804563 "HTTP/1.1 200 OK"
+2026-07-13 10:50:55,752 [INFO] HTTP Request: GET https://www.magicbricks.com/propertyDetails/2-BHK-1400-Sq-ft-Residential-House-FOR-Rent-Nizampur-Malhaur-in-Lucknow&id=4d423831363134363535#cardid-81614655 "HTTP/1.1 200 OK"
+2026-07-13 10:50:55,877 [INFO] Detail-page enrichment: 10/14 processed, 10 coordinates found so far
+2026-07-13 10:51:02,202 [INFO] HTTP Request: GET https://www.magicbricks.com/propertyDetails/2-BHK-600-Sq-ft-Residential-House-FOR-Rent-Kalyanpur-West-in-Lucknow&id=4d423739393231313535#cardid-79921155 "HTTP/1.1 200 OK"
+2026-07-13 10:51:07,626 [INFO] HTTP Request: GET https://www.magicbricks.com/propertyDetails/2-BHK-1400-Sq-ft-Residential-House-FOR-Rent-Sainik-Nagar-in-Lucknow&id=4d423834333831323131#cardid-84381211 "HTTP/1.1 200 OK"
+2026-07-13 10:51:12,739 [INFO] HTTP Request: GET https://www.magicbricks.com/propertyDetails/2-BHK-2600-Sq-ft-Residential-House-FOR-Rent-Rashmi-Khand-in-Lucknow&id=4d423832383838333333#cardid-82888333 "HTTP/1.1 200 OK"
+2026-07-13 10:51:17,147 [INFO] HTTP Request: GET https://www.magicbricks.com/prabhat-chauraha-jankipuram-lucknow-pdpid-4d4235343130333935#cardid-85067651 "HTTP/1.1 200 OK"
+2026-07-13 10:51:17,442 [INFO] Detail-page enrichment complete: 14/14 listings got real coordinates
+2026-07-13 10:51:17,443 [INFO] Scraped 14 total listings
+2026-07-13 10:51:17,446 [INFO] Wrote 14 listings to scraped_listings.jsonl
+  Resolved city: Lucknow (stored under unique key: "Domino's Gomti Nagar Lucknow")
+
+  → Seeding grid...
+Seeding city "Domino's Gomti Nagar Lucknow" (26.8467, 81.0072) — 200m cells, 5000m radius
+Created city "Domino's Gomti Nagar Lucknow" (id=15)
+Seeded 2601 grid cells for "Domino's Gomti Nagar Lucknow" (200m cells, 5000m radius).
+
+  → Ingesting...
+Ingesting into city="Domino's Gomti Nagar Lucknow" (id=15)
+
+Ingestion complete for "Domino's Gomti Nagar Lucknow":
+  Processed:            14
+  Skipped (no URL):     0
+  Skipped (no coords):  0
+  Skipped (no grid):    10
+  Errors:               0
+
+
+  → Aggregating...
+Computing stats for "Domino's Gomti Nagar Lucknow" (id=15)...
+  bhk_bucket_stats: 3 rows written
+  grid_stats: 3 rows written
+Done.
+
+
+Batch #2 finished: 2 succeeded, 1 empty, 0 failed.

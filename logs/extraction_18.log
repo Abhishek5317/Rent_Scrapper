@@ -1,0 +1,96 @@
+Extraction batch #18 started — 1 store(s).
+
+============================================================
+[1/1] Skymark One Sector 98 Noida (28.5074, 77.3912)
+============================================================
+
+  → Scraping...
+2026-07-14 12:11:19,864 [INFO] No city name in config � reverse-geocoding (28.5074, 77.3912)...
+2026-07-14 12:11:20,009 [INFO] Resolved city: Noida, state: Uttar Pradesh
+2026-07-14 12:11:20,011 [INFO] Saved resolved values back to C:\Users\riddh\OneDrive\Desktop\skymark-grid-project\config.json
+2026-07-14 12:11:20,015 [INFO] Starting MagicBricks scrape run
+2026-07-14 12:11:20,896 [INFO] Bootstrapping session via Playwright: https://www.magicbricks.com/property-for-rent/residential-real-estate?cityName=Noida&page=1
+2026-07-14 12:11:36,881 [INFO] Skipping likely-commercial listing:   Office Space for Rent in Sector 140A Noida
+2026-07-14 12:11:36,916 [INFO] Skipping likely-commercial listing:   Office Space for Rent in Sector 63 Noida
+2026-07-14 12:11:36,926 [INFO] Skipping likely-commercial listing:   Office Space for Rent in Sector 62, NH 24 Noida
+2026-07-14 12:11:36,930 [INFO] Skipping likely-commercial listing:   Office Space for Rent in Sector 16 Noida
+2026-07-14 12:11:36,936 [WARNING] Rejecting implausible monthly_rent=2200000.0 for cardid=85014211 (source text: 2200000) � outside the 1,000-1,000,000 sanity range.
+2026-07-14 12:11:36,936 [INFO] Skipping likely-commercial listing:  Industrial Shed for Rent in Block C Sector 80 Noida
+2026-07-14 12:11:36,944 [INFO] Skipping likely-commercial listing:  Industrial Building for Rent in C Block Sector 63 Noida
+2026-07-14 12:11:36,948 [WARNING] Rejecting implausible monthly_rent=2375000.0 for cardid=85153975 (source text: 2375000) � outside the 1,000-1,000,000 sanity range.
+2026-07-14 12:11:36,948 [INFO] Skipping likely-commercial listing:   Office Space for Rent in Block B Sector 62 Industrial Area Noida
+2026-07-14 12:11:36,975 [INFO] Skipping likely-commercial listing:   Office Space for Rent in Sector 135, Noida Express Way Noida
+2026-07-14 12:11:36,983 [WARNING] Rejecting implausible monthly_rent=1260000.0 for cardid=85452395 (source text: 1260000) � outside the 1,000-1,000,000 sanity range.
+2026-07-14 12:11:36,983 [INFO] Skipping likely-commercial listing:  Industrial Building for Rent in Block C Sector 57 Noida
+2026-07-14 12:11:36,984 [INFO] Page 1: 21 listings parsed so far
+2026-07-14 12:11:38,503 [INFO] Starting detail-page enrichment (coordinates + amenities) for 21 listings...
+2026-07-14 12:11:42,446 [INFO] HTTP Request: GET https://www.magicbricks.com/aba-cleo-county-sector-121-noida-pdpid-4d4235303139303230#cardid-83303695 "HTTP/1.1 200 OK"
+2026-07-14 12:11:43,352 [WARNING] Amenities section shows 'View All Amenities (62)' but only 6 were captured from the static HTML � the rest are likely behind a click-to-expand this scraper doesn't drive. Got: ['Most Comprehensive', "Insights you won't find anywhere else", 'Top Amenities', 'Nearby landmarks', 'MB', 'Project Reviews']
+2026-07-14 12:11:47,284 [INFO] HTTP Request: GET https://www.magicbricks.com/ajnara-homes-noida-extension-noida-pdpid-4d4235303030393235#cardid-41287745 "HTTP/1.1 200 OK"
+2026-07-14 12:11:48,710 [WARNING] Amenities section shows 'View All Amenities (54)' but only 6 were captured from the static HTML � the rest are likely behind a click-to-expand this scraper doesn't drive. Got: ['Most Comprehensive', "Insights you won't find anywhere else", 'Top Amenities', 'Nearby landmarks', 'MB', 'Project Reviews']
+2026-07-14 12:11:53,511 [INFO] HTTP Request: GET https://www.magicbricks.com/jaypee-klassic-sector-134-noida-pdpid-4d4235303231353035#cardid-85257169 "HTTP/1.1 200 OK"
+2026-07-14 12:11:54,295 [WARNING] Amenities section shows 'View All Amenities (17)' but only 5 were captured from the static HTML � the rest are likely behind a click-to-expand this scraper doesn't drive. Got: ['Most Comprehensive', "Insights you won't find anywhere else", 'Top Amenities', 'MB', 'Project Reviews']
+2026-07-14 12:11:59,034 [INFO] HTTP Request: GET https://www.magicbricks.com/godrej-woods-sector-43-noida-pdpid-4d4235323330313731#cardid-81408799 "HTTP/1.1 200 OK"
+2026-07-14 12:12:00,752 [WARNING] Amenities section shows 'View All Amenities (44)' but only 6 were captured from the static HTML � the rest are likely behind a click-to-expand this scraper doesn't drive. Got: ['Most Comprehensive', "Insights you won't find anywhere else", 'Top Amenities', 'Nearby landmarks', 'MB', 'Project Reviews']
+2026-07-14 12:12:05,916 [INFO] HTTP Request: GET https://www.magicbricks.com/propertyDetails/3-BHK-3302-Sq-ft-Multistorey-Apartment-FOR-Rent-Sector-108-Parx-Laureate-in-Noida&id=4d423536343231333933#cardid-56421393 "HTTP/1.1 200 OK"
+2026-07-14 12:12:09,041 [INFO] HTTP Request: GET https://www.magicbricks.com/pearls-gateway-towers-sector-44-noida-pdpid-4d4235303130333138#cardid-85006209 "HTTP/1.1 200 OK"
+2026-07-14 12:12:09,913 [WARNING] Amenities section shows 'View All Amenities (19)' but only 6 were captured from the static HTML � the rest are likely behind a click-to-expand this scraper doesn't drive. Got: ['Most Comprehensive', "Insights you won't find anywhere else", 'Top Amenities', 'Nearby landmarks', 'MB', 'Project Reviews']
+2026-07-14 12:12:15,326 [INFO] HTTP Request: GET https://www.magicbricks.com/county-107-sector-107-noida-pdpid-4d4235313234373439#cardid-79645351 "HTTP/1.1 200 OK"
+2026-07-14 12:12:16,199 [WARNING] Amenities section shows 'View All Amenities (32)' but only 6 were captured from the static HTML � the rest are likely behind a click-to-expand this scraper doesn't drive. Got: ['Most Comprehensive', "Insights you won't find anywhere else", 'Top Amenities', 'Nearby landmarks', 'MB', 'Project Reviews']
+2026-07-14 12:12:21,161 [INFO] HTTP Request: GET https://www.magicbricks.com/aba-cleo-county-sector-121-noida-pdpid-4d4235303139303230#cardid-82981737 "HTTP/1.1 200 OK"
+2026-07-14 12:12:22,079 [WARNING] Amenities section shows 'View All Amenities (62)' but only 6 were captured from the static HTML � the rest are likely behind a click-to-expand this scraper doesn't drive. Got: ['Most Comprehensive', "Insights you won't find anywhere else", 'Top Amenities', 'Nearby landmarks', 'MB', 'Project Reviews']
+2026-07-14 12:12:26,174 [INFO] HTTP Request: GET https://www.magicbricks.com/aba-cleo-county-sector-121-noida-pdpid-4d4235303139303230#cardid-84082387 "HTTP/1.1 200 OK"
+2026-07-14 12:12:27,688 [WARNING] Amenities section shows 'View All Amenities (62)' but only 6 were captured from the static HTML � the rest are likely behind a click-to-expand this scraper doesn't drive. Got: ['Most Comprehensive', "Insights you won't find anywhere else", 'Top Amenities', 'Nearby landmarks', 'MB', 'Project Reviews']
+2026-07-14 12:12:30,793 [INFO] HTTP Request: GET https://www.magicbricks.com/eldeco-utopia-sector-93a-noida-pdpid-4d4235303031303036#cardid-85529447 "HTTP/1.1 200 OK"
+2026-07-14 12:12:32,242 [INFO] Detail-page enrichment: 10/21 processed, 10 coordinates and 10 amenity lists found so far
+2026-07-14 12:12:38,062 [INFO] HTTP Request: GET https://www.magicbricks.com/prateek-stylome-sector-45-noida-pdpid-4d4235303139353130#cardid-85489835 "HTTP/1.1 200 OK"
+2026-07-14 12:12:39,407 [WARNING] Amenities section shows 'View All Amenities (41)' but only 6 were captured from the static HTML � the rest are likely behind a click-to-expand this scraper doesn't drive. Got: ['Most Comprehensive', "Insights you won't find anywhere else", 'Top Amenities', 'Nearby landmarks', 'MB', 'Project Reviews']
+2026-07-14 12:12:42,696 [INFO] HTTP Request: GET https://www.magicbricks.com/kalpataru-vista-sultanpur-noida-pdpid-4d4235313135383335#cardid-85223913 "HTTP/1.1 301 Moved Permanently"
+2026-07-14 12:12:42,874 [INFO] HTTP Request: GET https://www.magicbricks.com/kalpataru-vista-sector-128-noida-pdpid-4d4235313135383335#cardid-85223913 "HTTP/1.1 200 OK"
+2026-07-14 12:12:43,733 [WARNING] Amenities section shows 'View All Amenities (49)' but only 6 were captured from the static HTML � the rest are likely behind a click-to-expand this scraper doesn't drive. Got: ['Most Comprehensive', "Insights you won't find anywhere else", 'Top Amenities', 'Nearby landmarks', 'MB', 'Project Reviews']
+2026-07-14 12:12:49,318 [INFO] HTTP Request: GET https://www.magicbricks.com/gaur-city-14th-avenue-noida-extension-noida-pdpid-4d4235323234343431#cardid-85412461 "HTTP/1.1 200 OK"
+2026-07-14 12:12:55,815 [INFO] HTTP Request: GET https://www.magicbricks.com/kalpataru-vista-sector-128-noida-pdpid-4d4235313135383335#cardid-85523653 "HTTP/1.1 200 OK"
+2026-07-14 12:12:57,148 [WARNING] Amenities section shows 'View All Amenities (49)' but only 6 were captured from the static HTML � the rest are likely behind a click-to-expand this scraper doesn't drive. Got: ['Most Comprehensive', "Insights you won't find anywhere else", 'Top Amenities', 'Nearby landmarks', 'MB', 'Project Reviews']
+2026-07-14 12:13:01,296 [INFO] HTTP Request: GET https://www.magicbricks.com/grand-ajnara-heritage-sector-74-noida-pdpid-4d4235303233393931#cardid-82467133 "HTTP/1.1 200 OK"
+2026-07-14 12:13:02,844 [WARNING] Amenities section shows 'View All Amenities (58)' but only 5 were captured from the static HTML � the rest are likely behind a click-to-expand this scraper doesn't drive. Got: ['Most Comprehensive', "Insights you won't find anywhere else", 'Top Amenities', 'MB', 'Project Reviews']
+2026-07-14 12:13:06,419 [INFO] HTTP Request: GET https://www.magicbricks.com/jaypee-greens-pavilion-court-sector-128-noida-pdpid-4d4235303130313530#cardid-85406419 "HTTP/1.1 200 OK"
+2026-07-14 12:13:07,733 [WARNING] Amenities section shows 'View All Amenities (24)' but only 6 were captured from the static HTML � the rest are likely behind a click-to-expand this scraper doesn't drive. Got: ['Most Comprehensive', "Insights you won't find anywhere else", 'Top Amenities', 'Nearby landmarks', 'MB', 'Project Reviews']
+2026-07-14 12:13:13,290 [INFO] HTTP Request: GET https://www.magicbricks.com/propertyDetails/3-BHK-2510-Sq-ft-Multistorey-Apartment-FOR-Rent-Sector-75-in-Noida&id=4d423834383236343533#cardid-84826453 "HTTP/1.1 200 OK"
+2026-07-14 12:13:17,958 [INFO] HTTP Request: GET https://www.magicbricks.com/eldeco-live-by-the-greens-sector-150-noida-pdpid-4d4235313139363239#cardid-85195455 "HTTP/1.1 200 OK"
+2026-07-14 12:13:19,775 [WARNING] Amenities section shows 'View All Amenities (26)' but only 6 were captured from the static HTML � the rest are likely behind a click-to-expand this scraper doesn't drive. Got: ['Most Comprehensive', "Insights you won't find anywhere else", 'Top Amenities', 'Nearby landmarks', 'MB', 'Project Reviews']
+2026-07-14 12:13:25,359 [INFO] HTTP Request: GET https://www.magicbricks.com/jaypee-wish-town-klassic-sector-129-noida-pdpid-4d4235303130313439#cardid-84647849 "HTTP/1.1 200 OK"
+2026-07-14 12:13:26,776 [WARNING] Amenities section shows 'View All Amenities (20)' but only 5 were captured from the static HTML � the rest are likely behind a click-to-expand this scraper doesn't drive. Got: ['Most Comprehensive', "Insights you won't find anywhere else", 'Top Amenities', 'MB', 'Project Reviews']
+2026-07-14 12:13:32,323 [INFO] HTTP Request: GET https://www.magicbricks.com/royal-nest-noida-extension-noida-pdpid-4d4235303933393337#cardid-85362321 "HTTP/1.1 200 OK"
+2026-07-14 12:13:33,675 [WARNING] Amenities section shows 'View All Amenities (36)' but only 6 were captured from the static HTML � the rest are likely behind a click-to-expand this scraper doesn't drive. Got: ['Most Comprehensive', "Insights you won't find anywhere else", 'Top Amenities', 'Nearby landmarks', 'MB', 'Project Reviews']
+2026-07-14 12:13:33,676 [INFO] Detail-page enrichment: 20/21 processed, 20 coordinates and 19 amenity lists found so far
+2026-07-14 12:13:37,023 [INFO] HTTP Request: GET https://www.magicbricks.com/county-107-sector-107-noida-pdpid-4d4235313234373439#cardid-85105799 "HTTP/1.1 200 OK"
+2026-07-14 12:13:37,700 [WARNING] Amenities section shows 'View All Amenities (32)' but only 6 were captured from the static HTML � the rest are likely behind a click-to-expand this scraper doesn't drive. Got: ['Most Comprehensive', "Insights you won't find anywhere else", 'Top Amenities', 'Nearby landmarks', 'MB', 'Project Reviews']
+2026-07-14 12:13:37,701 [INFO] Detail-page enrichment complete: 21/21 listings got real coordinates, 20/21 got an amenities list
+2026-07-14 12:13:37,701 [INFO] Scraped 21 total listings
+2026-07-14 12:13:37,705 [INFO] Wrote 21 listings to scraped_listings.jsonl
+  Resolved city: Noida (stored under unique key: "Skymark One Sector 98 Noida")
+
+  → Seeding grid...
+Seeding city "Skymark One Sector 98 Noida" (28.5074, 77.3912) — 200m cells, 5000m radius
+City "Skymark One Sector 98 Noida" already exists (id=18). Updated to 200m cells, 5000m radius. Generating any new grid cells needed (existing ones untouched).
+Seeded 2601 grid cells for "Skymark One Sector 98 Noida" (200m cells, 5000m radius).
+
+  → Ingesting...
+Ingesting into city="Skymark One Sector 98 Noida" (id=18)
+
+Ingestion complete for "Skymark One Sector 98 Noida":
+  Processed:            21
+  Skipped (no URL):     0
+  Skipped (no coords):  0
+  Skipped (no grid):    13
+  Errors:               0
+
+
+  → Aggregating...
+Computing stats for "Skymark One Sector 98 Noida" (id=18)...
+  bhk_bucket_stats: 36 rows written
+  grid_stats: 30 rows written
+Done.
+
+
+Batch #18 finished: 1 succeeded, 0 empty, 0 failed.

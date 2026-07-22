@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>RentIQ – Listings</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body class="scrollable-page">
+
+  <div class="header">
+    <h1>📋 Scraped Listings</h1>
+    <p class="header-subtitle">Every scraped property across all stores — filter and browse.</p>
+  </div>
+
+  <div id="nav-placeholder" data-active="listings"></div>
+
+  <div class="page-container">
+    <div class="panel">
+      <h3>Filters</h3>
+      <div class="filter-grid">
+        <label>Store / Location
+          <select id="filter-store"><option value="">All</option></select>
+        </label>
+        <label>BHK Type
+          <select id="filter-bhk"><option value="">All</option></select>
+        </label>
+        <label>Furnishing
+          <select id="filter-furnishing"><option value="">All</option></select>
+        </label>
+        <label>Property Type
+          <select id="filter-property-type"><option value="">All</option></select>
+        </label>
+        <label>Min Rent (₹) <input type="number" id="filter-min-rent" placeholder="0" /></label>
+        <label>Max Rent (₹) <input type="number" id="filter-max-rent" placeholder="No limit" /></label>
+        <label>Society search <input type="text" id="filter-society" placeholder="e.g. Cleo County" /></label>
+      </div>
+      <button id="apply-filters-btn" onclick="applyFilters()">🔍 Apply Filters</button>
+      <button id="clear-filters-btn" class="secondary-btn" onclick="clearFilters()">✖️ Clear</button>
+    </div>
+
+    <div class="panel">
+      <h3>Results</h3>
+      <p id="results-status" class="status-msg">Loading...</p>
+      <div id="results-table-wrap"></div>
+      <div class="pagination-row">
+        <button id="prev-btn" onclick="prevPage()" disabled>◀ Prev</button>
+        <span id="page-info"></span>
+        <button id="next-btn" onclick="nextPage()" disabled>Next ▶</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="nav.js"></script>
+  <script src="shared.js"></script>
+  <script src="listings.js"></script>
+</body>
+</html>

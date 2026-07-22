@@ -1,0 +1,16 @@
+Extraction batch #5 started — 1 store(s).
+
+============================================================
+[1/1] Skymark One Sector 98 Noida (28.5074, 77.3912)
+============================================================
+
+  → Scraping...
+2026-07-13 12:34:37,289 [INFO] No city name in config � reverse-geocoding (28.5074, 77.3912)...
+2026-07-13 12:34:38,530 [INFO] Resolved city: Noida, state: Uttar Pradesh
+2026-07-13 12:34:38,532 [INFO] Saved resolved values back to C:\Users\riddh\OneDrive\Desktop\skymark-grid-project\config.json
+2026-07-13 12:34:38,539 [INFO] Starting MagicBricks scrape run
+
+  ❌ FAILED: Scraping exited with code 3221225786
+
+
+Batch #5 finished: 0 succeeded, 0 empty, 1 failed.

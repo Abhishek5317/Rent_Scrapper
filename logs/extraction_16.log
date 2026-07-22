@@ -1,0 +1,221 @@
+Extraction batch #16 started — 1 store(s).
+
+============================================================
+[1/1] Skymark One Sector 98 Noida (28.5074, 77.3912)
+============================================================
+
+  → Scraping...
+2026-07-14 11:13:50,956 [INFO] No city name in config � reverse-geocoding (28.5074, 77.3912)...
+2026-07-14 11:13:51,675 [INFO] Resolved city: Noida, state: Uttar Pradesh
+2026-07-14 11:13:51,678 [INFO] Saved resolved values back to C:\Users\riddh\OneDrive\Desktop\skymark-grid-project\config.json
+2026-07-14 11:13:51,698 [INFO] Starting MagicBricks scrape run
+2026-07-14 11:13:58,859 [INFO] Bootstrapping session via Playwright: https://www.magicbricks.com/property-for-rent/residential-real-estate?cityName=Noida&page=1
+2026-07-14 11:14:05,513 [INFO] Skipping likely-commercial listing:   Office Space for Rent in Sector 140A Noida
+2026-07-14 11:14:05,534 [INFO] Skipping likely-commercial listing:   Office Space for Rent in Sector 63 Noida
+2026-07-14 11:14:05,541 [INFO] Skipping likely-commercial listing:   Office Space for Rent in Sector 62, NH 24 Noida
+2026-07-14 11:14:05,545 [INFO] Skipping likely-commercial listing:   Office Space for Rent in Sector 16 Noida
+2026-07-14 11:14:05,552 [WARNING] Rejecting implausible monthly_rent=2200000.0 for cardid=85014211 (source text: 2200000) � outside the 1,000-1,000,000 sanity range.
+2026-07-14 11:14:05,552 [INFO] Skipping likely-commercial listing:  Industrial Shed for Rent in Block C Sector 80 Noida
+2026-07-14 11:14:05,558 [INFO] Skipping likely-commercial listing:  Industrial Building for Rent in C Block Sector 63 Noida
+2026-07-14 11:14:05,561 [WARNING] Rejecting implausible monthly_rent=2375000.0 for cardid=85153975 (source text: 2375000) � outside the 1,000-1,000,000 sanity range.
+2026-07-14 11:14:05,561 [INFO] Skipping likely-commercial listing:   Office Space for Rent in Block B Sector 62 Industrial Area Noida
+2026-07-14 11:14:05,585 [INFO] Skipping likely-commercial listing:   Office Space for Rent in Sector 135, Noida Express Way Noida
+2026-07-14 11:14:05,590 [WARNING] Rejecting implausible monthly_rent=1260000.0 for cardid=85452395 (source text: 1260000) � outside the 1,000-1,000,000 sanity range.
+2026-07-14 11:14:05,591 [INFO] Skipping likely-commercial listing:  Industrial Building for Rent in Block C Sector 57 Noida
+2026-07-14 11:14:05,591 [INFO] Page 1: 21 listings parsed so far
+2026-07-14 11:14:20,045 [INFO] HTTP Request: GET https://www.magicbricks.com/property-for-rent/residential-real-estate?cityName=Noida&page=2 "HTTP/1.1 200 OK"
+2026-07-14 11:14:20,305 [INFO] Skipping likely-commercial listing:   Shop for Rent in Sector 18, Noida sector 18 Metro Noida
+2026-07-14 11:14:20,314 [INFO] Skipping likely-commercial listing:   Office Space for Rent in Sector 96 Noida
+2026-07-14 11:14:20,328 [INFO] Skipping likely-commercial listing:   Office Space for Rent in Sector 154, Noida Express Way Noida
+2026-07-14 11:14:20,336 [INFO] Skipping likely-commercial listing:   Office Space for Rent in Block B Sector 132 Noida
+2026-07-14 11:14:20,347 [WARNING] Rejecting implausible monthly_rent=1200000.0 for cardid=83310679 (source text: 1200000) � outside the 1,000-1,000,000 sanity range.
+2026-07-14 11:14:20,347 [INFO] Skipping likely-commercial listing:   Showroom for Rent in Sector 5 Noida
+2026-07-14 11:14:20,361 [INFO] Skipping likely-commercial listing:  Industrial Land for Rent in Block A Phase 2 Noida Noida
+2026-07-14 11:14:20,366 [INFO] Skipping likely-commercial listing:   Office Space for Rent in Industrial Area Noida
+2026-07-14 11:14:20,369 [INFO] Skipping likely-commercial listing:   Office Space for Rent in Sector 18, Noida sector 18 Metro Noida
+2026-07-14 11:14:20,372 [INFO] Skipping likely-commercial listing:   Shop for Rent in Block C Sector 41 Noida
+2026-07-14 11:14:20,376 [INFO] Skipping likely-commercial listing:   Office Space for Rent in Sector 18, Noida sector 18 Metro Noida
+2026-07-14 11:14:20,383 [INFO] Skipping likely-commercial listing:   Office Space for Rent in Noida Extension Noida
+2026-07-14 11:14:20,393 [INFO] Skipping likely-commercial listing:  Warehouse/ Godown for Rent in Sector 70 Noida
+2026-07-14 11:14:20,397 [INFO] Skipping likely-commercial listing:   Office Space for Rent in Sector 2 Noida
+2026-07-14 11:14:20,397 [INFO] Page 2: +17 listings (running total: 38)
+2026-07-14 11:14:31,302 [INFO] HTTP Request: GET https://www.magicbricks.com/property-for-rent/residential-real-estate?cityName=Noida&page=3 "HTTP/1.1 200 OK"
+2026-07-14 11:14:31,567 [INFO] Skipping likely-commercial listing:   Office Space for Rent in Sector 90 Noida
+2026-07-14 11:14:31,576 [INFO] Skipping likely-commercial listing:   Shop for Rent in Aghapur, Sector 41 Noida
+2026-07-14 11:14:31,591 [INFO] Skipping likely-commercial listing:   Office Space for Rent in Sector 125, Noida Express Way Noida
+2026-07-14 11:14:31,594 [INFO] Skipping likely-commercial listing:   Office Space for Rent in Block C Sector 3 Noida
+2026-07-14 11:14:31,597 [INFO] Skipping likely-commercial listing:   Office Space for Rent in A Block Sector 83 Noida
+2026-07-14 11:14:31,613 [INFO] Skipping likely-commercial listing:   Office Space for Rent in Sector 140A Noida
+2026-07-14 11:14:31,617 [INFO] Skipping likely-commercial listing:   Office Space for Rent in Noida Greater Noida Expressway Noida
+2026-07-14 11:14:31,620 [INFO] Skipping likely-commercial listing:   Office Space for Rent in Block E Sector 3 Noida
+2026-07-14 11:14:31,627 [INFO] Skipping likely-commercial listing:   Office Space for Rent in H Block Sector 63 Noida
+2026-07-14 11:14:31,634 [INFO] Skipping likely-commercial listing:   Office Space for Rent in Sector 16 Noida
+2026-07-14 11:14:31,640 [INFO] Skipping likely-commercial listing:   Office Space for Rent in Sector 62, NH 24 Noida
+2026-07-14 11:14:31,644 [INFO] Skipping likely-commercial listing:   Office Space for Rent in Sector 63 Noida
+2026-07-14 11:14:31,647 [INFO] Skipping likely-commercial listing:   Office Space for Rent in Sector 94, Noida Express Way Noida
+2026-07-14 11:14:31,654 [INFO] Skipping likely-commercial listing:   Shop for Rent in Sector 75 Noida
+2026-07-14 11:14:31,657 [INFO] Skipping likely-commercial listing:   Office Space for Rent in D Block Sector 63 Noida
+2026-07-14 11:14:31,661 [INFO] Skipping likely-commercial listing: 2 BHK Flat  for Rent in  Noida One, Block C Phase 2 Industrial Area, Noida
+2026-07-14 11:14:31,661 [INFO] Page 3: +14 listings (running total: 52)
+2026-07-14 11:14:37,155 [INFO] HTTP Request: GET https://www.magicbricks.com/property-for-rent/residential-real-estate?cityName=Noida&page=4 "HTTP/1.1 200 OK"
+2026-07-14 11:14:37,433 [WARNING] Rejecting implausible monthly_rent=2500100.0 for cardid=67848991 (source text: 2500100) � outside the 1,000-1,000,000 sanity range.
+2026-07-14 11:14:37,434 [INFO] Skipping likely-commercial listing:   Office Space for Rent in Sector 125, Noida Express Way Noida
+2026-07-14 11:14:37,440 [INFO] Skipping likely-commercial listing:   Office Space for Rent in B Block Sector 63 Noida
+2026-07-14 11:14:37,461 [INFO] Skipping likely-commercial listing:   Office Space for Rent in Sector 135, Noida Express Way Noida
+2026-07-14 11:14:37,474 [INFO] Skipping likely-commercial listing:   Office Space for Rent in Block A Sector 16 Noida
+2026-07-14 11:14:37,477 [INFO] Skipping likely-commercial listing:   Office Space for Rent in BLS TECHHUB B69 B BLOCK SECTOR 63 Noida
+2026-07-14 11:14:37,491 [INFO] Skipping likely-commercial listing:  Office in IT Park/ SEZ for Rent in Block C Phase 2 Industrial Area Noida
+2026-07-14 11:14:37,509 [INFO] Skipping likely-commercial listing:   Office Space for Rent in Sector 63 Noida
+2026-07-14 11:14:37,517 [INFO] Skipping likely-commercial listing:   Office Space for Rent in A Block Sector 63 Noida
+2026-07-14 11:14:37,517 [INFO] Page 4: +22 listings (running total: 74)
+2026-07-14 11:14:42,482 [INFO] HTTP Request: GET https://www.magicbricks.com/property-for-rent/residential-real-estate?cityName=Noida&page=5 "HTTP/1.1 200 OK"
+2026-07-14 11:14:42,751 [INFO] Skipping likely-commercial listing:   Office Space for Rent in Sector 63 Noida
+2026-07-14 11:14:42,765 [INFO] Skipping likely-commercial listing:   Office Space for Rent in Sector 62, NH 24 Noida
+2026-07-14 11:14:42,767 [INFO] Skipping likely-commercial listing:   Office Space for Rent in Sector 69 Noida
+2026-07-14 11:14:42,776 [INFO] Skipping likely-commercial listing:   Office Space for Rent in Pocket A Sector 18 Noida
+2026-07-14 11:14:42,791 [INFO] Skipping likely-commercial listing:   Office Space for Rent in Sector 18, Noida sector 18 Metro Noida
+2026-07-14 11:14:42,794 [INFO] Skipping likely-commercial listing:   Office Space for Rent in Sector 90 Noida
+2026-07-14 11:14:42,800 [INFO] Skipping likely-commercial listing:   Office Space for Rent in Noida Extension Noida
+2026-07-14 11:14:42,803 [INFO] Skipping likely-commercial listing:   Office Space for Rent in Block C Phase 2 Industrial Area Noida
+2026-07-14 11:14:42,807 [INFO] Page 5: +22 listings (running total: 96)
+2026-07-14 11:14:42,807 [INFO] Starting detail-page coordinate enrichment for 96 listings...
+2026-07-14 11:14:48,513 [INFO] HTTP Request: GET https://www.magicbricks.com/aba-cleo-county-sector-121-noida-pdpid-4d4235303139303230#cardid-83303695 "HTTP/1.1 200 OK"
+2026-07-14 11:14:56,205 [INFO] HTTP Request: GET https://www.magicbricks.com/ajnara-homes-noida-extension-noida-pdpid-4d4235303030393235#cardid-41287745 "HTTP/1.1 200 OK"
+2026-07-14 11:15:03,668 [INFO] HTTP Request: GET https://www.magicbricks.com/jaypee-klassic-sector-134-noida-pdpid-4d4235303231353035#cardid-85257169 "HTTP/1.1 200 OK"
+2026-07-14 11:15:09,630 [INFO] HTTP Request: GET https://www.magicbricks.com/godrej-woods-sector-43-noida-pdpid-4d4235323330313731#cardid-81408799 "HTTP/1.1 200 OK"
+2026-07-14 11:15:15,865 [INFO] HTTP Request: GET https://www.magicbricks.com/propertyDetails/3-BHK-3302-Sq-ft-Multistorey-Apartment-FOR-Rent-Sector-108-Parx-Laureate-in-Noida&id=4d423536343231333933#cardid-56421393 "HTTP/1.1 200 OK"
+2026-07-14 11:15:22,509 [INFO] HTTP Request: GET https://www.magicbricks.com/pearls-gateway-towers-sector-44-noida-pdpid-4d4235303130333138#cardid-85006209 "HTTP/1.1 200 OK"
+2026-07-14 11:15:30,813 [INFO] HTTP Request: GET https://www.magicbricks.com/county-107-sector-107-noida-pdpid-4d4235313234373439#cardid-79645351 "HTTP/1.1 200 OK"
+2026-07-14 11:15:34,402 [INFO] HTTP Request: GET https://www.magicbricks.com/aba-cleo-county-sector-121-noida-pdpid-4d4235303139303230#cardid-82981737 "HTTP/1.1 200 OK"
+2026-07-14 11:15:37,496 [INFO] HTTP Request: GET https://www.magicbricks.com/aba-cleo-county-sector-121-noida-pdpid-4d4235303139303230#cardid-84082387 "HTTP/1.1 200 OK"
+2026-07-14 11:15:41,249 [INFO] HTTP Request: GET https://www.magicbricks.com/eldeco-utopia-sector-93a-noida-pdpid-4d4235303031303036#cardid-85529447 "HTTP/1.1 200 OK"
+2026-07-14 11:15:41,584 [INFO] Detail-page enrichment: 10/96 processed, 10 coordinates found so far
+2026-07-14 11:15:45,451 [INFO] HTTP Request: GET https://www.magicbricks.com/prateek-stylome-sector-45-noida-pdpid-4d4235303139353130#cardid-85489835 "HTTP/1.1 200 OK"
+2026-07-14 11:15:50,644 [INFO] HTTP Request: GET https://www.magicbricks.com/kalpataru-vista-sultanpur-noida-pdpid-4d4235313135383335#cardid-85223913 "HTTP/1.1 301 Moved Permanently"
+2026-07-14 11:15:51,489 [INFO] HTTP Request: GET https://www.magicbricks.com/kalpataru-vista-sector-128-noida-pdpid-4d4235313135383335#cardid-85223913 "HTTP/1.1 200 OK"
+2026-07-14 11:15:58,785 [INFO] HTTP Request: GET https://www.magicbricks.com/gaur-city-14th-avenue-noida-extension-noida-pdpid-4d4235323234343431#cardid-85412461 "HTTP/1.1 200 OK"
+2026-07-14 11:16:04,527 [INFO] HTTP Request: GET https://www.magicbricks.com/kalpataru-vista-sector-128-noida-pdpid-4d4235313135383335#cardid-85523653 "HTTP/1.1 200 OK"
+2026-07-14 11:16:10,648 [INFO] HTTP Request: GET https://www.magicbricks.com/grand-ajnara-heritage-sector-74-noida-pdpid-4d4235303233393931#cardid-82467133 "HTTP/1.1 200 OK"
+2026-07-14 11:16:17,001 [INFO] HTTP Request: GET https://www.magicbricks.com/jaypee-greens-pavilion-court-sector-128-noida-pdpid-4d4235303130313530#cardid-85406419 "HTTP/1.1 200 OK"
+2026-07-14 11:16:21,099 [INFO] HTTP Request: GET https://www.magicbricks.com/propertyDetails/3-BHK-2510-Sq-ft-Multistorey-Apartment-FOR-Rent-Sector-75-in-Noida&id=4d423834383236343533#cardid-84826453 "HTTP/1.1 200 OK"
+2026-07-14 11:16:26,520 [INFO] HTTP Request: GET https://www.magicbricks.com/eldeco-live-by-the-greens-sector-150-noida-pdpid-4d4235313139363239#cardid-85195455 "HTTP/1.1 200 OK"
+2026-07-14 11:16:32,250 [INFO] HTTP Request: GET https://www.magicbricks.com/jaypee-wish-town-klassic-sector-129-noida-pdpid-4d4235303130313439#cardid-84647849 "HTTP/1.1 200 OK"
+2026-07-14 11:16:37,782 [INFO] HTTP Request: GET https://www.magicbricks.com/royal-nest-noida-extension-noida-pdpid-4d4235303933393337#cardid-85362321 "HTTP/1.1 200 OK"
+2026-07-14 11:16:38,120 [INFO] Detail-page enrichment: 20/96 processed, 20 coordinates found so far
+2026-07-14 11:16:41,773 [INFO] HTTP Request: GET https://www.magicbricks.com/county-107-sector-107-noida-pdpid-4d4235313234373439#cardid-85105799 "HTTP/1.1 200 OK"
+2026-07-14 11:16:46,071 [INFO] HTTP Request: GET https://www.magicbricks.com/panchsheel-pratishtha-sector-75-noida-pdpid-4d4235303139383038#cardid-82774183 "HTTP/1.1 200 OK"
+2026-07-14 11:16:49,570 [INFO] HTTP Request: GET https://www.magicbricks.com/aba-cleo-county-sector-121-noida-pdpid-4d4235303139303230#cardid-84266103 "HTTP/1.1 200 OK"
+2026-07-14 11:16:53,131 [INFO] HTTP Request: GET https://www.magicbricks.com/samridhi-luxuriya-avenue-sector-150-noida-pdpid-4d4235303833353733#cardid-82000853 "HTTP/1.1 200 OK"
+2026-07-14 11:16:57,141 [INFO] HTTP Request: GET https://www.magicbricks.com/jaypee-greens-augusta-town-homes-sector-128-noida-pdpid-4d4235303938363339#cardid-85442231 "HTTP/1.1 200 OK"
+2026-07-14 11:17:03,378 [INFO] HTTP Request: GET https://www.magicbricks.com/civitech-stadia-sector-79-noida-pdpid-4d4235303232393932#cardid-83539221 "HTTP/1.1 200 OK"
+2026-07-14 11:17:09,267 [INFO] HTTP Request: GET https://www.magicbricks.com/supertech-ecociti-sector-137-noida-pdpid-4d4235303137353239#cardid-83937675 "HTTP/1.1 200 OK"
+2026-07-14 11:17:15,868 [INFO] HTTP Request: GET https://www.magicbricks.com/mahagun-moderne-sector-78-noida-pdpid-4d4235303230373436#cardid-64545405 "HTTP/1.1 200 OK"
+2026-07-14 11:17:21,402 [INFO] HTTP Request: GET https://www.magicbricks.com/ivy-county-sector-75-noida-pdpid-4d4235313236393639#cardid-84414117 "HTTP/1.1 200 OK"
+2026-07-14 11:17:24,781 [INFO] HTTP Request: GET https://www.magicbricks.com/aba-cleo-county-sector-121-noida-pdpid-4d4235303139303230#cardid-79112525 "HTTP/1.1 200 OK"
+2026-07-14 11:17:25,359 [INFO] Detail-page enrichment: 30/96 processed, 30 coordinates found so far
+2026-07-14 11:17:30,205 [INFO] HTTP Request: GET https://www.magicbricks.com/amrapali-princely-estate-sector-76-noida-pdpid-4d4235303030383638#cardid-84553355 "HTTP/1.1 200 OK"
+2026-07-14 11:17:37,072 [INFO] HTTP Request: GET https://www.magicbricks.com/hawelia-valenova-park-noida-extension-noida-pdpid-4d4235303231393133#cardid-85394865 "HTTP/1.1 200 OK"
+2026-07-14 11:17:43,625 [INFO] HTTP Request: GET https://www.magicbricks.com/propertyDetails/3-BHK-1695-Sq-ft-Multistorey-Apartment-FOR-Rent-Sector-143-in-Noida&id=4d423832313930363435#cardid-82190645 "HTTP/1.1 200 OK"
+2026-07-14 11:17:49,776 [INFO] HTTP Request: GET https://www.magicbricks.com/ace-parkway-sector-150-noida-pdpid-4d4235313332363433#cardid-85347983 "HTTP/1.1 200 OK"
+2026-07-14 11:17:55,087 [INFO] HTTP Request: GET https://www.magicbricks.com/supertech-capetown-sector-74-noida-pdpid-4d4235303137353133#cardid-82991791 "HTTP/1.1 200 OK"
+2026-07-14 11:18:01,222 [INFO] HTTP Request: GET https://www.magicbricks.com/antriksh-valley-noida-extension-noida-pdpid-4d4235303031313738#cardid-85529719 "HTTP/1.1 200 OK"
+2026-07-14 11:18:07,618 [INFO] HTTP Request: GET https://www.magicbricks.com/propertyDetails/3-BHK-1540-Sq-ft-Multistorey-Apartment-FOR-Rent-Sector-143-in-Noida&id=4d423834313930333531#cardid-84190351 "HTTP/1.1 200 OK"
+2026-07-14 11:18:13,830 [INFO] HTTP Request: GET https://www.magicbricks.com/amrapali-silicon-city-sector-76-noida-pdpid-4d4235303233383639#cardid-85054991 "HTTP/1.1 200 OK"
+2026-07-14 11:18:21,208 [INFO] HTTP Request: GET https://www.magicbricks.com/iitl-nimbus-the-hyde-park-sector-78-noida-pdpid-4d4235303339313130#cardid-85528693 "HTTP/1.1 200 OK"
+2026-07-14 11:18:26,516 [INFO] HTTP Request: GET https://www.magicbricks.com/propertyDetails/3-BHK-1440-Sq-ft-Builder-Floor-Apartment-FOR-Rent-Sector-104-in-Noida&id=4d423834343832353331#cardid-84482531 "HTTP/1.1 200 OK"
+2026-07-14 11:18:26,653 [INFO] Detail-page enrichment: 40/96 processed, 40 coordinates found so far
+2026-07-14 11:18:30,098 [INFO] HTTP Request: GET https://www.magicbricks.com/gateway-apartment-sector-51-noida-pdpid-4d4235303130383137#cardid-27467133 "HTTP/1.1 200 OK"
+2026-07-14 11:18:36,949 [INFO] HTTP Request: GET https://www.magicbricks.com/propertyDetails/3-BHK-1500-Sq-ft-Residential-House-FOR-Rent-Sector-45-in-Noida&id=4d423835303434333031#cardid-85044301 "HTTP/1.1 200 OK"
+2026-07-14 11:18:40,762 [INFO] HTTP Request: GET https://www.magicbricks.com/habitech-panchtatva-noida-extension-noida-pdpid-4d4235303139303039#cardid-83770787 "HTTP/1.1 200 OK"
+2026-07-14 11:18:45,358 [INFO] HTTP Request: GET https://www.magicbricks.com/ats-nobility-sector-4-noida-pdpid-4d4235313234333731#cardid-85168291 "HTTP/1.1 301 Moved Permanently"
+2026-07-14 11:18:47,282 [INFO] HTTP Request: GET https://www.magicbricks.com/ats-nobility-noida-extension-noida-pdpid-4d4235313234333731#cardid-85168291 "HTTP/1.1 200 OK"
+2026-07-14 11:18:53,817 [INFO] HTTP Request: GET https://www.magicbricks.com/propertyDetails/3-BHK-1582-Sq-ft-Multistorey-Apartment-FOR-Rent-Sector-131-in-Noida&id=4d423835323639343637#cardid-85269467 "HTTP/1.1 200 OK"
+2026-07-14 11:18:59,980 [INFO] HTTP Request: GET https://www.magicbricks.com/tata-eureka-park-sector-150-noida-pdpid-4d4235313235363339#cardid-79490159 "HTTP/1.1 200 OK"
+2026-07-14 11:19:05,063 [INFO] HTTP Request: GET https://www.magicbricks.com/rwa-metro-apartments-sector-71-pocket-b-noida-pdpid-4d4235303131303731#cardid-84962673 "HTTP/1.1 301 Moved Permanently"
+2026-07-14 11:19:05,658 [INFO] HTTP Request: GET https://www.magicbricks.com/rwa-metro-apartments-sector-71-noida-pdpid-4d4235303131303731#cardid-84962673 "HTTP/1.1 200 OK"
+2026-07-14 11:19:12,637 [INFO] HTTP Request: GET https://www.magicbricks.com/amrapali-heart-beat-city-sector-107-noida-pdpid-4d4235303233383635#cardid-83915669 "HTTP/1.1 200 OK"
+2026-07-14 11:19:18,337 [INFO] HTTP Request: GET https://www.magicbricks.com/grace-sector-61-block-e-noida-pdpid-4d4235303030393537#cardid-59305959 "HTTP/1.1 301 Moved Permanently"
+2026-07-14 11:19:18,752 [INFO] HTTP Request: GET https://www.magicbricks.com/grace-sector-61-noida-pdpid-4d4235303030393537#cardid-59305959 "HTTP/1.1 200 OK"
+2026-07-14 11:19:23,159 [INFO] HTTP Request: GET https://www.magicbricks.com/apex-athena-sector-75-noida-pdpid-4d4235303236303735#cardid-82550705 "HTTP/1.1 200 OK"
+2026-07-14 11:19:23,582 [INFO] Detail-page enrichment: 50/96 processed, 50 coordinates found so far
+2026-07-14 11:19:29,133 [INFO] HTTP Request: GET https://www.magicbricks.com/ats-pious-hideaways-sector-150-noida-pdpid-4d4235313231383435#cardid-83985061 "HTTP/1.1 200 OK"
+2026-07-14 11:19:37,632 [INFO] HTTP Request: GET https://www.magicbricks.com/propertyDetails/1-BHK-530-Sq-ft-Multistorey-Apartment-FOR-Rent-Noida-Extension-in-Noida&id=4d423834343038343839#cardid-84408489 "HTTP/1.1 200 OK"
+2026-07-14 11:19:42,598 [INFO] HTTP Request: GET https://www.magicbricks.com/amrapali-amarpali-o2-valley-noida-extension-noida-pdpid-4d4235303335333838#cardid-85309967 "HTTP/1.1 200 OK"
+2026-07-14 11:19:47,733 [INFO] HTTP Request: GET https://www.magicbricks.com/ats-one-hamlet-sector-104-noida-pdpid-4d4235303235353436#cardid-45411717 "HTTP/1.1 200 OK"
+2026-07-14 11:19:55,402 [INFO] HTTP Request: GET https://www.magicbricks.com/propertyDetails/5000-Sq-ft-Office-in-IT-Park-SEZ-FOR-Rent-Sector-63-Block-H-in-Noida&id=4d423833353530333031#cardid-83550301 "HTTP/1.1 200 OK"
+2026-07-14 11:19:59,899 [INFO] HTTP Request: GET https://www.magicbricks.com/maxblis-white-house-sector-75-noida-pdpid-4d4235303230353039#cardid-78561783 "HTTP/1.1 200 OK"
+2026-07-14 11:20:04,524 [INFO] HTTP Request: GET https://www.magicbricks.com/gaur-city-7th-avenue-noida-extension-noida-pdpid-4d4235303737323133#cardid-85510723 "HTTP/1.1 200 OK"
+2026-07-14 11:20:09,439 [INFO] HTTP Request: GET https://www.magicbricks.com/aims-max-gardenia-golf-city-sector-75-noida-pdpid-4d4235303039383531#cardid-85521383 "HTTP/1.1 200 OK"
+2026-07-14 11:20:14,652 [INFO] HTTP Request: GET https://www.magicbricks.com/propertyDetails/3-BHK-2000-Sq-ft-Builder-Floor-Apartment-FOR-Rent-Sector-122-in-Noida&id=4d423833353339313133#cardid-83539113 "HTTP/1.1 200 OK"
+2026-07-14 11:20:20,866 [INFO] HTTP Request: GET https://www.magicbricks.com/propertyDetails/6-BHK-450-Sq-m-Residential-House-FOR-Rent-Sector-47-Block-D-in-Noida&id=4d423835303236323339#cardid-85026239 "HTTP/1.1 200 OK"
+2026-07-14 11:20:21,388 [INFO] Detail-page enrichment: 60/96 processed, 60 coordinates found so far
+2026-07-14 11:20:25,733 [INFO] HTTP Request: GET https://www.magicbricks.com/ats-one-hamlet-sector-104-noida-pdpid-4d4235303235353436#cardid-82816657 "HTTP/1.1 200 OK"
+2026-07-14 11:20:31,650 [INFO] HTTP Request: GET https://www.magicbricks.com/propertyDetails/3-BHK-2510-Sq-ft-Multistorey-Apartment-FOR-Rent-Sector-75-in-Noida&id=4d423834323033313433#cardid-84203143 "HTTP/1.1 200 OK"
+2026-07-14 11:20:36,379 [INFO] HTTP Request: GET https://www.magicbricks.com/gardenia-glory-sector-46-noida-pdpid-4d4235303030393535#cardid-85494197 "HTTP/1.1 200 OK"
+2026-07-14 11:20:42,198 [INFO] HTTP Request: GET https://www.magicbricks.com/okaya-centre-sector-62-noida-pdpid-4d4235303836343536#cardid-76683427 "HTTP/1.1 301 Moved Permanently"
+2026-07-14 11:20:43,138 [INFO] HTTP Request: GET https://www.magicbricks.com/okaya-centre-sector-62-block-b-industrial-area-noida-pdpid-4d4235303836343536#cardid-76683427 "HTTP/1.1 200 OK"
+2026-07-14 11:20:49,192 [INFO] HTTP Request: GET https://www.magicbricks.com/grihapravesh-griha-pravesh-sector-77-noida-pdpid-4d4235303236303335#cardid-83863495 "HTTP/1.1 200 OK"
+2026-07-14 11:20:54,113 [INFO] HTTP Request: GET https://www.magicbricks.com/sunworld-vanalika-sector-107-noida-pdpid-4d4235303030313831#cardid-85482723 "HTTP/1.1 200 OK"
+2026-07-14 11:21:00,003 [INFO] HTTP Request: GET https://www.magicbricks.com/aba-cleo-county-sector-121-noida-pdpid-4d4235303139303230#cardid-85495003 "HTTP/1.1 200 OK"
+2026-07-14 11:21:05,915 [INFO] HTTP Request: GET https://www.magicbricks.com/super-nova-east-sector-94-noida-pdpid-4d4235323039383831#cardid-84706989 "HTTP/1.1 200 OK"
+2026-07-14 11:21:09,573 [INFO] HTTP Request: GET https://www.magicbricks.com/panchsheel-pratishtha-sector-75-noida-pdpid-4d4235303139383038#cardid-85220261 "HTTP/1.1 200 OK"
+2026-07-14 11:21:15,709 [INFO] HTTP Request: GET https://www.magicbricks.com/ace-city-noida-extension-noida-pdpid-4d4235303238363133#cardid-84327213 "HTTP/1.1 200 OK"
+2026-07-14 11:21:16,067 [INFO] Detail-page enrichment: 70/96 processed, 70 coordinates found so far
+2026-07-14 11:21:21,232 [INFO] HTTP Request: GET https://www.magicbricks.com/propertyDetails/2-BHK-1106-Sq-ft-Multistorey-Apartment-FOR-Rent-Noida-Extension-in-Noida&id=4d423730343134383537#cardid-70414857 "HTTP/1.1 200 OK"
+2026-07-14 11:21:24,795 [INFO] HTTP Request: GET https://www.magicbricks.com/supertech-capetown-sector-74-noida-pdpid-4d4235303137353133#cardid-84085357 "HTTP/1.1 200 OK"
+2026-07-14 11:21:28,073 [INFO] HTTP Request: GET https://www.magicbricks.com/habitat-44-sector-44-block-c-noida-pdpid-4d4235303635383638#cardid-85474145 "HTTP/1.1 301 Moved Permanently"
+2026-07-14 11:21:28,908 [INFO] HTTP Request: GET https://www.magicbricks.com/habitat-44-sector-44-noida-pdpid-4d4235303635383638#cardid-85474145 "HTTP/1.1 200 OK"
+2026-07-14 11:21:33,760 [INFO] HTTP Request: GET https://www.magicbricks.com/supertech-capetown-sector-74-noida-pdpid-4d4235303137353133#cardid-85511223 "HTTP/1.1 200 OK"
+2026-07-14 11:21:40,323 [INFO] HTTP Request: GET https://www.magicbricks.com/propertyDetails/3-BHK-1800-Sq-ft-Builder-Floor-Apartment-FOR-Rent-Sector-15A-in-Noida&id=4d423831333633363733#cardid-81363673 "HTTP/1.1 200 OK"
+2026-07-14 11:21:46,512 [INFO] HTTP Request: GET https://www.magicbricks.com/omaxe-grandwoods-sector-93b-noida-pdpid-4d4235303030353932#cardid-85129469 "HTTP/1.1 200 OK"
+2026-07-14 11:21:51,987 [INFO] HTTP Request: GET https://www.magicbricks.com/ivy-county-sector-75-noida-pdpid-4d4235313236393639#cardid-84904803 "HTTP/1.1 200 OK"
+2026-07-14 11:21:57,380 [INFO] HTTP Request: GET https://www.magicbricks.com/propertyDetails/3-BHK-1550-Sq-ft-Residential-House-FOR-Rent-Sector-75-in-Noida&id=4d423834353730333833#cardid-84570383 "HTTP/1.1 200 OK"
+2026-07-14 11:22:05,468 [INFO] HTTP Request: GET https://www.magicbricks.com/prateek-edifice-sector-107-noida-pdpid-4d4235303030353137#cardid-84862149 "HTTP/1.1 200 OK"
+2026-07-14 11:22:10,591 [INFO] HTTP Request: GET https://www.magicbricks.com/supertech-ecociti-sector-137-noida-pdpid-4d4235303137353239#cardid-82667117 "HTTP/1.1 200 OK"
+2026-07-14 11:22:10,955 [INFO] Detail-page enrichment: 80/96 processed, 80 coordinates found so far
+2026-07-14 11:22:16,193 [INFO] HTTP Request: GET https://www.magicbricks.com/propertyDetails/3-BHK-252-Sq-m-Residential-House-FOR-Rent-Sector-41-in-Noida&id=4d423831303436323539#cardid-81046259 "HTTP/1.1 200 OK"
+2026-07-14 11:22:24,175 [INFO] HTTP Request: GET https://www.magicbricks.com/mahagun-mezzaria-sector-78-noida-pdpid-4d4235303230373435#cardid-85442255 "HTTP/1.1 200 OK"
+2026-07-14 11:22:28,101 [INFO] HTTP Request: GET https://www.magicbricks.com/supertech-capetown-sector-74-noida-pdpid-4d4235303137353133#cardid-85377903 "HTTP/1.1 200 OK"
+2026-07-14 11:22:32,907 [INFO] HTTP Request: GET https://www.magicbricks.com/supertech-emerald-court-sector-93a-noida-pdpid-4d4235303030313736#cardid-85521921 "HTTP/1.1 200 OK"
+2026-07-14 11:22:38,788 [INFO] HTTP Request: GET https://www.magicbricks.com/godrej-woods-sector-43-noida-pdpid-4d4235323330313731#cardid-85505185 "HTTP/1.1 200 OK"
+2026-07-14 11:22:45,396 [INFO] HTTP Request: GET https://www.magicbricks.com/parx-laureate-sector-108-noida-pdpid-4d4235303137303534#cardid-84202137 "HTTP/1.1 200 OK"
+2026-07-14 11:22:50,116 [INFO] HTTP Request: GET https://www.magicbricks.com/omaxe-grandwoods-sector-93b-noida-pdpid-4d4235303030353932#cardid-82101193 "HTTP/1.1 200 OK"
+2026-07-14 11:23:00,263 [INFO] HTTP Request: GET https://www.magicbricks.com/propertyDetails/7-BHK-3000-Sq-ft-Villa-FOR-Rent-Sector-93B-in-Noida&id=4d423835313936363639#cardid-85196669 "HTTP/1.1 200 OK"
+2026-07-14 11:23:06,583 [INFO] HTTP Request: GET https://www.magicbricks.com/propertyDetails/442-Sq-ft-Office-in-IT-Park-SEZ-FOR-Rent-Sector-127-in-Noida&id=4d423835313433303731#cardid-85143071 "HTTP/1.1 200 OK"
+2026-07-14 11:23:10,737 [INFO] HTTP Request: GET https://www.magicbricks.com/amrapali-silicon-city-sector-76-noida-pdpid-4d4235303233383639#cardid-83694747 "HTTP/1.1 200 OK"
+2026-07-14 11:23:11,197 [INFO] Detail-page enrichment: 90/96 processed, 90 coordinates found so far
+2026-07-14 11:23:14,593 [INFO] HTTP Request: GET https://www.magicbricks.com/omaxe-grandwoods-sector-93b-noida-pdpid-4d4235303030353932#cardid-85510425 "HTTP/1.1 200 OK"
+2026-07-14 11:23:21,850 [INFO] HTTP Request: GET https://www.magicbricks.com/the-3c-lotus-zing-sector-168-noida-pdpid-4d4235303031323931#cardid-84993237 "HTTP/1.1 200 OK"
+2026-07-14 11:23:28,440 [INFO] HTTP Request: GET https://www.magicbricks.com/propertyDetails/Builder-Floor-Apartment-FOR-Rent-Sector-44-in-Noida&id=4d423733323539323633#cardid-73259263 "HTTP/1.1 200 OK"
+2026-07-14 11:23:34,964 [INFO] HTTP Request: GET https://www.magicbricks.com/propertyDetails/3-BHK-1936-Sq-ft-Residential-House-FOR-Rent-Sector-41-in-Noida&id=4d423134373235393233#cardid-14725923 "HTTP/1.1 200 OK"
+2026-07-14 11:23:39,175 [INFO] HTTP Request: GET https://www.magicbricks.com/jaypee-klassic-sector-134-noida-pdpid-4d4235303231353035#cardid-84611259 "HTTP/1.1 200 OK"
+2026-07-14 11:23:45,911 [INFO] HTTP Request: GET https://www.magicbricks.com/aditya-celebrity-homes-sector-76-noida-pdpid-4d4235303237383030#cardid-85493161 "HTTP/1.1 200 OK"
+2026-07-14 11:23:46,203 [INFO] Detail-page enrichment complete: 96/96 listings got real coordinates
+2026-07-14 11:23:46,205 [INFO] Scraped 96 total listings
+2026-07-14 11:23:46,212 [INFO] Wrote 96 listings to scraped_listings.jsonl
+  Resolved city: Noida (stored under unique key: "Skymark One Sector 98 Noida")
+
+  → Seeding grid...
+Seeding city "Skymark One Sector 98 Noida" (28.5074, 77.3912) — 200m cells, 5000m radius
+City "Skymark One Sector 98 Noida" already exists (id=18). Updated to 200m cells, 5000m radius. Generating any new grid cells needed (existing ones untouched).
+Seeded 2601 grid cells for "Skymark One Sector 98 Noida" (200m cells, 5000m radius).
+
+  → Ingesting...
+Ingesting into city="Skymark One Sector 98 Noida" (id=18)
+
+Ingestion complete for "Skymark One Sector 98 Noida":
+  Processed:            96
+  Skipped (no URL):     0
+  Skipped (no coords):  0
+  Skipped (no grid):    65
+  Errors:               0
+
+
+  → Aggregating...
+Computing stats for "Skymark One Sector 98 Noida" (id=18)...
+  bhk_bucket_stats: 35 rows written
+  grid_stats: 29 rows written
+Done.
+
+
+Batch #16 finished: 1 succeeded, 0 empty, 0 failed.

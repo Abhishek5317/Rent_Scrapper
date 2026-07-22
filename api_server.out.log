@@ -1,0 +1,2 @@
+RentIQ API listening on http://localhost:3001
+Try: http://localhost:3001/api/grids?city=Noida

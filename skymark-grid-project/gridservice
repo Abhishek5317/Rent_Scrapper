@@ -1,0 +1,153 @@
+/**
+ * gridService.js
+ *
+ * Two responsibilities, kept separate on purpose:
+ *
+ * 1. generateGridsForCity()  — run ONCE per city (or when the radius/
+ *    cell size config changes). Creates all grid rows + polygons and
+ *    persists them. Grid codes are stable from then on.
+ *
+ * 2. assignPropertyToGrid()  — run per scraped listing at ingestion
+ *    time. Pure analytical math (no DB round-trip, no polygon test)
+ *    because the grid is a regular axis-aligned lattice anchored at
+ *    the city's origin point. This mirrors the exact row/col logic
+ *    already in the frontend (script.js), so grid_code assignment is
+ *    reproducible client-side and server-side.
+ *
+ * A validation helper (ST_Contains) is provided separately for
+ * sanity-checking a batch, or for future irregular/clipped grids —
+ * it is NOT on the hot ingestion path.
+ */
+
+const METERS_PER_DEG_LAT = 111320;
+
+function degLat(meters) {
+  return meters / METERS_PER_DEG_LAT;
+}
+
+function degLng(meters, atLat) {
+  return meters / (METERS_PER_DEG_LAT * Math.cos((atLat * Math.PI) / 180));
+}
+
+/**
+ * Build the polygon + metadata for every cell in a city's grid.
+ * Does NOT touch the database — returns plain objects so callers
+ * (a seed script, a migration, a test) can decide how to persist them.
+ *
+ * @param {{origin_lat:number, origin_lng:number, cell_size_m:number, radius_m:number}} city
+ * @returns {Array<GridCell>}
+ */
+function generateGridCells(city) {
+  const { origin_lat, origin_lng, cell_size_m, radius_m } = city;
+
+  const dLat = degLat(cell_size_m);
+  const dLng = degLng(cell_size_m, origin_lat);
+
+  // Number of cells needed to cover the radius in each direction.
+  // ceil() ensures the full requested radius is covered even if
+  // radius_m isn't an exact multiple of cell_size_m.
+  const halfGrid = Math.ceil(radius_m / cell_size_m);
+
+  const cells = [];
+
+  for (let row = -halfGrid; row <= halfGrid; row++) {
+    for (let col = -halfGrid; col <= halfGrid; col++) {
+      const south = origin_lat + row * dLat;
+      const north = origin_lat + (row + 1) * dLat;
+      const west = origin_lng + col * dLng;
+      const east = origin_lng + (col + 1) * dLng;
+
+      cells.push({
+        grid_code: gridCodeFor(row, col, halfGrid),
+        row_index: row,
+        col_index: col,
+        south,
+        north,
+        west,
+        east,
+        center_lat: (south + north) / 2,
+        center_lng: (west + east) / 2,
+        // WKT polygon, ring must close (first point == last point)
+        geom_wkt: polygonWkt(south, north, west, east),
+      });
+    }
+  }
+
+  return cells;
+}
+
+/**
+ * Deterministic, human-readable grid code. Encodes row/col directly
+ * so G(row,col) is always reconstructible, and sorts sensibly.
+ * Example: row=-2, col=1, halfGrid=2 -> "G-2_1"
+ * Swap this for a sequential "G1, G2, ..." scheme at insert time if
+ * you prefer opaque IDs — row/col are kept as real columns either way.
+ */
+function gridCodeFor(row, col, halfGrid) {
+  return `G${row}_${col}`;
+}
+
+function polygonWkt(south, north, west, east) {
+  return (
+    `POLYGON((${west} ${south}, ${east} ${south}, ` +
+    `${east} ${north}, ${west} ${north}, ${west} ${south}))`
+  );
+}
+
+/**
+ * Assign a single lat/lng to a grid cell using the SAME analytical
+ * formula used to generate the cells — guarantees every listing that
+ * falls within the covered radius maps to exactly one existing cell.
+ *
+ * @param {number} lat
+ * @param {number} lng
+ * @param {{origin_lat:number, origin_lng:number, cell_size_m:number, radius_m:number}} city
+ * @returns {{row_index:number, col_index:number, grid_code:string} | null}
+ *          null if the point falls outside the generated grid's radius
+ */
+function assignPropertyToGrid(lat, lng, city) {
+  const { origin_lat, origin_lng, cell_size_m, radius_m } = city;
+
+  const dLat = degLat(cell_size_m);
+  const dLng = degLng(cell_size_m, origin_lat);
+
+  const row = Math.floor((lat - origin_lat) / dLat);
+  const col = Math.floor((lng - origin_lng) / dLng);
+
+  const halfGrid = Math.ceil(radius_m / cell_size_m);
+  if (Math.abs(row) > halfGrid || Math.abs(col) > halfGrid) {
+    return null; // outside the analysis area entirely
+  }
+
+  return {
+    row_index: row,
+    col_index: col,
+    grid_code: gridCodeFor(row, col, halfGrid),
+  };
+}
+
+/**
+ * Validation query — confirm the analytically-assigned grid actually
+ * contains the point in PostGIS terms. Use in a batch QA job or in
+ * tests, not on the hot path (it's a DB round trip + spatial op).
+ *
+ * @param {import('pg').Pool} pool
+ * @param {number} gridId
+ * @param {number} lat
+ * @param {number} lng
+ */
+async function validateAssignment(pool, gridId, lat, lng) {
+  const { rows } = await pool.query(
+    `SELECT ST_Contains(geom, ST_SetSRID(ST_MakePoint($1, $2), 4326)) AS contains
+     FROM grids WHERE id = $3`,
+    [lng, lat, gridId]
+  );
+  return rows[0]?.contains === true;
+}
+
+module.exports = {
+  generateGridCells,
+  assignPropertyToGrid,
+  validateAssignment,
+  gridCodeFor,
+};

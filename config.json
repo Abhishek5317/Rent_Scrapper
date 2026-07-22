@@ -1,0 +1,13 @@
+{
+  "center_lat": 9.9312,
+  "center_lng": 76.2673,
+  "cell_size_m": 200,
+  "radius_m": 5000,
+  "max_pages": 6,
+  "api_base_url": "http://localhost:3001/api",
+  "store_key": "Domino's Kochi Kerala",
+  "city_name": "Kochi",
+  "state": "Kerala",
+  "magicbricks_city_name": "Kochi",
+  "location_label": "Kochi"
+}

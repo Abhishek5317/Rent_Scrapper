@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>RentIQ – Run History</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body class="scrollable-page">
+
+  <div class="header">
+    <h1>🕘 Run History</h1>
+    <p class="header-subtitle">Every extraction batch — status, per-store results, and downloads.</p>
+  </div>
+
+  <div id="nav-placeholder" data-active="history"></div>
+
+  <div class="page-container">
+    <div class="panel">
+      <p id="runs-status" class="status-msg">Loading...</p>
+      <div id="runs-table-wrap"></div>
+    </div>
+
+    <div id="run-detail-panel" class="panel hidden">
+      <h3 id="run-detail-title"></h3>
+      <p id="run-detail-status" class="status-msg"></p>
+      <div id="run-detail-stores"></div>
+      <pre id="run-detail-log" class="log-console hidden"></pre>
+    </div>
+  </div>
+
+  <script src="nav.js"></script>
+  <script src="shared.js"></script>
+  <script src="history.js"></script>
+</body>
+</html>

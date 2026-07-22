@@ -1,0 +1,155 @@
+Extraction batch #14 started — 1 store(s).
+
+============================================================
+[1/1] Mohan Nagar Ghaziabad (28.6739, 77.3406)
+============================================================
+
+  → Scraping...
+2026-07-13 14:20:29,179 [INFO] No city name in config � reverse-geocoding (28.6739, 77.3406)...
+2026-07-13 14:20:29,397 [INFO] Resolved city: Ghaziabad, state: Uttar Pradesh
+2026-07-13 14:20:29,398 [INFO] Saved resolved values back to C:\Users\riddh\OneDrive\Desktop\skymark-grid-project\config.json
+2026-07-13 14:20:29,401 [INFO] Starting MagicBricks scrape run
+2026-07-13 14:20:32,206 [INFO] Bootstrapping session via Playwright: https://www.magicbricks.com/property-for-rent/residential-real-estate?cityName=Ghaziabad&page=1
+2026-07-13 14:20:43,802 [INFO] Skipping likely-commercial listing:  Warehouse/ Godown for Rent in Meerut Road Ghaziabad
+2026-07-13 14:20:43,845 [INFO] Skipping likely-commercial listing:   Office Space for Rent in Kaushambi Ghaziabad
+2026-07-13 14:20:43,849 [INFO] Skipping likely-commercial listing:  Warehouse/ Godown for Rent in Shastri Nagar Ghaziabad
+2026-07-13 14:20:43,857 [INFO] Skipping likely-commercial listing:  Industrial Shed for Rent in Rajinder Nagar Industrial Area Ghaziabad
+2026-07-13 14:20:43,860 [INFO] Skipping likely-commercial listing:   Office Space for Rent in Sector 5 Rajendra Nagar Ghaziabad
+2026-07-13 14:20:43,863 [INFO] Skipping likely-commercial listing:   Shop for Rent in Nai Basti, Naya Ganj Ghaziabad
+2026-07-13 14:20:43,877 [INFO] Skipping likely-commercial listing:   Office Space for Rent in Omaxe Park Plaza, Shakti Khand 2, Indirapuram Ghaziabad
+2026-07-13 14:20:43,877 [INFO] Page 1: 23 listings parsed so far
+2026-07-13 14:20:51,439 [INFO] HTTP Request: GET https://www.magicbricks.com/property-for-rent/residential-real-estate?cityName=Ghaziabad&page=2 "HTTP/1.1 200 OK"
+2026-07-13 14:20:51,897 [INFO] Skipping likely-commercial listing:   Office Space for Rent in Gyankhand 4 Ghaziabad
+2026-07-13 14:20:51,916 [WARNING] Rejecting implausible monthly_rent=1400000.0 for cardid=84647439 (source text: 1400000) � outside the 1,000-1,000,000 sanity range.
+2026-07-13 14:20:51,917 [INFO] Skipping likely-commercial listing:   Shop for Rent in Victory Indirapuram Habitat Centre, Ahinsa Khand-1, Indirapuram Ghaziabad
+2026-07-13 14:20:51,945 [INFO] Page 2: +28 listings (running total: 51)
+2026-07-13 14:20:57,802 [INFO] HTTP Request: GET https://www.magicbricks.com/property-for-rent/residential-real-estate?cityName=Ghaziabad&page=3 "HTTP/1.1 200 OK"
+2026-07-13 14:20:58,063 [INFO] Skipping likely-commercial listing:  Warehouse/ Godown for Rent in Tila More Ghaziabad
+2026-07-13 14:20:58,069 [INFO] Skipping likely-commercial listing:   Office Space for Rent in Nehru Nagar 2 Ghaziabad
+2026-07-13 14:20:58,080 [INFO] Skipping likely-commercial listing:   Office Space for Rent in Vasundhara Ghaziabad
+2026-07-13 14:20:58,084 [INFO] Skipping likely-commercial listing:  Industrial Shed for Rent in Sahibabad Ghaziabad
+2026-07-13 14:20:58,087 [INFO] Skipping likely-commercial listing:   Office Space for Rent in Block C Surya Nagar Ghaziabad
+2026-07-13 14:20:58,095 [INFO] Skipping likely-commercial listing:   Office Space for Rent in Sector 4 Vaishali Ghaziabad
+2026-07-13 14:20:58,099 [INFO] Skipping likely-commercial listing:   Shop for Rent in Sector 4 Vaishali Ghaziabad
+2026-07-13 14:20:58,100 [INFO] Skipping likely-commercial listing:   Shop for Rent in AU Family Hub, National Highway 24 Ghaziabad
+2026-07-13 14:20:58,107 [INFO] Skipping likely-commercial listing:   Shop for Rent in Wave City Ghaziabad
+2026-07-13 14:20:58,116 [INFO] Skipping likely-commercial listing:  Industrial Building for Rent in Site 4 Sahibabad Industrial Area Ghaziabad
+2026-07-13 14:20:58,143 [INFO] Page 3: +20 listings (running total: 71)
+2026-07-13 14:20:58,144 [INFO] Starting detail-page coordinate enrichment for 71 listings...
+2026-07-13 14:21:05,492 [INFO] HTTP Request: GET https://www.magicbricks.com/east-avenue-indirapuram-ghaziabad-pdpid-4d4235303534313136#cardid-85380509 "HTTP/1.1 200 OK"
+2026-07-13 14:21:10,966 [INFO] HTTP Request: GET https://www.magicbricks.com/propertyDetails/5-BHK-3500-Sq-ft-Builder-Floor-Apartment-FOR-Rent-Vaishali-in-Ghaziabad&id=4d423834373730373939#cardid-84770799 "HTTP/1.1 200 OK"
+2026-07-13 14:21:17,636 [INFO] HTTP Request: GET https://www.magicbricks.com/ajnara-gen-x-crossings-republik-ghaziabad-pdpid-4d4235303330343332#cardid-83579427 "HTTP/1.1 200 OK"
+2026-07-13 14:21:20,821 [INFO] HTTP Request: GET https://www.magicbricks.com/ajnara-gen-x-crossings-republik-ghaziabad-pdpid-4d4235303330343332#cardid-84494035 "HTTP/1.1 200 OK"
+2026-07-13 14:21:25,033 [INFO] HTTP Request: GET https://www.magicbricks.com/propertyDetails/2-BHK-1250-Sq-ft-Multistorey-Apartment-FOR-Rent-Crossings-Republik-in-Ghaziabad&id=4d423635303433353231#cardid-65043521 "HTTP/1.1 200 OK"
+2026-07-13 14:21:28,824 [INFO] HTTP Request: GET https://www.magicbricks.com/ats-advantage-indirapuram-ghaziabad-pdpid-4d4235303031333930#cardid-85508401 "HTTP/1.1 200 OK"
+2026-07-13 14:21:33,433 [INFO] HTTP Request: GET https://www.magicbricks.com/propertyDetails/3-BHK-2115-Sq-ft-Multistorey-Apartment-FOR-Rent-NH-24-in-Ghaziabad&id=4d423835343239343339#cardid-85429439 "HTTP/1.1 200 OK"
+2026-07-13 14:21:37,839 [INFO] HTTP Request: GET https://www.magicbricks.com/ats-advantage-indirapuram-ghaziabad-pdpid-4d4235303031333930#cardid-82968733 "HTTP/1.1 200 OK"
+2026-07-13 14:21:44,799 [INFO] HTTP Request: GET https://www.magicbricks.com/propertyDetails/4-BHK-2500-Sq-ft-Builder-Floor-Apartment-FOR-Rent-Ramprastha-Colony-in-Ghaziabad&id=4d423833393038393035#cardid-83908905 "HTTP/1.1 200 OK"
+2026-07-13 14:21:48,285 [INFO] HTTP Request: GET https://www.magicbricks.com/truvae-fragrance-homes-siddhartha-vihar-ghaziabad-pdpid-4d4235303734323932#cardid-83408503 "HTTP/1.1 200 OK"
+2026-07-13 14:21:48,552 [INFO] Detail-page enrichment: 10/71 processed, 10 coordinates found so far
+2026-07-13 14:21:52,885 [INFO] HTTP Request: GET https://www.magicbricks.com/crossing-republic-gh-7-crossings-republik-ghaziabad-pdpid-4d4235303232383938#cardid-83034445 "HTTP/1.1 200 OK"
+2026-07-13 14:21:58,525 [INFO] HTTP Request: GET https://www.magicbricks.com/nilaya-greens-raj-nagar-extension-ghaziabad-pdpid-4d4235313230393235#cardid-84488899 "HTTP/1.1 200 OK"
+2026-07-13 14:22:05,197 [INFO] HTTP Request: GET https://www.magicbricks.com/propertyDetails/2-BHK-990-Sq-ft-Residential-House-FOR-Rent-Chipiyana-Buzurg-in-Ghaziabad&id=4d423834363138383831#cardid-84618881 "HTTP/1.1 200 OK"
+2026-07-13 14:22:08,902 [INFO] HTTP Request: GET https://www.magicbricks.com/skb-gold-coast-crossings-republik-ghaziabad-pdpid-4d4235303030323535#cardid-83355975 "HTTP/1.1 200 OK"
+2026-07-13 14:22:12,231 [INFO] HTTP Request: GET https://www.magicbricks.com/ats-advantage-indirapuram-ghaziabad-pdpid-4d4235303031333930#cardid-84913773 "HTTP/1.1 200 OK"
+2026-07-13 14:22:16,842 [INFO] HTTP Request: GET https://www.magicbricks.com/propertyDetails/2-BHK-900-Sq-ft-Builder-Floor-Apartment-FOR-Rent-Shakti-Khand-3-in-Ghaziabad&id=4d423732383832383739#cardid-72882879 "HTTP/1.1 200 OK"
+2026-07-13 14:22:21,052 [INFO] HTTP Request: GET https://www.magicbricks.com/exotica-eastern-court-crossings-republik-ghaziabad-pdpid-4d4235303130303735#cardid-85517115 "HTTP/1.1 200 OK"
+2026-07-13 14:22:26,299 [INFO] HTTP Request: GET https://www.magicbricks.com/the-golden-gate-nh-24-ghaziabad-pdpid-4d4235303832343736#cardid-83558209 "HTTP/1.1 200 OK"
+2026-07-13 14:22:29,658 [INFO] HTTP Request: GET https://www.magicbricks.com/supertech-livingston-crossings-republik-ghaziabad-pdpid-4d4235303235383439#cardid-85512479 "HTTP/1.1 200 OK"
+2026-07-13 14:22:33,438 [INFO] HTTP Request: GET https://www.magicbricks.com/anthem-kingdom-homes-raj-nagar-extension-ghaziabad-pdpid-4d4235303136353437#cardid-84481825 "HTTP/1.1 200 OK"
+2026-07-13 14:22:33,715 [INFO] Detail-page enrichment: 20/71 processed, 20 coordinates found so far
+2026-07-13 14:22:38,027 [INFO] HTTP Request: GET https://www.magicbricks.com/lotus-pond-indirapuram-ghaziabad-pdpid-4d4235303030363130#cardid-50180762 "HTTP/1.1 200 OK"
+2026-07-13 14:22:42,961 [INFO] HTTP Request: GET https://www.magicbricks.com/propertyDetails/2-BHK-90-Sq-m-Builder-Floor-Apartment-FOR-Rent-Vaishali-Sector-6-in-Ghaziabad&id=4d423834373035313131#cardid-84705111 "HTTP/1.1 200 OK"
+2026-07-13 14:22:47,110 [INFO] HTTP Request: GET https://www.magicbricks.com/propertyDetails/2-BHK-1200-Sq-ft-Builder-Floor-Apartment-FOR-Rent-Indirapuram-in-Ghaziabad&id=4d423834383533303835#cardid-84853085 "HTTP/1.1 200 OK"
+2026-07-13 14:22:53,097 [INFO] HTTP Request: GET https://www.magicbricks.com/prateek-grand-city-siddhartha-vihar-ghaziabad-pdpid-4d4235303239363635#cardid-84863731 "HTTP/1.1 200 OK"
+2026-07-13 14:22:57,943 [INFO] HTTP Request: GET https://www.magicbricks.com/dwarikaraj-raj-garden-city-raj-nagar-extension-ghaziabad-pdpid-4d4235303232353435#cardid-85143181 "HTTP/1.1 200 OK"
+2026-07-13 14:23:03,364 [INFO] HTTP Request: GET https://www.magicbricks.com/shri-balaji-residency-indirapuram-ghaziabad-pdpid-4d4235303039393631#cardid-76726373 "HTTP/1.1 200 OK"
+2026-07-13 14:23:09,594 [INFO] HTTP Request: GET https://www.magicbricks.com/propertyDetails/90-Sq-ft-Residential-House-FOR-Rent-Vasundhara-Sector-9-in-Ghaziabad&id=4d423433343535333239#cardid-43455329 "HTTP/1.1 200 OK"
+2026-07-13 14:23:15,516 [INFO] HTTP Request: GET https://www.magicbricks.com/propertyDetails/5-BHK-300-Sq-m-Villa-FOR-Rent-Indirapuram-in-Ghaziabad&id=4d423834343836383433#cardid-84486843 "HTTP/1.1 200 OK"
+2026-07-13 14:23:23,082 [INFO] HTTP Request: GET https://www.magicbricks.com/vasu-fortune-residency-raj-nagar-extension-ghaziabad-pdpid-4d4235303136383931#cardid-84822379 "HTTP/1.1 200 OK"
+2026-07-13 14:23:27,528 [INFO] HTTP Request: GET https://www.magicbricks.com/propertyDetails/1-BHK-350-Sq-ft-Builder-Floor-Apartment-FOR-Rent-Vaishali-Sector-3-in-Ghaziabad&id=4d423834333730383033#cardid-84370803 "HTTP/1.1 200 OK"
+2026-07-13 14:23:27,630 [INFO] Detail-page enrichment: 30/71 processed, 30 coordinates found so far
+2026-07-13 14:23:32,024 [INFO] HTTP Request: GET https://www.magicbricks.com/gaur-green-city-indirapuram-ghaziabad-pdpid-4d4235303030393530#cardid-85450945 "HTTP/1.1 200 OK"
+2026-07-13 14:23:36,621 [INFO] HTTP Request: GET https://www.magicbricks.com/anthem-kingdom-homes-raj-nagar-extension-ghaziabad-pdpid-4d4235303136353437#cardid-85410533 "HTTP/1.1 200 OK"
+2026-07-13 14:23:40,435 [INFO] HTTP Request: GET https://www.magicbricks.com/meenal-balmukunda-residency-raj-nagar-extension-ghaziabad-pdpid-4d4235303230343638#cardid-85327127 "HTTP/1.1 200 OK"
+2026-07-13 14:23:46,771 [INFO] HTTP Request: GET https://www.magicbricks.com/rishabh-cloud-habitate9-towers-vaishali-ghaziabad-pdpid-4d4235323636323833#cardid-84597665 "HTTP/1.1 200 OK"
+2026-07-13 14:23:50,360 [INFO] HTTP Request: GET https://www.magicbricks.com/krishna-apra-gardens-indirapuram-ghaziabad-pdpid-4d4235303030363833#cardid-85518905 "HTTP/1.1 200 OK"
+2026-07-13 14:23:55,962 [INFO] HTTP Request: GET https://www.magicbricks.com/gulmohur-tower-sector-4-chiranjiv-vihar-ghaziabad-pdpid-4d4235303130343734#cardid-83357123 "HTTP/1.1 301 Moved Permanently"
+2026-07-13 14:23:56,686 [INFO] HTTP Request: GET https://www.magicbricks.com/gulmohur-tower-chiranjiv-vihar-ghaziabad-pdpid-4d4235303130343734#cardid-83357123 "HTTP/1.1 200 OK"
+2026-07-13 14:24:02,536 [INFO] HTTP Request: GET https://www.magicbricks.com/shipra-sun-tower-indirapuram-ghaziabad-pdpid-4d4235303130333933#cardid-85261517 "HTTP/1.1 200 OK"
+2026-07-13 14:24:07,446 [INFO] HTTP Request: GET https://www.magicbricks.com/kdp-grand-savana-raj-nagar-extension-ghaziabad-pdpid-4d4235303231323830#cardid-85511197 "HTTP/1.1 200 OK"
+2026-07-13 14:24:13,985 [INFO] HTTP Request: GET https://www.magicbricks.com/propertyDetails/3-BHK-1200-Sq-ft-Builder-Floor-Apartment-FOR-Rent-Niti-Khand-1-in-Ghaziabad&id=4d423739313435353333#cardid-79145533 "HTTP/1.1 200 OK"
+2026-07-13 14:24:19,208 [INFO] HTTP Request: GET https://www.magicbricks.com/mahagun-mosaic-phase-2-vaishali-sector-4-ghaziabad-pdpid-4d4235323637363733#cardid-84999091 "HTTP/1.1 301 Moved Permanently"
+2026-07-13 14:24:20,355 [INFO] HTTP Request: GET https://www.magicbricks.com/mahagun-mosaic-phase-2-vaishali-ghaziabad-pdpid-4d4235323637363733#cardid-84999091 "HTTP/1.1 200 OK"
+2026-07-13 14:24:20,517 [INFO] Detail-page enrichment: 40/71 processed, 40 coordinates found so far
+2026-07-13 14:24:23,919 [INFO] HTTP Request: GET https://www.magicbricks.com/ats-advantage-ahinsa-khand-1-ghaziabad-pdpid-4d4235303031333930#cardid-85522339 "HTTP/1.1 301 Moved Permanently"
+2026-07-13 14:24:24,029 [INFO] HTTP Request: GET https://www.magicbricks.com/ats-advantage-indirapuram-ghaziabad-pdpid-4d4235303031333930#cardid-85522339 "HTTP/1.1 200 OK"
+2026-07-13 14:24:30,340 [INFO] HTTP Request: GET https://www.magicbricks.com/metro-suites-vaishali-sector-4-ghaziabad-pdpid-4d4235303230323536#cardid-85491629 "HTTP/1.1 301 Moved Permanently"
+2026-07-13 14:24:31,403 [INFO] HTTP Request: GET https://www.magicbricks.com/metro-suites-vaishali-ghaziabad-pdpid-4d4235303230323536#cardid-85491629 "HTTP/1.1 200 OK"
+2026-07-13 14:24:36,827 [INFO] HTTP Request: GET https://www.magicbricks.com/exotica-eastern-court-crossings-republik-ghaziabad-pdpid-4d4235303130303735#cardid-85073721 "HTTP/1.1 200 OK"
+2026-07-13 14:24:42,785 [INFO] HTTP Request: GET https://www.magicbricks.com/saviour-park-mohan-nagar-ghaziabad-pdpid-4d4235303130333834#cardid-80739911 "HTTP/1.1 200 OK"
+2026-07-13 14:24:48,859 [INFO] HTTP Request: GET https://www.magicbricks.com/saya-gold-avenue-vaibhav-khand-ghaziabad-pdpid-4d4235303731333437#cardid-83307753 "HTTP/1.1 301 Moved Permanently"
+2026-07-13 14:24:50,768 [INFO] HTTP Request: GET https://www.magicbricks.com/saya-gold-avenue-indirapuram-ghaziabad-pdpid-4d4235303731333437#cardid-83307753 "HTTP/1.1 200 OK"
+2026-07-13 14:24:57,523 [INFO] HTTP Request: GET https://www.magicbricks.com/wave-veridia-nh-24-ghaziabad-pdpid-4d4235333137383931#cardid-81381611 "HTTP/1.1 200 OK"
+2026-07-13 14:25:05,156 [INFO] HTTP Request: GET https://www.magicbricks.com/propertyDetails/3-BHK-1300-Sq-ft-Builder-Floor-Apartment-FOR-Rent-Gyan-Khand-1-in-Ghaziabad&id=4d423835303832323939#cardid-85082299 "HTTP/1.1 200 OK"
+2026-07-13 14:25:10,686 [INFO] HTTP Request: GET https://www.magicbricks.com/wave-veridia-nh-24-ghaziabad-pdpid-4d4235333137383931#cardid-83503905 "HTTP/1.1 200 OK"
+2026-07-13 14:25:16,982 [INFO] HTTP Request: GET https://www.magicbricks.com/proview-officer-city-raj-nagar-extension-ghaziabad-pdpid-4d4235303030373337#cardid-84689977 "HTTP/1.1 200 OK"
+2026-07-13 14:25:24,335 [INFO] HTTP Request: GET https://www.magicbricks.com/propertyDetails/3-BHK-1400-Sq-ft-Builder-Floor-Apartment-FOR-Rent-Vaishali-Sector-5-in-Ghaziabad&id=4d423835333830373531#cardid-85380751 "HTTP/1.1 200 OK"
+2026-07-13 14:25:24,497 [INFO] Detail-page enrichment: 50/71 processed, 50 coordinates found so far
+2026-07-13 14:25:29,502 [INFO] HTTP Request: GET https://www.magicbricks.com/rishabh-cloud-9-towers-vaishali-vaishali-ghaziabad-pdpid-4d4235313136373535#cardid-85413281 "HTTP/1.1 200 OK"
+2026-07-13 14:25:34,388 [INFO] HTTP Request: GET https://www.magicbricks.com/panchsheel-wellington-crossings-republik-ghaziabad-pdpid-4d4235303139383131#cardid-85099717 "HTTP/1.1 200 OK"
+2026-07-13 14:25:38,672 [INFO] HTTP Request: GET https://www.magicbricks.com/vasu-fortune-residency-garhi-ghaziabad-pdpid-4d4235303136383931#cardid-77608597 "HTTP/1.1 301 Moved Permanently"
+2026-07-13 14:25:38,787 [INFO] HTTP Request: GET https://www.magicbricks.com/vasu-fortune-residency-raj-nagar-extension-ghaziabad-pdpid-4d4235303136383931#cardid-77608597 "HTTP/1.1 200 OK"
+2026-07-13 14:25:42,878 [INFO] HTTP Request: GET https://www.magicbricks.com/saviour-park-mohan-nagar-ghaziabad-pdpid-4d4235303130333834#cardid-85039743 "HTTP/1.1 200 OK"
+2026-07-13 14:25:47,708 [INFO] HTTP Request: GET https://www.magicbricks.com/anthem-kingdom-homes-raj-nagar-extension-ghaziabad-pdpid-4d4235303136353437#cardid-85349287 "HTTP/1.1 200 OK"
+2026-07-13 14:25:55,772 [INFO] HTTP Request: GET https://www.magicbricks.com/propertyDetails/1500-Sq-yrd-Commercial-Land-FOR-Rent-Vikas-Nagar-in-Ghaziabad&id=4d423833383930313231#cardid-83890121 "HTTP/1.1 200 OK"
+2026-07-13 14:26:02,139 [INFO] HTTP Request: GET https://www.magicbricks.com/proview-delhi-99-phase-ii-bhopura-ghaziabad-pdpid-4d4235323637383935#cardid-85210863 "HTTP/1.1 200 OK"
+2026-07-13 14:26:07,106 [INFO] HTTP Request: GET https://www.magicbricks.com/shipra-regal-apartment-indirapuram-ghaziabad-pdpid-4d4235313033303633#cardid-85107339 "HTTP/1.1 200 OK"
+2026-07-13 14:26:10,827 [INFO] HTTP Request: GET https://www.magicbricks.com/sps-residency-indirapuram-ghaziabad-pdpid-4d4235303030353731#cardid-84855847 "HTTP/1.1 200 OK"
+2026-07-13 14:26:14,218 [INFO] HTTP Request: GET https://www.magicbricks.com/prateek-grand-city-siddhartha-vihar-ghaziabad-pdpid-4d4235303239363635#cardid-84799753 "HTTP/1.1 200 OK"
+2026-07-13 14:26:14,992 [INFO] Detail-page enrichment: 60/71 processed, 60 coordinates found so far
+2026-07-13 14:26:23,013 [INFO] HTTP Request: GET https://www.magicbricks.com/wave-veridia-wave-city-ghaziabad-pdpid-4d4235333137383931#cardid-84950501 "HTTP/1.1 301 Moved Permanently"
+2026-07-13 14:26:23,116 [INFO] HTTP Request: GET https://www.magicbricks.com/wave-veridia-nh-24-ghaziabad-pdpid-4d4235333137383931#cardid-84950501 "HTTP/1.1 200 OK"
+2026-07-13 14:26:29,477 [INFO] HTTP Request: GET https://www.magicbricks.com/amrapali-royal-indirapuram-ghaziabad-pdpid-4d4235303031323135#cardid-85474823 "HTTP/1.1 200 OK"
+2026-07-13 14:26:36,046 [INFO] HTTP Request: GET https://www.magicbricks.com/wave-dream-homes-nh-24-ghaziabad-pdpid-4d4235303136353939#cardid-85162499 "HTTP/1.1 200 OK"
+2026-07-13 14:26:40,231 [INFO] HTTP Request: GET https://www.magicbricks.com/assotech-the-nest-crossings-republik-ghaziabad-pdpid-4d4235303039393435#cardid-85174745 "HTTP/1.1 200 OK"
+2026-07-13 14:26:44,620 [INFO] HTTP Request: GET https://www.magicbricks.com/rishabh-cloud-9-towers-vaishali-kamma-1-ghaziabad-pdpid-4d4235313136373535#cardid-85442793 "HTTP/1.1 301 Moved Permanently"
+2026-07-13 14:26:44,828 [INFO] HTTP Request: GET https://www.magicbricks.com/rishabh-cloud-9-towers-vaishali-vaishali-ghaziabad-pdpid-4d4235313136373535#cardid-85442793 "HTTP/1.1 200 OK"
+2026-07-13 14:26:51,791 [INFO] HTTP Request: GET https://www.magicbricks.com/independent-builder-floor-at-niti-khand-indirapuram-indirapuram-ghaziabad-pdpid-4d4235343233363339#cardid-85436177 "HTTP/1.1 200 OK"
+2026-07-13 14:26:56,334 [INFO] HTTP Request: GET https://www.magicbricks.com/gaur-valerio-ahinsa-khand-2-ghaziabad-pdpid-4d4235303030393532#cardid-85492993 "HTTP/1.1 301 Moved Permanently"
+2026-07-13 14:26:57,360 [INFO] HTTP Request: GET https://www.magicbricks.com/gaur-valerio-indirapuram-ghaziabad-pdpid-4d4235303030393532#cardid-85492993 "HTTP/1.1 200 OK"
+2026-07-13 14:27:01,000 [INFO] HTTP Request: GET https://www.magicbricks.com/propertyDetails/3-BHK-1450-Sq-ft-Multistorey-Apartment-FOR-Rent-Pandav-Nagar-in-Ghaziabad&id=4d423835353039393931#cardid-85509991 "HTTP/1.1 200 OK"
+2026-07-13 14:27:05,816 [INFO] HTTP Request: GET https://www.magicbricks.com/aegis-trine-towers-ahinsa-khand-2-ghaziabad-pdpid-4d4235333234333233#cardid-85514675 "HTTP/1.1 301 Moved Permanently"
+2026-07-13 14:27:09,117 [INFO] HTTP Request: GET https://www.magicbricks.com/aegis-trine-towers-indirapuram-ghaziabad-pdpid-4d4235333234333233#cardid-85514675 "HTTP/1.1 200 OK"
+2026-07-13 14:27:15,151 [INFO] HTTP Request: GET https://www.magicbricks.com/hrc-professional-indirapuram-ghaziabad-pdpid-4d4235303131323932#cardid-85520055 "HTTP/1.1 200 OK"
+2026-07-13 14:27:15,552 [INFO] Detail-page enrichment: 70/71 processed, 70 coordinates found so far
+2026-07-13 14:27:20,970 [INFO] HTTP Request: GET https://www.magicbricks.com/savfab-jasmine-grove-nh-24-ghaziabad-pdpid-4d4235303338383030#cardid-85507607 "HTTP/1.1 200 OK"
+2026-07-13 14:27:21,711 [INFO] Detail-page enrichment complete: 71/71 listings got real coordinates
+2026-07-13 14:27:21,713 [INFO] Scraped 71 total listings
+2026-07-13 14:27:21,719 [INFO] Wrote 71 listings to scraped_listings.jsonl
+  Resolved city: Ghaziabad (stored under unique key: "Mohan Nagar Ghaziabad")
+
+  → Seeding grid...
+Seeding city "Mohan Nagar Ghaziabad" (28.6739, 77.3406) — 200m cells, 5000m radius
+City "Mohan Nagar Ghaziabad" already exists (id=19). Updated to 200m cells, 5000m radius. Generating any new grid cells needed (existing ones untouched).
+Seeded 2601 grid cells for "Mohan Nagar Ghaziabad" (200m cells, 5000m radius).
+
+  → Ingesting...
+Ingesting into city="Mohan Nagar Ghaziabad" (id=19)
+
+Ingestion complete for "Mohan Nagar Ghaziabad":
+  Processed:            71
+  Skipped (no URL):     0
+  Skipped (no coords):  0
+  Skipped (no grid):    38
+  Errors:               0
+
+
+  → Aggregating...
+Computing stats for "Mohan Nagar Ghaziabad" (id=19)...
+  bhk_bucket_stats: 29 rows written
+  grid_stats: 24 rows written
+Done.
+
+
+Batch #14 finished: 1 succeeded, 0 empty, 0 failed.

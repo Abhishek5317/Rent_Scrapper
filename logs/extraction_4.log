@@ -1,0 +1,12 @@
+Extraction batch #4 started — 1 store(s).
+
+============================================================
+[1/1] Skymark One Sector 98 Noida (28.5074, 77.3912)
+============================================================
+
+  → Scraping...
+
+  ❌ FAILED: Scraping exited with code 3221225786
+
+
+Batch #4 finished: 0 succeeded, 0 empty, 1 failed.

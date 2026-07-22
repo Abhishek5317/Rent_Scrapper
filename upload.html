@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>RentIQ – Upload &amp; Extract</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body class="scrollable-page">
+
+  <div class="header">
+    <h1>📤 Upload &amp; Extract</h1>
+    <p class="header-subtitle">Upload a CSV of store locations and run the scrape → seed → ingest → aggregate pipeline — no terminal needed.</p>
+  </div>
+
+  <div id="nav-placeholder" data-active="upload"></div>
+
+  <div class="page-container">
+
+    <div class="panel">
+      <h3>1. Upload store list (CSV)</h3>
+
+      <button id="toggle-help-btn" class="link-btn" onclick="toggleHelp()">❓ Expected CSV format</button>
+      <div id="csv-help" class="help-block hidden">
+        <table class="results-table">
+          <thead><tr><th>Column</th><th>Required</th><th>Notes</th></tr></thead>
+          <tbody>
+            <tr><td><code>label</code></td><td>Yes</td><td>Unique name for the store, e.g. "Domino's Sector 62 Noida"</td></tr>
+            <tr><td><code>center_lat</code></td><td>Yes</td><td>-90 to 90</td></tr>
+            <tr><td><code>center_lng</code></td><td>Yes</td><td>-180 to 180</td></tr>
+            <tr><td><code>cell_size_m</code></td><td>No</td><td>Falls back to the default below</td></tr>
+            <tr><td><code>radius_m</code></td><td>No</td><td>Falls back to the default below</td></tr>
+            <tr><td><code>max_pages</code></td><td>No</td><td>Falls back to the default below</td></tr>
+            <tr><td><code>magicbricks_locality</code></td><td>No</td><td>Optional — scopes the scrape to a known locality</td></tr>
+            <tr><td><code>magicbricks_city_name</code></td><td>No</td><td>Optional — overrides auto-detected city name</td></tr>
+          </tbody>
+        </table>
+        <p class="hint">Example:</p>
+        <pre class="code-block">label,center_lat,center_lng
+Domino's Sector 62 Noida,28.6139,77.3910
+Domino's Andheri Mumbai,19.1136,72.8697</pre>
+      </div>
+
+      <div class="upload-row">
+        <input type="file" id="csv-file" accept=".csv" />
+        <button id="validate-btn" onclick="validateCsv()">🔍 Validate</button>
+      </div>
+
+      <div class="defaults-form">
+        <h4>Batch defaults <span class="hint-inline">(used for any row that doesn't override them)</span></h4>
+        <div class="defaults-grid">
+          <label>Cell size (m) <input type="number" id="def-cell-size" value="200" /></label>
+          <label>Radius (m) <input type="number" id="def-radius" value="5000" /></label>
+          <label>Max pages <input type="number" id="def-max-pages" value="5" /></label>
+          <label>Cooldown between stores (s) <input type="number" id="def-cooldown" value="45" /></label>
+        </div>
+      </div>
+
+      <p id="validate-status" class="status-msg"></p>
+    </div>
+
+    <div id="preview-panel" class="panel hidden">
+      <h3>2. Review &amp; start</h3>
+      <div id="valid-summary"></div>
+      <div id="row-errors"></div>
+      <div id="valid-preview"></div>
+      <button id="start-btn" onclick="startExtraction()" disabled>▶️ Start Extraction</button>
+      <p id="start-status" class="status-msg"></p>
+    </div>
+
+    <div id="progress-panel" class="panel hidden">
+      <h3>3. Progress</h3>
+      <p id="progress-status" class="status-msg"></p>
+      <div id="store-status-list"></div>
+      <h4>Live log</h4>
+      <pre id="log-console" class="log-console"></pre>
+      <p id="progress-links"></p>
+    </div>
+
+  </div>
+
+  <script src="nav.js"></script>
+  <script src="shared.js"></script>
+  <script src="upload.js"></script>
+</body>
+</html>

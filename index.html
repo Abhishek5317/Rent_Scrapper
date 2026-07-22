@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>RentIQ – Grid Rent Finder</title>
+
+  <!-- Leaflet CSS -->
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <div class="header">
+    <h1>🏙️ RentIQ</h1>
+    <p id="coords-display">📍 Loading...</p>
+    <div class="btn-row">
+      <button id="grid-btn" onclick="drawGrid()">🔲 Draw 200m Grid</button>
+      <button id="clear-btn" onclick="clearAll()">🗑️ Clear</button>
+    </div>
+    <div class="location-input-row">
+      <div id="location-search-wrapper" class="location-search-wrapper">
+        <input
+          type="text"
+          id="location-search"
+          placeholder="🔎 Search a scraped city..."
+          autocomplete="off"
+          oninput="onLocationSearchInput()"
+          onkeydown="handleSearchKeydown(event)"
+        />
+        <div id="location-suggestions" class="location-suggestions hidden"></div>
+      </div>
+      <span class="or-divider">or</span>
+      <input type="number" id="input-lat" placeholder="Latitude" step="0.0001" />
+      <input type="number" id="input-lng" placeholder="Longitude" step="0.0001" />
+      <button id="goto-btn" onclick="gotoLocation()">📍 Go to Location</button>
+      <span id="goto-status" class="goto-status"></span>
+    </div>
+  </div>
+
+  <div id="nav-placeholder" data-active="grid"></div>
+
+  <div class="container">
+    <div id="map"></div>
+
+    <div class="results-panel">
+      <div class="tabs">
+        <button class="tab active" onclick="switchTab('grid')">Grid Info</button>
+        <button class="tab" onclick="switchTab('analytics')">Grid Analytics</button>
+      </div>
+
+      <!-- Grid Tab -->
+      <div id="tab-grid" class="tab-content">
+        <h3>Grid Details</h3>
+        <p id="grid-status" class="status-msg">Click "Draw 200m Grid" to start.</p>
+        <div id="grid-stats" class="stats-box hidden">
+          <div class="stat"><span id="stat-cells">0</span><label>Grid Cells</label></div>
+          <div class="stat"><span id="stat-size">—</span><label>Cell Size</label></div>
+          <div class="stat"><span id="stat-center">—</span><label>Centre Point</label></div>
+        </div>
+        <p id="cell-size-hint" class="hint">Click "Draw Grid" to see cell size and radius for the current location.<br/>
+        Teal-shaded cells have real scraped listings — click one to see full analytics.</p>
+      </div>
+
+      <!-- Analytics Tab -->
+      <div id="tab-analytics" class="tab-content hidden">
+        <h3>Grid Analytics</h3>
+        <p id="analytics-status" class="status-msg">Draw the grid, then click any shaded cell to see its analytics.</p>
+        <div id="loader" class="loader hidden"></div>
+        <div id="analytics-content"></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Leaflet JS -->
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+  <script src="nav.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
