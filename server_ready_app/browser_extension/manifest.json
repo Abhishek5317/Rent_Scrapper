@@ -1,0 +1,23 @@
+{
+  "manifest_version": 3,
+  "name": "RentIQ MagicBricks Capture",
+  "version": "1.0.0",
+  "description": "Capture visible MagicBricks rental listings after you complete any site challenge manually.",
+  "permissions": ["activeTab", "storage"],
+  "host_permissions": [
+    "https://www.magicbricks.com/*",
+    "http://*/*",
+    "https://*/*"
+  ],
+  "action": {
+    "default_title": "Send visible listings to RentIQ",
+    "default_popup": "popup.html"
+  },
+  "content_scripts": [
+    {
+      "matches": ["https://www.magicbricks.com/*"],
+      "js": ["content.js"],
+      "run_at": "document_idle"
+    }
+  ]
+}
