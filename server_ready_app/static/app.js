@@ -1,8 +1,9 @@
 const statusEl = document.getElementById("status");
 const errorEl = document.getElementById("error");
-const button = document.getElementById("scrape-button");
 const body = document.getElementById("listing-body");
+const runBody = document.getElementById("run-body");
 const countEl = document.getElementById("count");
+const downloadLink = document.getElementById("download-link");
 
 function money(value) {
   if (value === null || value === undefined || value === "") return "—";
@@ -21,7 +22,11 @@ async function loadListings(runId = null) {
   const data = await response.json();
   const rows = data.listings || [];
   countEl.textContent = `${rows.length} rows loaded`;
-  body.innerHTML = rows.map(row => `
+  downloadLink.href = runId
+    ? `/api/listings.csv?run_id=${encodeURIComponent(runId)}`
+    : "/api/listings.csv";
+
+  body.innerHTML = rows.length ? rows.map(row => `
     <tr>
       <td>${escapeHtml(row.title || "—")}</td>
       <td>${escapeHtml(row.locality || "—")}</td>
@@ -31,50 +36,52 @@ async function loadListings(runId = null) {
       <td>${escapeHtml(row.property_type || "—")}</td>
       <td>${row.listing_url ? `<a href="${escapeHtml(row.listing_url)}" target="_blank" rel="noopener">Open</a>` : "—"}</td>
     </tr>
-  `).join("");
+  `).join("") : `<tr><td colspan="7">No captured listings yet.</td></tr>`;
 }
 
-async function pollStatus(runId) {
-  const response = await fetch("/api/status");
+async function loadRuns() {
+  const response = await fetch("/api/runs");
   const data = await response.json();
-  statusEl.textContent = data.message || "Running";
-  errorEl.textContent = data.error || "";
-  if (data.running) {
-    setTimeout(() => pollStatus(runId), 2000);
-  } else {
-    button.disabled = false;
-    button.textContent = "Start scrape";
-    await loadListings(runId);
-  }
+  const runs = data.runs || [];
+
+  runBody.innerHTML = runs.length ? runs.map(run => `
+    <tr>
+      <td>${escapeHtml(new Date(run.started_at).toLocaleString("en-IN"))}</td>
+      <td>${escapeHtml(run.city)}</td>
+      <td>${escapeHtml(run.locality || "—")}</td>
+      <td>${escapeHtml(run.listing_count)}</td>
+      <td>${escapeHtml(run.status)}</td>
+    </tr>
+  `).join("") : `<tr><td colspan="5">No capture runs yet.</td></tr>`;
+
+  await loadListings(runs[0]?.id || null);
 }
 
-button.addEventListener("click", async () => {
+document.getElementById("open-button").addEventListener("click", async () => {
   errorEl.textContent = "";
-  button.disabled = true;
-  button.textContent = "Starting…";
-  const payload = {
-    city: document.getElementById("city").value.trim(),
-    locality: document.getElementById("locality").value.trim(),
-    provider: document.getElementById("provider").value,
-    max_results: Number(document.getElementById("max-results").value),
-    max_pages: Number(document.getElementById("max-pages").value)
-  };
+  const city = document.getElementById("city").value.trim();
+  const locality = document.getElementById("locality").value.trim();
+
   try {
-    const response = await fetch("/api/scrape", {
-      method: "POST",
-      headers: { "Content-Type": "application/json" },
-      body: JSON.stringify(payload)
-    });
+    const response = await fetch(
+      `/api/search-url?city=${encodeURIComponent(city)}&locality=${encodeURIComponent(locality)}`
+    );
     const data = await response.json();
     if (!response.ok) throw new Error(data.error || `HTTP ${response.status}`);
-    statusEl.textContent = "Running";
-    pollStatus(data.run_id);
+    window.open(data.url, "_blank", "noopener");
+    statusEl.textContent = "MagicBricks opened. Complete any CAPTCHA manually, load the listings, then use the RentIQ extension.";
   } catch (error) {
     errorEl.textContent = error.message;
-    button.disabled = false;
-    button.textContent = "Start scrape";
   }
 });
 
-document.getElementById("refresh-button").addEventListener("click", () => loadListings());
-loadListings();
+document.getElementById("copy-server").addEventListener("click", async () => {
+  const value = document.getElementById("server-url").textContent.trim();
+  await navigator.clipboard.writeText(value);
+  statusEl.textContent = `Copied ${value}`;
+});
+
+document.getElementById("refresh-button").addEventListener("click", loadRuns);
+
+loadRuns();
+setInterval(loadRuns, 5000);
