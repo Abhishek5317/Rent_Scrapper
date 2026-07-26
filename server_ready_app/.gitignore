@@ -1,0 +1,8 @@
+.venv/
+.env
+__pycache__/
+*.pyc
+data/*.sqlite3
+data/browser-profile/
+debug/*
+!debug/.gitkeep
