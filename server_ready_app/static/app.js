@@ -11,6 +11,12 @@ function money(value) {
   return `₹${Number(value).toLocaleString("en-IN", { maximumFractionDigits: 0 })}`;
 }
 
+function coordinate(value) {
+  if (value === null || value === undefined || value === "") return "—";
+  const number = Number(value);
+  return Number.isFinite(number) ? number.toFixed(6) : "—";
+}
+
 function escapeHtml(value) {
   return String(value ?? "").replace(/[&<>'"]/g, ch => ({
     "&": "&amp;", "<": "&lt;", ">": "&gt;", "'": "&#39;", '"': "&quot;"
@@ -22,7 +28,8 @@ async function loadListings(runId = null) {
   const response = await fetch(`/api/listings${query}`);
   const data = await response.json();
   const rows = data.listings || [];
-  countEl.textContent = `${rows.length} rows loaded`;
+  const coordinateCount = rows.filter(row => row.latitude !== null && row.longitude !== null).length;
+  countEl.textContent = `${rows.length} rows loaded · ${coordinateCount} with coordinates`;
   downloadLink.href = runId
     ? `/api/listings.csv?run_id=${encodeURIComponent(runId)}`
     : "/api/listings.csv";
@@ -35,9 +42,11 @@ async function loadListings(runId = null) {
       <td>${escapeHtml(row.bhk || "—")}</td>
       <td>${row.area_sqft ? `${Number(row.area_sqft).toLocaleString("en-IN")} sq ft` : "—"}</td>
       <td>${escapeHtml(row.property_type || "—")}</td>
+      <td>${coordinate(row.latitude)}</td>
+      <td>${coordinate(row.longitude)}</td>
       <td>${row.listing_url ? `<a href="${escapeHtml(row.listing_url)}" target="_blank" rel="noopener">Open</a>` : "—"}</td>
     </tr>
-  `).join("") : `<tr><td colspan="7">No captured listings yet.</td></tr>`;
+  `).join("") : `<tr><td colspan="9">No captured listings yet.</td></tr>`;
 }
 
 async function loadRuns() {
@@ -72,7 +81,7 @@ openButton.addEventListener("click", async () => {
     const data = await response.json();
     if (!response.ok) throw new Error(data.error || `HTTP ${response.status}`);
     window.open(data.url, "_blank", "noopener");
-    statusEl.textContent = "MagicBricks opened. Complete any CAPTCHA manually. RentIQ will then auto-scroll, collect the loaded page, and send the listings automatically.";
+    statusEl.textContent = "MagicBricks opened. Complete any CAPTCHA manually. RentIQ will auto-scroll, read coordinates from listing JSON-LD, open only missing property pages in one reusable tab, and send everything automatically.";
   } catch (error) {
     errorEl.textContent = error.message;
   } finally {
