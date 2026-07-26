@@ -40,6 +40,98 @@ function absoluteUrl(value) {
   }
 }
 
+function parseNumber(value) {
+  if (value === null || value === undefined || value === "") return null;
+  const match = String(value).replace(/,/g, "").match(/-?\d+(?:\.\d+)?/);
+  if (!match) return null;
+  const number = Number(match[0]);
+  return Number.isFinite(number) ? number : null;
+}
+
+function validIndiaPair(latitude, longitude) {
+  const lat = parseNumber(latitude);
+  const lng = parseNumber(longitude);
+  if (lat === null || lng === null) return null;
+  if (lat < 5 || lat > 40 || lng < 65 || lng > 100) return null;
+  return { latitude: lat, longitude: lng };
+}
+
+function deepCoordinatePair(value, depth = 0) {
+  if (!value || depth > 14) return null;
+
+  if (Array.isArray(value)) {
+    for (const item of value) {
+      const found = deepCoordinatePair(item, depth + 1);
+      if (found) return found;
+    }
+    return null;
+  }
+
+  if (typeof value !== "object") return null;
+
+  const candidates = [
+    [value.latitude, value.longitude],
+    [value.lat, value.lng],
+    [value.lat, value.lon],
+    [value.latitude, value.lng],
+    [value.latitude, value.lon]
+  ];
+
+  for (const [latitude, longitude] of candidates) {
+    const pair = validIndiaPair(latitude, longitude);
+    if (pair) return pair;
+  }
+
+  for (const nested of Object.values(value)) {
+    const found = deepCoordinatePair(nested, depth + 1);
+    if (found) return found;
+  }
+  return null;
+}
+
+function coordinateFromStructuredData(card) {
+  const roots = [
+    card,
+    card.parentElement,
+    card.closest(".mb-srp__list"),
+    card.closest("[id^='cardid']")
+  ].filter(Boolean);
+  const scripts = new Set();
+
+  for (const root of roots) {
+    root.querySelectorAll('script[type="application/ld+json"], script[type="application/json"]').forEach(script => {
+      scripts.add(script);
+    });
+  }
+
+  for (const script of scripts) {
+    const text = script.textContent?.trim();
+    if (!text) continue;
+    try {
+      const pair = deepCoordinatePair(JSON.parse(text));
+      if (pair) return { ...pair, source: "search-card-json-ld" };
+    } catch {
+      // Ignore malformed structured-data fragments.
+    }
+  }
+  return null;
+}
+
+function coordinateFromCardAttributes(card) {
+  const candidates = [
+    [card.getAttribute("data-latitude"), card.getAttribute("data-longitude")],
+    [card.getAttribute("data-lat"), card.getAttribute("data-lng")],
+    [card.dataset?.latitude, card.dataset?.longitude],
+    [card.dataset?.lat, card.dataset?.lng]
+  ];
+
+  for (const [latitude, longitude] of candidates) {
+    const pair = validIndiaPair(latitude, longitude);
+    if (pair) return { ...pair, source: "search-card-attribute" };
+  }
+  return null;
+}
+
 function parseIndianMoney(text) {
   const normalized = cleanText(text).replace(/,/g, "");
   const match = normalized.match(/(?:₹|Rs\.?|INR)\s*([\d.]+)\s*(Lac|Lakh|Cr|Crore)?/i)
@@ -99,7 +191,7 @@ function collectCandidateCards() {
 
   if (!candidates.size) {
     document.querySelectorAll(
-      "a[href*='propertyDetails'], a[href*='property-for-rent'], a[href*='propertyDetailsForRent']"
+      "a[href*='propertyDetails'], a[href*='property-for-rent'], a[href*='propertyDetailsForRent'], a[href*='-pdpid-']"
     ).forEach(anchor => {
       const card = anchor.closest("article, li, section, div[class*='card'], div");
       if (card) candidates.add(card);
@@ -112,6 +204,7 @@ function collectCandidateCards() {
 function extractCard(card) {
   const fullText = cleanText(card.textContent);
   const listingUrl = absoluteUrl(firstAttribute(card, [
+    "a[href*='-pdpid-']",
     "a[href*='propertyDetails']",
     "a[href*='property-for-rent']",
     "a[href*='propertyDetailsForRent']",
@@ -143,8 +236,10 @@ function extractCard(card) {
     card.getAttribute("data-propertyid")
     || card.getAttribute("data-property-id")
     || card.dataset?.propertyid
-    || (listingUrl.match(/(?:propertyId=|\/)(\d{6,})/i)?.[1])
+    || (listingUrl.match(/(?:propertyId=|pdpid-|\/)(\d{6,})/i)?.[1])
     || listingUrl;
+
+  const coordinate = coordinateFromCardAttributes(card) || coordinateFromStructuredData(card);
 
   return {
     source_id: sourceId,
@@ -155,10 +250,13 @@ function extractCard(card) {
     area_sqft: parseArea(fullText),
     property_type: parsePropertyType(fullText),
     furnishing: parseFurnishing(fullText),
-    latitude: Number(card.getAttribute("data-latitude")) || null,
-    longitude: Number(card.getAttribute("data-longitude")) || null,
+    latitude: coordinate?.latitude ?? null,
+    longitude: coordinate?.longitude ?? null,
     listing_url: listingUrl,
-    raw: { text: fullText }
+    raw: {
+      text: fullText,
+      coordinate_source: coordinate?.source || "pending-detail-enrichment"
+    }
   };
 }
 
@@ -207,7 +305,7 @@ function statusBox() {
     right: "18px",
     bottom: "18px",
     zIndex: "2147483647",
-    maxWidth: "360px",
+    maxWidth: "390px",
     padding: "14px 16px",
     borderRadius: "10px",
     background: "#17232c",
@@ -222,7 +320,13 @@ function statusBox() {
 function setAutoStatus(message, kind = "info") {
   const box = statusBox();
   box.textContent = message;
-  box.style.background = kind === "error" ? "#9f1c1c" : kind === "success" ? "#116149" : "#17232c";
+  box.style.background = kind === "error"
+    ? "#9f1c1c"
+    : kind === "success"
+      ? "#116149"
+      : kind === "warning"
+        ? "#8a4b08"
+        : "#17232c";
 }
 
 function elementIsVisible(element) {
@@ -259,7 +363,7 @@ async function waitForListings() {
     if (count > 0) return count;
 
     if (pageLooksLikeChallenge()) {
-      setAutoStatus("RentIQ is waiting. Complete the CAPTCHA manually; automatic capture will resume afterwards.");
+      setAutoStatus("RentIQ is waiting. Complete the CAPTCHA manually; automatic capture will resume afterwards.", "warning");
     } else {
       setAutoStatus("RentIQ is waiting for MagicBricks listing cards to load…");
     }
@@ -276,13 +380,11 @@ async function autoScrollUntilStable() {
   let stableCycles = 0;
 
   while (Date.now() - startedAt < AUTO_SCROLL_LIMIT_MS) {
-    if (pageLooksLikeChallenge()) {
-      await waitForListings();
-    }
+    if (pageLooksLikeChallenge()) await waitForListings();
 
     const beforeCount = collectCandidateCards().length;
     const beforeHeight = documentHeight();
-    setAutoStatus(`RentIQ is loading the full page automatically… ${beforeCount} listing cards found.`);
+    setAutoStatus(`RentIQ is loading the full results page automatically… ${beforeCount} listing cards found.`);
 
     const clickedLoadMore = clickLoadMoreIfPresent();
     window.scrollTo({ top: beforeHeight, behavior: "smooth" });
@@ -293,15 +395,11 @@ async function autoScrollUntilStable() {
     const atBottom = window.scrollY + window.innerHeight >= afterHeight - 250;
     const unchanged = afterCount === previousCount && afterHeight === previousHeight;
 
-    if (unchanged && atBottom && !clickedLoadMore) {
-      stableCycles += 1;
-    } else {
-      stableCycles = 0;
-    }
+    if (unchanged && atBottom && !clickedLoadMore) stableCycles += 1;
+    else stableCycles = 0;
 
     previousCount = afterCount;
     previousHeight = afterHeight;
-
     if (stableCycles >= STABLE_CYCLES_REQUIRED) return afterCount;
   }
 
@@ -354,11 +452,14 @@ async function runAutomaticCapture(job) {
     const listings = captureVisibleListings();
     if (!listings.length) throw new Error("No listing cards were found after automatic scrolling.");
 
+    const initialCoordinates = listings.filter(item => validIndiaPair(item.latitude, item.longitude)).length;
     const saved = await chrome.storage.sync.get(["captureKey"]);
-    setAutoStatus(`RentIQ found ${listings.length} listings. Sending them to the server…`);
+    setAutoStatus(
+      `RentIQ found ${listings.length} listings. ${initialCoordinates} already have coordinates; opening the remaining property pages automatically…`
+    );
 
     const result = await chrome.runtime.sendMessage({
-      type: "RENTIQ_SUBMIT_CAPTURE",
+      type: "RENTIQ_ENRICH_AND_SUBMIT",
       serverUrl: job.serverUrl,
       captureKey: cleanText(saved.captureKey),
       payload: {
@@ -372,7 +473,10 @@ async function runAutomaticCapture(job) {
     if (!result?.ok) throw new Error(result?.error || "RentIQ server rejected the capture.");
 
     await chrome.storage.local.remove(RENTIQ_PENDING_JOB);
-    setAutoStatus(`Success: ${result.listing_count} listings were saved in RentIQ.`, "success");
+    setAutoStatus(
+      `Success: ${result.listing_count} listings saved. Coordinates found for ${result.coordinates_found}/${result.listing_count}.`,
+      "success"
+    );
   } catch (error) {
     await chrome.storage.local.remove(RENTIQ_PENDING_JOB);
     setAutoStatus(`RentIQ automatic capture failed: ${error.message}`, "error");
@@ -380,11 +484,17 @@ async function runAutomaticCapture(job) {
 }
 
 chrome.runtime.onMessage.addListener((message, _sender, sendResponse) => {
-  if (message?.type !== "RENTIQ_CAPTURE_VISIBLE") return;
-  try {
-    sendResponse({ ok: true, listings: captureVisibleListings() });
-  } catch (error) {
-    sendResponse({ ok: false, error: error.message });
+  if (message?.type === "RENTIQ_CAPTURE_VISIBLE") {
+    try {
+      sendResponse({ ok: true, listings: captureVisibleListings() });
+    } catch (error) {
+      sendResponse({ ok: false, error: error.message });
+    }
+    return;
+  }
+
+  if (message?.type === "RENTIQ_ENRICH_PROGRESS") {
+    setAutoStatus(message.message || "RentIQ is enriching property coordinates…", message.kind || "info");
   }
 });
 
