@@ -5,6 +5,7 @@ import tempfile
 import unittest
 import zipfile
 from io import BytesIO
+from urllib.parse import parse_qs, urlparse
 
 
 class BrowserAssistedSmokeTest(unittest.TestCase):
@@ -24,21 +25,28 @@ class BrowserAssistedSmokeTest(unittest.TestCase):
     def test_health(self) -> None:
         response = self.client.get("/health")
         self.assertEqual(response.status_code, 200)
-        self.assertEqual(response.get_json()["mode"], "browser-assisted")
+        self.assertEqual(response.get_json()["mode"], "browser-assisted-auto")
 
     def test_index(self) -> None:
         response = self.client.get("/")
         self.assertEqual(response.status_code, 200)
-        self.assertIn(b"browser-assisted capture", response.data)
+        self.assertIn(b"automatic browser capture", response.data)
 
     def test_search_url_requires_city(self) -> None:
         response = self.client.get("/api/search-url")
         self.assertEqual(response.status_code, 400)
 
-    def test_search_url(self) -> None:
+    def test_search_url_contains_automatic_capture_config(self) -> None:
         response = self.client.get("/api/search-url?city=Noida&locality=Sector%2098")
         self.assertEqual(response.status_code, 200)
-        self.assertIn("cityName=Noida", response.get_json()["url"])
+        url = response.get_json()["url"]
+        parsed = urlparse(url)
+        fragment = parse_qs(parsed.fragment)
+        self.assertIn("cityName=Noida", parsed.query)
+        self.assertEqual(fragment["rentiq_auto"], ["1"])
+        self.assertEqual(fragment["rentiq_city"], ["Noida"])
+        self.assertEqual(fragment["rentiq_locality"], ["Sector 98"])
+        self.assertEqual(fragment["rentiq_server"], ["http://localhost"])
 
     def test_browser_capture(self) -> None:
         response = self.client.post(
@@ -71,7 +79,10 @@ class BrowserAssistedSmokeTest(unittest.TestCase):
         response = self.client.get("/browser-extension.zip")
         self.assertEqual(response.status_code, 200)
         with zipfile.ZipFile(BytesIO(response.data)) as archive:
-            self.assertIn("browser_extension/manifest.json", archive.namelist())
+            names = archive.namelist()
+            self.assertIn("browser_extension/manifest.json", names)
+            self.assertIn("browser_extension/background.js", names)
+            self.assertIn("browser_extension/content.js", names)
 
 
 if __name__ == "__main__":
