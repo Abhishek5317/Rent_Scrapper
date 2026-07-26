@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>RentIQ Server Scraper</title>
+  <link rel="stylesheet" href="/static/styles.css">
+</head>
+<body>
+  <main class="shell">
+    <header>
+      <p class="eyebrow">Rent intelligence</p>
+      <h1>MagicBricks rental scraper</h1>
+      <p class="sub">One web process. SQLite storage. No PostgreSQL or Docker required.</p>
+    </header>
+
+    <section class="panel form-panel">
+      <div class="grid">
+        <label>City<input id="city" value="Noida" placeholder="Noida"></label>
+        <label>Locality<input id="locality" placeholder="Sector 98 (optional)"></label>
+        <label>Provider
+          <select id="provider">
+            <option value="auto">Auto</option>
+            <option value="apify">Managed (recommended)</option>
+            <option value="direct">Direct browser</option>
+          </select>
+        </label>
+        <label>Maximum listings<input id="max-results" type="number" value="50" min="1" max="1000"></label>
+        <label>Maximum pages<input id="max-pages" type="number" value="3" min="1" max="20"></label>
+      </div>
+      <button id="scrape-button">Start scrape</button>
+      <p id="status" class="status">Ready</p>
+      <p id="error" class="error"></p>
+    </section>
+
+    <section class="panel actions">
+      <div>
+        <h2>Latest listings</h2>
+        <p id="count">0 rows loaded</p>
+      </div>
+      <div class="button-row">
+        <button id="refresh-button" class="secondary">Refresh</button>
+        <a class="download" href="/api/listings.csv">Download CSV</a>
+      </div>
+    </section>
+
+    <section class="table-wrap">
+      <table>
+        <thead>
+          <tr>
+            <th>Title</th><th>Locality</th><th>Rent</th><th>BHK</th>
+            <th>Area</th><th>Type</th><th>Link</th>
+          </tr>
+        </thead>
+        <tbody id="listing-body"></tbody>
+      </table>
+    </section>
+
+    <section class="panel notes">
+      <h2>Execution modes</h2>
+      <p><strong>Managed:</strong> recommended on cloud/datacenter servers. It does not require Chrome or Docker.</p>
+      <p><strong>Direct browser:</strong> launches Chrome on this server. MagicBricks may still block datacenter IPs.</p>
+    </section>
+  </main>
+  <script src="/static/app.js"></script>
+</body>
+</html>
