@@ -4,7 +4,8 @@
   <meta charset="utf-8">
   <style>
     body { width: 360px; margin: 0; padding: 16px; font: 14px system-ui, sans-serif; color: #17232c; }
-    h1 { font-size: 18px; margin: 0 0 12px; }
+    h1 { font-size: 18px; margin: 0 0 6px; }
+    .hint { margin: 0 0 12px; color: #5d6b74; }
     label { display: grid; gap: 5px; margin: 10px 0; font-weight: 700; }
     input { padding: 9px; border: 1px solid #cbd5da; border-radius: 8px; font: inherit; }
     button { width: 100%; margin-top: 12px; padding: 11px; border: 0; border-radius: 8px; background: #187d6b; color: white; font-weight: 800; cursor: pointer; }
@@ -14,12 +15,13 @@
   </style>
 </head>
 <body>
-  <h1>RentIQ browser capture</h1>
+  <h1>RentIQ manual fallback</h1>
+  <p class="hint">Normal captures start automatically from the RentIQ Open MagicBricks button. Use this only when you need to resend the current page manually.</p>
   <label>RentIQ server URL<input id="server-url" value="http://10.3.8.174:8771"></label>
   <label>City<input id="city" placeholder="Noida"></label>
   <label>Locality<input id="locality" placeholder="Sector 98 (optional)"></label>
   <label>Capture key<input id="capture-key" type="password" placeholder="Optional"></label>
-  <button id="capture">Capture visible listings</button>
+  <button id="capture">Send current loaded listings</button>
   <p id="status">Complete any CAPTCHA first and wait for property cards to load.</p>
   <script src="popup.js"></script>
 </body>
