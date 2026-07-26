@@ -1,0 +1,26 @@
+{
+  "manifest_version": 3,
+  "name": "RentIQ MagicBricks Capture",
+  "version": "1.2.0",
+  "description": "Automatically capture MagicBricks rentals and enrich them with latitude/longitude after any CAPTCHA is completed manually.",
+  "permissions": ["activeTab", "storage", "tabs", "scripting"],
+  "host_permissions": [
+    "https://www.magicbricks.com/*",
+    "http://*/*",
+    "https://*/*"
+  ],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "action": {
+    "default_title": "Capture and enrich MagicBricks listings",
+    "default_popup": "popup.html"
+  },
+  "content_scripts": [
+    {
+      "matches": ["https://www.magicbricks.com/*"],
+      "js": ["content.js"],
+      "run_at": "document_idle"
+    }
+  ]
+}

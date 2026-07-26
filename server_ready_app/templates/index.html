@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>RentIQ Automatic Browser Capture</title>
+  <link rel="stylesheet" href="/static/styles.css">
+</head>
+<body>
+  <main class="shell">
+    <header>
+      <p class="eyebrow">Rent intelligence</p>
+      <h1>MagicBricks automatic browser capture</h1>
+      <p class="sub">You complete any CAPTCHA yourself. RentIQ loads listings, enriches latitude/longitude, and imports the data automatically.</p>
+    </header>
+
+    <section class="panel">
+      <h2>One-time browser extension setup</h2>
+      <ol class="steps">
+        <li><a class="download" href="/browser-extension.zip">Download the Chrome extension</a></li>
+        <li>Extract the ZIP on your computer.</li>
+        <li>Open <code>chrome://extensions</code>, enable <strong>Developer mode</strong>, then choose <strong>Load unpacked</strong>.</li>
+        <li>Select the extracted <code>browser_extension</code> folder.</li>
+        <li>After future code updates, click <strong>Reload</strong> on this extension in <code>chrome://extensions</code>.</li>
+      </ol>
+      <p class="hint">Server URL used by automatic capture: <code id="server-url">{{ server_url }}</code></p>
+      <button id="copy-server" class="secondary">Copy server URL</button>
+    </section>
+
+    <section class="panel form-panel">
+      <h2>Start automatic capture</h2>
+      <div class="grid">
+        <label>City<input id="city" value="Noida" placeholder="Noida"></label>
+        <label>Locality<input id="locality" placeholder="Sector 98 (optional)"></label>
+      </div>
+      <button id="open-button">Open MagicBricks &amp; Start Automatic Capture</button>
+      <p class="status" id="status">The extension waits for manual CAPTCHA completion, auto-scrolls, extracts card coordinates, and opens only listings whose coordinates are missing.</p>
+      <p class="error" id="error"></p>
+    </section>
+
+    <section class="panel workflow">
+      <h2>Automatic workflow</h2>
+      <ol class="steps">
+        <li>Enter the city and locality, then click the button above.</li>
+        <li>Complete a CAPTCHA manually if MagicBricks shows one.</li>
+        <li>RentIQ auto-scrolls until the current results page stops loading new cards.</li>
+        <li>Latitude/longitude is first read from each card's embedded JSON-LD.</li>
+        <li>For missing coordinates, one background detail tab is reused automatically and closed after enrichment.</li>
+        <li>The listings, coordinates, and property links are saved to SQLite and CSV.</li>
+      </ol>
+    </section>
+
+    <section class="panel actions">
+      <div>
+        <h2>Latest captured listings</h2>
+        <p id="count">0 rows loaded</p>
+      </div>
+      <div class="button-row">
+        <button id="refresh-button" class="secondary">Refresh</button>
+        <a id="download-link" class="download" href="/api/listings.csv">Download CSV</a>
+      </div>
+    </section>
+
+    <section class="table-wrap">
+      <table>
+        <thead>
+          <tr>
+            <th>Title</th><th>Locality</th><th>Rent</th><th>BHK</th>
+            <th>Area</th><th>Type</th><th>Latitude</th><th>Longitude</th><th>Link</th>
+          </tr>
+        </thead>
+        <tbody id="listing-body"></tbody>
+      </table>
+    </section>
+
+    <section class="panel">
+      <h2>Recent capture runs</h2>
+      <div class="table-wrap inner-table">
+        <table>
+          <thead>
+            <tr><th>Time</th><th>City</th><th>Locality</th><th>Listings</th><th>Status</th></tr>
+          </thead>
+          <tbody id="run-body"></tbody>
+        </table>
+      </div>
+    </section>
+
+    <section class="panel notes">
+      <h2>Important limitation</h2>
+      <p>RentIQ does not solve, skip, bypass, or hide CAPTCHA challenges. It pauses and brings the affected MagicBricks tab forward only when manual verification is required. It processes the dynamically loaded listings on the current search-results page.</p>
+    </section>
+  </main>
+  <script src="/static/app.js"></script>
+</body>
+</html>

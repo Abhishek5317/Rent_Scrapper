@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <style>
+    body { width: 370px; margin: 0; padding: 16px; font: 14px system-ui, sans-serif; color: #17232c; }
+    h1 { font-size: 18px; margin: 0 0 12px; }
+    label { display: grid; gap: 5px; margin: 10px 0; font-weight: 700; }
+    input { padding: 9px; border: 1px solid #cbd5da; border-radius: 8px; font: inherit; }
+    button { width: 100%; margin-top: 12px; padding: 11px; border: 0; border-radius: 8px; background: #187d6b; color: white; font-weight: 800; cursor: pointer; }
+    button:disabled { opacity: .6; cursor: wait; }
+    #status { white-space: pre-wrap; margin-bottom: 0; color: #4d5d67; }
+    .error { color: #b42318 !important; }
+  </style>
+</head>
+<body>
+  <h1>RentIQ capture and coordinates</h1>
+  <label>RentIQ server URL<input id="server-url" value="http://10.3.8.174:8771"></label>
+  <label>City<input id="city" placeholder="Noida"></label>
+  <label>Locality<input id="locality" placeholder="Sector 98 (optional)"></label>
+  <label>Capture key<input id="capture-key" type="password" placeholder="Optional"></label>
+  <button id="capture">Capture and fetch coordinates</button>
+  <p id="status">This is a manual fallback. The main RentIQ button starts the same process automatically.</p>
+  <script src="popup.js"></script>
+</body>
+</html>
