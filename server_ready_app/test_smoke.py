@@ -1,5 +1,6 @@
 from __future__ import annotations
 
+import json
 import os
 import tempfile
 import unittest
@@ -31,6 +32,8 @@ class BrowserAssistedSmokeTest(unittest.TestCase):
         response = self.client.get("/")
         self.assertEqual(response.status_code, 200)
         self.assertIn(b"automatic browser capture", response.data)
+        self.assertIn(b"Latitude", response.data)
+        self.assertIn(b"Longitude", response.data)
 
     def test_search_url_requires_city(self) -> None:
         response = self.client.get("/api/search-url")
@@ -48,7 +51,7 @@ class BrowserAssistedSmokeTest(unittest.TestCase):
         self.assertEqual(fragment["rentiq_locality"], ["Sector 98"])
         self.assertEqual(fragment["rentiq_server"], ["http://localhost"])
 
-    def test_browser_capture(self) -> None:
+    def test_browser_capture_preserves_coordinates(self) -> None:
         response = self.client.post(
             "/api/browser-capture",
             json={
@@ -62,6 +65,8 @@ class BrowserAssistedSmokeTest(unittest.TestCase):
                         "monthly_rent": 25000,
                         "bhk": "2 BHK",
                         "area_sqft": 1100,
+                        "latitude": 28.5074,
+                        "longitude": 77.3912,
                         "listing_url": "https://www.magicbricks.com/propertyDetails/test-1",
                     }
                 ],
@@ -74,8 +79,10 @@ class BrowserAssistedSmokeTest(unittest.TestCase):
         listings = self.client.get(f"/api/listings?run_id={payload['run_id']}").get_json()["listings"]
         self.assertEqual(len(listings), 1)
         self.assertEqual(listings[0]["monthly_rent"], 25000)
+        self.assertAlmostEqual(listings[0]["latitude"], 28.5074)
+        self.assertAlmostEqual(listings[0]["longitude"], 77.3912)
 
-    def test_extension_zip(self) -> None:
+    def test_extension_zip_contains_coordinate_enrichment_worker(self) -> None:
         response = self.client.get("/browser-extension.zip")
         self.assertEqual(response.status_code, 200)
         with zipfile.ZipFile(BytesIO(response.data)) as archive:
@@ -83,6 +90,12 @@ class BrowserAssistedSmokeTest(unittest.TestCase):
             self.assertIn("browser_extension/manifest.json", names)
             self.assertIn("browser_extension/background.js", names)
             self.assertIn("browser_extension/content.js", names)
+
+            manifest = json.loads(archive.read("browser_extension/manifest.json"))
+            self.assertEqual(manifest["version"], "1.2.0")
+            self.assertIn("tabs", manifest["permissions"])
+            self.assertIn("scripting", manifest["permissions"])
+            self.assertEqual(manifest["background"]["service_worker"], "background.js")
 
 
 if __name__ == "__main__":
