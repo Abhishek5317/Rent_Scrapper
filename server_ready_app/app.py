@@ -24,7 +24,7 @@ app.config["MAX_CONTENT_LENGTH"] = 4 * 1024 * 1024
 
 storage = Storage(os.getenv("DATABASE_PATH", "data/rentiq.sqlite3"))
 current_state: dict[str, Any] = {
-    "message": "Ready for browser capture",
+    "message": "Ready for automatic browser capture",
     "error": None,
     "last_run_id": None,
     "listing_count": 0,
@@ -51,6 +51,20 @@ def build_search_url(city: str, locality: str | None = None) -> str:
         "https://www.magicbricks.com/property-for-rent/residential-real-estate?"
         + urlencode(params, safe=",")
     )
+
+
+def build_automatic_capture_url(
+    city: str,
+    locality: str | None,
+    server_url: str,
+) -> str:
+    automation = [
+        ("rentiq_auto", "1"),
+        ("rentiq_server", server_url.rstrip("/")),
+        ("rentiq_city", city),
+        ("rentiq_locality", locality or ""),
+    ]
+    return f"{build_search_url(city, locality)}#{urlencode(automation)}"
 
 
 def optional_number(value: Any) -> float | None:
@@ -132,7 +146,7 @@ def index() -> str:
 
 @app.get("/health")
 def health() -> Response:
-    return jsonify({"status": "ok", "mode": "browser-assisted"})
+    return jsonify({"status": "ok", "mode": "browser-assisted-auto"})
 
 
 @app.get("/api/status")
@@ -146,7 +160,13 @@ def api_search_url() -> Response:
     locality = str(request.args.get("locality", "")).strip() or None
     if not city:
         return jsonify({"error": "city is required"}), 400
-    return jsonify({"url": build_search_url(city, locality)})
+
+    url = build_automatic_capture_url(
+        city=city,
+        locality=locality,
+        server_url=request.host_url.rstrip("/"),
+    )
+    return jsonify({"url": url, "mode": "automatic-browser-capture"})
 
 
 @app.route("/api/browser-capture", methods=["POST", "OPTIONS"])
@@ -189,7 +209,7 @@ def browser_capture() -> Response:
     storage.create_run(
         {
             "id": run_id,
-            "provider": "browser-assisted",
+            "provider": "browser-assisted-auto",
             "city": city,
             "locality": locality,
             "search_url": search_url,
@@ -202,7 +222,7 @@ def browser_capture() -> Response:
 
     current_state.update(
         {
-            "message": f"Imported {len(normalized)} listings from your browser",
+            "message": f"Automatically imported {len(normalized)} listings from your browser",
             "error": None,
             "last_run_id": run_id,
             "listing_count": len(normalized),
