@@ -3,44 +3,61 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>RentIQ Server Scraper</title>
+  <title>RentIQ Browser Capture</title>
   <link rel="stylesheet" href="/static/styles.css">
 </head>
 <body>
   <main class="shell">
     <header>
       <p class="eyebrow">Rent intelligence</p>
-      <h1>MagicBricks rental scraper</h1>
-      <p class="sub">One web process. SQLite storage. No PostgreSQL or Docker required.</p>
+      <h1>MagicBricks browser-assisted capture</h1>
+      <p class="sub">You browse normally and complete any CAPTCHA yourself. The server only receives the listings you explicitly send.</p>
     </header>
 
+    <section class="panel">
+      <h2>One-time browser extension setup</h2>
+      <ol class="steps">
+        <li><a class="download" href="/browser-extension.zip">Download the Chrome extension</a></li>
+        <li>Extract the ZIP on your computer.</li>
+        <li>Open <code>chrome://extensions</code>, enable <strong>Developer mode</strong>, then choose <strong>Load unpacked</strong>.</li>
+        <li>Select the extracted <code>browser_extension</code> folder.</li>
+        <li>Pin <strong>RentIQ MagicBricks Capture</strong> to the Chrome toolbar.</li>
+      </ol>
+      <p class="hint">Server URL for the extension: <code id="server-url">{{ server_url }}</code></p>
+      <button id="copy-server" class="secondary">Copy server URL</button>
+    </section>
+
     <section class="panel form-panel">
+      <h2>Open the MagicBricks search</h2>
       <div class="grid">
         <label>City<input id="city" value="Noida" placeholder="Noida"></label>
         <label>Locality<input id="locality" placeholder="Sector 98 (optional)"></label>
-        <label>Provider
-          <select id="provider">
-            <option value="auto">Auto</option>
-            <option value="apify">Managed (recommended)</option>
-            <option value="direct">Direct browser</option>
-          </select>
-        </label>
-        <label>Maximum listings<input id="max-results" type="number" value="50" min="1" max="1000"></label>
-        <label>Maximum pages<input id="max-pages" type="number" value="3" min="1" max="20"></label>
       </div>
-      <button id="scrape-button">Start scrape</button>
-      <p id="status" class="status">Ready</p>
-      <p id="error" class="error"></p>
+      <button id="open-button">Open MagicBricks</button>
+      <p class="status" id="status">After the page opens, complete any CAPTCHA, scroll through the listings, then click the RentIQ extension.</p>
+      <p class="error" id="error"></p>
+    </section>
+
+    <section class="panel workflow">
+      <h2>Capture workflow</h2>
+      <ol class="steps">
+        <li>Open MagicBricks using the button above.</li>
+        <li>Complete any CAPTCHA manually.</li>
+        <li>Wait for property cards to load and scroll to load more visible listings.</li>
+        <li>Click the RentIQ extension icon.</li>
+        <li>Confirm the server URL and click <strong>Capture visible listings</strong>.</li>
+        <li>Return here; this page refreshes automatically.</li>
+      </ol>
     </section>
 
     <section class="panel actions">
       <div>
-        <h2>Latest listings</h2>
+        <h2>Latest captured listings</h2>
         <p id="count">0 rows loaded</p>
       </div>
       <div class="button-row">
         <button id="refresh-button" class="secondary">Refresh</button>
-        <a class="download" href="/api/listings.csv">Download CSV</a>
+        <a id="download-link" class="download" href="/api/listings.csv">Download CSV</a>
       </div>
     </section>
 
@@ -56,10 +73,21 @@
       </table>
     </section>
 
+    <section class="panel">
+      <h2>Recent capture runs</h2>
+      <div class="table-wrap inner-table">
+        <table>
+          <thead>
+            <tr><th>Time</th><th>City</th><th>Locality</th><th>Listings</th><th>Status</th></tr>
+          </thead>
+          <tbody id="run-body"></tbody>
+        </table>
+      </div>
+    </section>
+
     <section class="panel notes">
-      <h2>Execution modes</h2>
-      <p><strong>Managed:</strong> recommended on cloud/datacenter servers. It does not require Chrome or Docker.</p>
-      <p><strong>Direct browser:</strong> launches Chrome on this server. MagicBricks may still block datacenter IPs.</p>
+      <h2>What this application does not do</h2>
+      <p>It does not solve, bypass, automate, or hide CAPTCHA challenges. It captures only the listing cards loaded in the browser after you have accessed the site normally.</p>
     </section>
   </main>
   <script src="/static/app.js"></script>
