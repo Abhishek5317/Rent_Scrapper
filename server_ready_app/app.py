@@ -3,33 +3,30 @@ from __future__ import annotations
 import csv
 import io
 import os
-import threading
 import uuid
+import zipfile
 from datetime import datetime, timezone
 from pathlib import Path
 from typing import Any
+from urllib.parse import urlencode
 
 from dotenv import load_dotenv
-from flask import Flask, Response, jsonify, render_template, request, send_from_directory
+from flask import Flask, Response, jsonify, render_template, request, send_file
 from waitress import serve
 
-from providers import build_search_url, scrape
 from storage import Storage
 
 load_dotenv()
 
+BASE_DIR = Path(__file__).resolve().parent
 app = Flask(__name__)
-storage = Storage(os.getenv("DATABASE_PATH", "data/rentiq.sqlite3"))
-debug_dir = os.getenv("DEBUG_DIR", "debug")
-Path(debug_dir).mkdir(parents=True, exist_ok=True)
+app.config["MAX_CONTENT_LENGTH"] = 4 * 1024 * 1024
 
-state_lock = threading.Lock()
-run_lock = threading.Lock()
+storage = Storage(os.getenv("DATABASE_PATH", "data/rentiq.sqlite3"))
 current_state: dict[str, Any] = {
-    "running": False,
-    "run_id": None,
-    "message": "Ready",
+    "message": "Ready for browser capture",
     "error": None,
+    "last_run_id": None,
     "listing_count": 0,
 }
 
@@ -38,105 +35,180 @@ def now_iso() -> str:
     return datetime.now(timezone.utc).isoformat()
 
 
-def set_state(**updates: Any) -> None:
-    with state_lock:
-        current_state.update(updates)
+def build_search_url(city: str, locality: str | None = None) -> str:
+    params = [
+        ("bedroom", "1,2,3,4,5"),
+        (
+            "proptype",
+            "Multistorey-Apartment,Builder-Floor-Apartment,Penthouse,"
+            "Studio-Apartment,Service-Apartment,Residential-House,Villa",
+        ),
+    ]
+    if locality:
+        params.append(("Locality", locality))
+    params.extend([("cityName", city), ("page", "1")])
+    return (
+        "https://www.magicbricks.com/property-for-rent/residential-real-estate?"
+        + urlencode(params, safe=",")
+    )
 
 
-def run_scrape_job(
-    run_id: str,
-    requested_provider: str,
+def optional_number(value: Any) -> float | None:
+    if value in (None, ""):
+        return None
+    try:
+        return float(str(value).replace(",", "").strip())
+    except (TypeError, ValueError):
+        return None
+
+
+def normalize_listing(
+    item: dict[str, Any],
     city: str,
     locality: str | None,
-    max_results: int,
-    max_pages: int,
-) -> None:
-    try:
-        set_state(message="Starting scraper", error=None, listing_count=0)
-        selected_provider, search_url, listings = scrape(
-            requested_provider,
-            city,
-            locality,
-            max_results,
-            max_pages,
-            debug_dir,
+    page_url: str,
+    index: int,
+) -> dict[str, Any]:
+    listing_url = str(item.get("listing_url") or "").strip() or page_url
+    source_id = str(item.get("source_id") or "").strip()
+    if not source_id:
+        source_id = f"browser-{index}-{uuid.uuid4().hex[:12]}"
+
+    return {
+        "source_id": source_id,
+        "title": str(item.get("title") or "").strip(),
+        "locality": str(item.get("locality") or locality or "").strip(),
+        "city": str(item.get("city") or city).strip(),
+        "monthly_rent": optional_number(item.get("monthly_rent")),
+        "bhk": str(item.get("bhk") or "").strip(),
+        "area_sqft": optional_number(item.get("area_sqft")),
+        "property_type": str(item.get("property_type") or "").strip(),
+        "furnishing": str(item.get("furnishing") or "").strip(),
+        "latitude": optional_number(item.get("latitude")),
+        "longitude": optional_number(item.get("longitude")),
+        "listing_url": listing_url,
+        "raw": item.get("raw") or item,
+    }
+
+
+def deduplicate_listings(listings: list[dict[str, Any]]) -> list[dict[str, Any]]:
+    unique: list[dict[str, Any]] = []
+    seen: set[str] = set()
+    for item in listings:
+        key = (
+            str(item.get("source_id") or "").strip()
+            or str(item.get("listing_url") or "").strip()
+            or "|".join(
+                [
+                    str(item.get("title") or "").strip(),
+                    str(item.get("monthly_rent") or ""),
+                    str(item.get("locality") or "").strip(),
+                ]
+            )
         )
-        storage.save_listings(run_id, listings)
-        storage.finish_run(run_id, "success", len(listings), now_iso())
-        set_state(
-            message=f"Completed with {len(listings)} listings using {selected_provider}",
-            listing_count=len(listings),
-        )
-    except Exception as exc:
-        storage.finish_run(run_id, "failed", 0, now_iso(), str(exc))
-        set_state(message="Scrape failed", error=str(exc), listing_count=0)
-    finally:
-        set_state(running=False)
-        run_lock.release()
+        if key and key not in seen:
+            seen.add(key)
+            unique.append(item)
+    return unique
+
+
+@app.after_request
+def add_api_cors_headers(response: Response) -> Response:
+    if request.path.startswith("/api/"):
+        response.headers["Access-Control-Allow-Origin"] = "*"
+        response.headers["Access-Control-Allow-Headers"] = "Content-Type, X-Capture-Key"
+        response.headers["Access-Control-Allow-Methods"] = "GET, POST, OPTIONS"
+    return response
 
 
 @app.get("/")
 def index() -> str:
-    return render_template("index.html", default_port=os.getenv("PORT", "8771"))
+    return render_template(
+        "index.html",
+        default_port=os.getenv("PORT", "8771"),
+        server_url=request.host_url.rstrip("/"),
+    )
 
 
 @app.get("/health")
 def health() -> Response:
-    return jsonify({"status": "ok", "provider": os.getenv("SCRAPE_PROVIDER", "auto")})
+    return jsonify({"status": "ok", "mode": "browser-assisted"})
 
 
 @app.get("/api/status")
 def api_status() -> Response:
-    with state_lock:
-        return jsonify(dict(current_state))
+    return jsonify(dict(current_state))
 
 
-@app.post("/api/scrape")
-def api_scrape() -> Response:
+@app.get("/api/search-url")
+def api_search_url() -> Response:
+    city = str(request.args.get("city", "")).strip()
+    locality = str(request.args.get("locality", "")).strip() or None
+    if not city:
+        return jsonify({"error": "city is required"}), 400
+    return jsonify({"url": build_search_url(city, locality)})
+
+
+@app.route("/api/browser-capture", methods=["POST", "OPTIONS"])
+def browser_capture() -> Response:
+    if request.method == "OPTIONS":
+        return Response(status=204)
+
+    expected_key = os.getenv("CAPTURE_KEY", "").strip()
+    supplied_key = request.headers.get("X-Capture-Key", "").strip()
+    if expected_key and supplied_key != expected_key:
+        return jsonify({"error": "Invalid capture key"}), 401
+
     payload = request.get_json(silent=True) or {}
     city = str(payload.get("city", "")).strip()
     locality = str(payload.get("locality", "")).strip() or None
-    provider = str(payload.get("provider") or os.getenv("SCRAPE_PROVIDER", "auto")).strip()
-
-    try:
-        max_results = min(max(int(payload.get("max_results", 50)), 1), 1000)
-        max_pages = min(max(int(payload.get("max_pages", 3)), 1), 20)
-    except (TypeError, ValueError):
-        return jsonify({"error": "max_results and max_pages must be integers"}), 400
+    page_url = str(payload.get("page_url", "")).strip()
+    raw_listings = payload.get("listings")
 
     if not city:
         return jsonify({"error": "city is required"}), 400
-    if not run_lock.acquire(blocking=False):
-        return jsonify({"error": "Another scrape is already running"}), 409
+    if not isinstance(raw_listings, list):
+        return jsonify({"error": "listings must be an array"}), 400
+    if not raw_listings:
+        return jsonify({"error": "No visible listings were captured"}), 400
+    if len(raw_listings) > 1000:
+        return jsonify({"error": "A single capture cannot exceed 1000 listings"}), 400
+
+    normalized = [
+        normalize_listing(item, city, locality, page_url, index)
+        for index, item in enumerate(raw_listings, start=1)
+        if isinstance(item, dict)
+    ]
+    normalized = deduplicate_listings(normalized)
+    if not normalized:
+        return jsonify({"error": "No valid listings were captured"}), 400
 
     run_id = uuid.uuid4().hex
-    search_url = build_search_url(city, locality)
+    search_url = page_url or build_search_url(city, locality)
+    started_at = now_iso()
     storage.create_run(
         {
             "id": run_id,
-            "provider": provider,
+            "provider": "browser-assisted",
             "city": city,
             "locality": locality,
             "search_url": search_url,
             "status": "running",
-            "started_at": now_iso(),
+            "started_at": started_at,
         }
     )
-    set_state(
-        running=True,
-        run_id=run_id,
-        message="Queued",
-        error=None,
-        listing_count=0,
-    )
+    storage.save_listings(run_id, normalized)
+    storage.finish_run(run_id, "success", len(normalized), now_iso())
 
-    thread = threading.Thread(
-        target=run_scrape_job,
-        args=(run_id, provider, city, locality, max_results, max_pages),
-        daemon=True,
+    current_state.update(
+        {
+            "message": f"Imported {len(normalized)} listings from your browser",
+            "error": None,
+            "last_run_id": run_id,
+            "listing_count": len(normalized),
+        }
     )
-    thread.start()
-    return jsonify({"run_id": run_id, "status": "running"}), 202
+    return jsonify({"run_id": run_id, "listing_count": len(normalized), "status": "success"}), 201
 
 
 @app.get("/api/runs")
@@ -160,9 +232,19 @@ def listings_csv() -> Response:
     rows = storage.list_listings(run_id, 5000)
     output = io.StringIO()
     fields = [
-        "run_id", "source_id", "title", "locality", "city", "monthly_rent",
-        "bhk", "area_sqft", "property_type", "furnishing", "latitude",
-        "longitude", "listing_url",
+        "run_id",
+        "source_id",
+        "title",
+        "locality",
+        "city",
+        "monthly_rent",
+        "bhk",
+        "area_sqft",
+        "property_type",
+        "furnishing",
+        "latitude",
+        "longitude",
+        "listing_url",
     ]
     writer = csv.DictWriter(output, fieldnames=fields, extrasaction="ignore")
     writer.writeheader()
@@ -174,9 +256,24 @@ def listings_csv() -> Response:
     )
 
 
-@app.get("/debug/<path:filename>")
-def debug_file(filename: str):
-    return send_from_directory(Path(debug_dir).resolve(), filename)
+@app.get("/browser-extension.zip")
+def browser_extension_zip() -> Response:
+    extension_dir = BASE_DIR / "browser_extension"
+    if not extension_dir.exists():
+        return jsonify({"error": "Browser extension files are missing"}), 404
+
+    buffer = io.BytesIO()
+    with zipfile.ZipFile(buffer, "w", zipfile.ZIP_DEFLATED) as archive:
+        for path in sorted(extension_dir.rglob("*")):
+            if path.is_file():
+                archive.write(path, Path("browser_extension") / path.relative_to(extension_dir))
+    buffer.seek(0)
+    return send_file(
+        buffer,
+        mimetype="application/zip",
+        as_attachment=True,
+        download_name="rentiq-browser-extension.zip",
+    )
 
 
 if __name__ == "__main__":
