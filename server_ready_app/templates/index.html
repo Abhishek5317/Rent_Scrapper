@@ -3,15 +3,15 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>RentIQ Browser Capture</title>
+  <title>RentIQ Automatic Browser Capture</title>
   <link rel="stylesheet" href="/static/styles.css">
 </head>
 <body>
   <main class="shell">
     <header>
       <p class="eyebrow">Rent intelligence</p>
-      <h1>MagicBricks browser-assisted capture</h1>
-      <p class="sub">You browse normally and complete any CAPTCHA yourself. The server only receives the listings you explicitly send.</p>
+      <h1>MagicBricks automatic browser capture</h1>
+      <p class="sub">You complete any CAPTCHA yourself. RentIQ then scrolls the results page and imports the loaded listings automatically.</p>
     </header>
 
     <section class="panel">
@@ -21,32 +21,31 @@
         <li>Extract the ZIP on your computer.</li>
         <li>Open <code>chrome://extensions</code>, enable <strong>Developer mode</strong>, then choose <strong>Load unpacked</strong>.</li>
         <li>Select the extracted <code>browser_extension</code> folder.</li>
-        <li>Pin <strong>RentIQ MagicBricks Capture</strong> to the Chrome toolbar.</li>
+        <li>After future code updates, click <strong>Reload</strong> on this extension in <code>chrome://extensions</code>.</li>
       </ol>
-      <p class="hint">Server URL for the extension: <code id="server-url">{{ server_url }}</code></p>
+      <p class="hint">Server URL used by automatic capture: <code id="server-url">{{ server_url }}</code></p>
       <button id="copy-server" class="secondary">Copy server URL</button>
     </section>
 
     <section class="panel form-panel">
-      <h2>Open the MagicBricks search</h2>
+      <h2>Start automatic capture</h2>
       <div class="grid">
         <label>City<input id="city" value="Noida" placeholder="Noida"></label>
         <label>Locality<input id="locality" placeholder="Sector 98 (optional)"></label>
       </div>
-      <button id="open-button">Open MagicBricks</button>
-      <p class="status" id="status">After the page opens, complete any CAPTCHA, scroll through the listings, then click the RentIQ extension.</p>
+      <button id="open-button">Open MagicBricks &amp; Start Automatic Capture</button>
+      <p class="status" id="status">The extension will wait while you complete any CAPTCHA, then auto-scroll and send the loaded listings without another click.</p>
       <p class="error" id="error"></p>
     </section>
 
     <section class="panel workflow">
-      <h2>Capture workflow</h2>
+      <h2>Automatic workflow</h2>
       <ol class="steps">
-        <li>Open MagicBricks using the button above.</li>
-        <li>Complete any CAPTCHA manually.</li>
-        <li>Wait for property cards to load and scroll to load more visible listings.</li>
-        <li>Click the RentIQ extension icon.</li>
-        <li>Confirm the server URL and click <strong>Capture visible listings</strong>.</li>
-        <li>Return here; this page refreshes automatically.</li>
+        <li>Enter the city and locality, then click the button above.</li>
+        <li>Complete the CAPTCHA manually if MagicBricks shows one.</li>
+        <li>RentIQ automatically scrolls until the listing count and page height stop changing.</li>
+        <li>The extension sends the collected listings to this server automatically.</li>
+        <li>This page refreshes every five seconds and displays the new capture.</li>
       </ol>
     </section>
 
@@ -86,8 +85,8 @@
     </section>
 
     <section class="panel notes">
-      <h2>What this application does not do</h2>
-      <p>It does not solve, bypass, automate, or hide CAPTCHA challenges. It captures only the listing cards loaded in the browser after you have accessed the site normally.</p>
+      <h2>Important limitation</h2>
+      <p>RentIQ does not solve, skip, bypass, or hide CAPTCHA challenges. Automatic scrolling starts only after listing cards become available. It captures the listings dynamically loaded on the current search-results page; it does not automatically traverse separate numbered result pages.</p>
     </section>
   </main>
   <script src="/static/app.js"></script>
