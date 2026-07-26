@@ -4,6 +4,7 @@ const body = document.getElementById("listing-body");
 const runBody = document.getElementById("run-body");
 const countEl = document.getElementById("count");
 const downloadLink = document.getElementById("download-link");
+const openButton = document.getElementById("open-button");
 
 function money(value) {
   if (value === null || value === undefined || value === "") return "—";
@@ -57,10 +58,12 @@ async function loadRuns() {
   await loadListings(runs[0]?.id || null);
 }
 
-document.getElementById("open-button").addEventListener("click", async () => {
+openButton.addEventListener("click", async () => {
   errorEl.textContent = "";
   const city = document.getElementById("city").value.trim();
   const locality = document.getElementById("locality").value.trim();
+  openButton.disabled = true;
+  openButton.textContent = "Opening…";
 
   try {
     const response = await fetch(
@@ -69,9 +72,12 @@ document.getElementById("open-button").addEventListener("click", async () => {
     const data = await response.json();
     if (!response.ok) throw new Error(data.error || `HTTP ${response.status}`);
     window.open(data.url, "_blank", "noopener");
-    statusEl.textContent = "MagicBricks opened. Complete any CAPTCHA manually, load the listings, then use the RentIQ extension.";
+    statusEl.textContent = "MagicBricks opened. Complete any CAPTCHA manually. RentIQ will then auto-scroll, collect the loaded page, and send the listings automatically.";
   } catch (error) {
     errorEl.textContent = error.message;
+  } finally {
+    openButton.disabled = false;
+    openButton.textContent = "Open MagicBricks & Start Automatic Capture";
   }
 });
 
