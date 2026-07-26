@@ -35,7 +35,7 @@ async function initialize() {
 
 button.addEventListener("click", async () => {
   button.disabled = true;
-  setStatus("Reading visible property cards…");
+  setStatus("Reading property cards…");
 
   try {
     const tab = await activeTab();
@@ -49,31 +49,32 @@ button.addEventListener("click", async () => {
 
     await chrome.storage.sync.set({ serverUrl, captureKey });
 
-    const result = await chrome.tabs.sendMessage(tab.id, { type: "RENTIQ_CAPTURE_VISIBLE" });
-    if (!result?.ok) throw new Error(result?.error || "The page could not be read.");
-    if (!result.listings?.length) {
-      throw new Error("No property cards were found. Complete the CAPTCHA, wait for listings, and scroll the page first.");
+    const capture = await chrome.tabs.sendMessage(tab.id, { type: "RENTIQ_CAPTURE_VISIBLE" });
+    if (!capture?.ok) throw new Error(capture?.error || "The page could not be read.");
+    if (!capture.listings?.length) {
+      throw new Error("No property cards were found. Complete the CAPTCHA and wait for listings first.");
     }
 
-    setStatus(`Found ${result.listings.length} cards. Sending to RentIQ…`);
+    setStatus(`Found ${capture.listings.length} cards. Reading property coordinates automatically…`);
 
-    const headers = { "Content-Type": "application/json" };
-    if (captureKey) headers["X-Capture-Key"] = captureKey;
-
-    const response = await fetch(`${serverUrl}/api/browser-capture`, {
-      method: "POST",
-      headers,
-      body: JSON.stringify({
+    const result = await chrome.runtime.sendMessage({
+      type: "RENTIQ_ENRICH_AND_SUBMIT",
+      serverUrl,
+      captureKey,
+      searchTabId: tab.id,
+      payload: {
         city,
         locality,
         page_url: tab.url,
-        listings: result.listings
-      })
+        listings: capture.listings
+      }
     });
-    const data = await response.json().catch(() => ({}));
-    if (!response.ok) throw new Error(data.error || `Server returned HTTP ${response.status}`);
 
-    setStatus(`Success: ${data.listing_count} listings saved.\nRun ID: ${data.run_id}`);
+    if (!result?.ok) throw new Error(result?.error || "Coordinate enrichment failed.");
+
+    setStatus(
+      `Success: ${result.listing_count} listings saved.\nCoordinates: ${result.coordinates_found}/${result.listing_count}.\nRun ID: ${result.run_id}`
+    );
   } catch (error) {
     setStatus(error.message, true);
   } finally {
