@@ -11,7 +11,7 @@
     <header>
       <p class="eyebrow">Rent intelligence</p>
       <h1>MagicBricks automatic browser capture</h1>
-      <p class="sub">You complete any CAPTCHA yourself. RentIQ then scrolls the results page and imports the loaded listings automatically.</p>
+      <p class="sub">You complete any CAPTCHA yourself. RentIQ loads listings, enriches latitude/longitude, and imports the data automatically.</p>
     </header>
 
     <section class="panel">
@@ -34,7 +34,7 @@
         <label>Locality<input id="locality" placeholder="Sector 98 (optional)"></label>
       </div>
       <button id="open-button">Open MagicBricks &amp; Start Automatic Capture</button>
-      <p class="status" id="status">The extension will wait while you complete any CAPTCHA, then auto-scroll and send the loaded listings without another click.</p>
+      <p class="status" id="status">The extension waits for manual CAPTCHA completion, auto-scrolls, extracts card coordinates, and opens only listings whose coordinates are missing.</p>
       <p class="error" id="error"></p>
     </section>
 
@@ -42,10 +42,11 @@
       <h2>Automatic workflow</h2>
       <ol class="steps">
         <li>Enter the city and locality, then click the button above.</li>
-        <li>Complete the CAPTCHA manually if MagicBricks shows one.</li>
-        <li>RentIQ automatically scrolls until the listing count and page height stop changing.</li>
-        <li>The extension sends the collected listings to this server automatically.</li>
-        <li>This page refreshes every five seconds and displays the new capture.</li>
+        <li>Complete a CAPTCHA manually if MagicBricks shows one.</li>
+        <li>RentIQ auto-scrolls until the current results page stops loading new cards.</li>
+        <li>Latitude/longitude is first read from each card's embedded JSON-LD.</li>
+        <li>For missing coordinates, one background detail tab is reused automatically and closed after enrichment.</li>
+        <li>The listings, coordinates, and property links are saved to SQLite and CSV.</li>
       </ol>
     </section>
 
@@ -65,7 +66,7 @@
         <thead>
           <tr>
             <th>Title</th><th>Locality</th><th>Rent</th><th>BHK</th>
-            <th>Area</th><th>Type</th><th>Link</th>
+            <th>Area</th><th>Type</th><th>Latitude</th><th>Longitude</th><th>Link</th>
           </tr>
         </thead>
         <tbody id="listing-body"></tbody>
@@ -86,7 +87,7 @@
 
     <section class="panel notes">
       <h2>Important limitation</h2>
-      <p>RentIQ does not solve, skip, bypass, or hide CAPTCHA challenges. Automatic scrolling starts only after listing cards become available. It captures the listings dynamically loaded on the current search-results page; it does not automatically traverse separate numbered result pages.</p>
+      <p>RentIQ does not solve, skip, bypass, or hide CAPTCHA challenges. It pauses and brings the affected MagicBricks tab forward only when manual verification is required. It processes the dynamically loaded listings on the current search-results page.</p>
     </section>
   </main>
   <script src="/static/app.js"></script>
